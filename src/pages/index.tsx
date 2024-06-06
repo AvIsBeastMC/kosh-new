@@ -257,7 +257,7 @@ const Home = () => {
             <span className='border-b-2'>Our History</span>
           </h1>
 
-          <section className="text-gray-600 body-font overflow-hidden">
+          <section data-aos="fade-right" data-aos-delay="200" data-aos-once="false" className="text-gray-600 body-font overflow-hidden">
             <div className="container py-12 mx-auto">
               <div className="lg:w-4/5 mx-auto flex flex-wrap">
                 <img alt="ecommerce" className="lg:w-1/2 w-full lg:h-auto h-64 object-cover object-center rounded" src="/assets/photo.png" />
@@ -271,13 +271,13 @@ const Home = () => {
           </section>
         </section>
 
-        <div className='px-4 py-8  flex items-center justify-center flex-row gap-2 w-4/5 rounded-md mx-auto mb-8'>
+        <div data-aos="fade-in" data-aos-delay="200" data-aos-once="false" className='px-4 py-8  flex items-center justify-center flex-row gap-2 w-4/5 rounded-md mx-auto mb-8'>
           {['/assets/slider/1.jpg', '/assets/slider/2.jpg', '/assets/slider/3.jpg', '/assets/slider/4.jpg'].map((image, i) => (
             <img key={i} src={image} alt="Sample Image" className="rounded-md w-96 h-full object-cover" />
           ))}
         </div>
 
-        <section className="text-gray-600 body-font">
+        <section data-aos="fade-left" data-aos-delay="200" data-aos-once="false" className="text-gray-600 body-font">
           <div
             className="container mx-auto flex px-5 py-12 md:flex-row flex-col items-center"
           >
@@ -306,7 +306,7 @@ const Home = () => {
             </div>
           </div>
         </section>
-        <section className="text-gray-600 body-font">
+        <section data-aos="fade-right" data-aos-delay="200" data-aos-once="false" className="text-gray-600 body-font">
           <div
             className="container mx-auto flex px-5 py-12 md:flex-row flex-col items-center"
           >

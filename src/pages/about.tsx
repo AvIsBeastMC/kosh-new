@@ -11,7 +11,7 @@ const About = () => {
     <>
       <Navbar />
 
-      <section className='px-12 py-4'>
+      <section data-aos="fade-in" data-aos-delay="200" data-aos-once="false" className='px-12 py-4'>
         <section className="text-gray-600 body-font overflow-hidden">
           <div className="container py-12 mx-auto">
             <div className="lg:w-4/5 mx-auto flex flex-wrap">
@@ -31,7 +31,7 @@ const About = () => {
 
       <div style={{
         backgroundImage: "url('/assets/white-bg.png')"
-      }} className='py-12 border-b-2 border-gray-300'>
+      }} data-aos="fade-right" data-aos-delay="400" data-aos-once="false" className='py-12 border-b-2 border-gray-300'>
         <div className='w-2/3 mx-auto flex flex-row'>
           <div className='mr-auto w-1/2'>
             <div className='flex flex-row gap-2 items-center'>
@@ -60,7 +60,7 @@ const About = () => {
         </div>
       </div>
 
-      <div className='py-12 w-2/3 mx-auto'>
+      <div data-aos="fade-in" data-aos-delay="200" data-aos-once="false" className='py-12 w-2/3 mx-auto'>
         <div className='flex flex-row gap-2 items-center mb-6'>
           <Trophy />
           <h1 className={classNames(InterBold.className, 'text-2xl')}><span className='border-b-2'>AWARDS AND RECOGNITIONS</span></h1>
@@ -73,7 +73,7 @@ const About = () => {
         </div>
       </div>
       
-      <div className='py-12 w-2/3 mx-auto'>
+      <div data-aos="fade-right" data-aos-delay="200" data-aos-once="false" className='py-12 w-2/3 mx-auto'>
         <div className='flex flex-row gap-2 items-center mb-3'>
           <Globe2 />
           <h1 className={classNames(InterBold.className, 'text-2xl')}><span className='border-b-2'>COMPANY AND EXPORT LOCATIONS</span></h1>
@@ -83,7 +83,7 @@ const About = () => {
         </div>
       </div>
       
-      <div className='py-12 w-2/3 mx-auto'>
+      <div data-aos="fade-left" data-aos-delay="200" data-aos-once="false" className='py-12 w-2/3 mx-auto'>
         <div className='flex flex-row gap-2 items-center mb-7'>
           <FileText />
           <h1 className={classNames(InterBold.className, 'text-2xl')}><span className='border-b-2'>CERTIFICATIONS</span></h1>
