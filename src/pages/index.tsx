@@ -339,7 +339,7 @@ const Home = () => {
         </h1>
 
 {/* @ts-ignore */}
-        <Marquee direction="right">
+        <Marquee direction="ltr">
           {['/customer/extrusion/bosch.png', '/customer/extrusion/samsung.png', '/customer/extrusion/whirlpool.png', '/customer/extrusion/IFB.png'].map((image, i) => (
             <img src={image} className='w-48 mr-12' key={i} />
           ))}
