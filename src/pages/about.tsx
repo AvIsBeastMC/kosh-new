@@ -1,9 +1,10 @@
 import classNames from 'classnames'
-import { BookText, LineChart, Quote, ScanEye, Trophy } from 'lucide-react'
+import { BookText, FileText, Globe, Globe2, LineChart, Quote, ScanEye, Trophy } from 'lucide-react'
 import React from 'react'
 import Navbar from '~/components/Navbar'
 import { InterBold, PlayfairDisplayBold } from './_app'
 import Marquee from 'react-marquee-slider'
+import Footer from '~/components/Footer'
 
 const About = () => {
   return (
@@ -71,6 +72,31 @@ const About = () => {
           <img src="/Cards/Group 9.png" className='mr-6 w-56' alt="" />
         </div>
       </div>
+      
+      <div className='py-12 w-2/3 mx-auto'>
+        <div className='flex flex-row gap-2 items-center mb-3'>
+          <Globe2 />
+          <h1 className={classNames(InterBold.className, 'text-2xl')}><span className='border-b-2'>COMPANY AND EXPORT LOCATIONS</span></h1>
+        </div>
+        <div className='flex flex-row items-center'>
+          Maps used are currently being updated, please come back after some time.
+        </div>
+      </div>
+      
+      <div className='py-12 w-2/3 mx-auto'>
+        <div className='flex flex-row gap-2 items-center mb-7'>
+          <FileText />
+          <h1 className={classNames(InterBold.className, 'text-2xl')}><span className='border-b-2'>CERTIFICATIONS</span></h1>
+        </div>
+        <div className='flex flex-row items-center'>
+          <img src="/Certifications/Image 10.png" className='w-72 mr-10' alt="" />
+          <img src="/Certifications/Image 11.png" className='w-72 mr-10' alt="" />
+          <img src="/Certifications/Image 12.png" className='w-72 mr-10' alt="" />
+          <img src="/Certifications/Image 13.png" className='w-72 mr-10' alt="" />
+        </div>
+      </div>
+
+      <Footer />
     </>
   )
 }
