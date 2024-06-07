@@ -1,8 +1,9 @@
+/* eslint-disable @next/next/no-img-element */
 import classNames from 'classnames'
 import { BookText, FileText, Globe, Globe2, LineChart, Quote, ScanEye, Trophy } from 'lucide-react'
 import React from 'react'
 import Navbar from '~/components/Navbar'
-import { InterBold, PlayfairDisplayBold } from './_app'
+import { InterBold, JioType, PlayfairDisplayBold } from './_app'
 import Marquee from 'react-marquee-slider'
 import Footer from '~/components/Footer'
 
@@ -31,9 +32,9 @@ const About = () => {
 
       <div style={{
         backgroundImage: "url('/assets/white-bg.png')"
-      }} data-aos="fade-right" data-aos-delay="400" data-aos-once="false" className='py-12 border-b-2 border-gray-300'>
-        <div className='w-2/3 mx-auto flex flex-row'>
-          <div className='mr-auto w-1/2'>
+      }} data-aos="fade-right" data-aos-delay="400" data-aos-once="false" className='py-12 border border-yellow-200'>
+        <div className='w-1/2 mx-auto flex flex-col gap-8'>
+          <div className='mr-auto'>
             <div className='flex flex-row gap-2 items-center'>
               <ScanEye />
               <h1 className={classNames(InterBold.className, 'text-2xl')}><span className='border-b-2'>VISION</span></h1>
@@ -44,7 +45,7 @@ const About = () => {
               innovations!
             </p>
           </div>
-          <div className='ml-auto w-1/2'>
+          <div className='ml-auto '>
             <div className='flex flex-row gap-2 items-center'>
               <LineChart />
               <h1 className={classNames(InterBold.className, 'text-2xl')}><span className='border-b-2'>MISSION</span></h1>
@@ -60,29 +61,76 @@ const About = () => {
         </div>
       </div>
 
+      {/* <img src="/Cards/Group 6.png" className='mr-6 w-56' alt="" />
+          <img src="/Cards/Group 7.png" className='mr-6 w-56' alt="" />
+          <img src="/Cards/Group 8.png" className='mr-6 w-56' alt="" />
+          <img src="/Cards/Group 9.png" className='mr-6 w-56' alt="" /> */}
       <div data-aos="fade-in" data-aos-delay="200" data-aos-once="false" className='py-12 w-2/3 mx-auto'>
         <div className='flex flex-row gap-2 items-center mb-6'>
           <Trophy />
           <h1 className={classNames(InterBold.className, 'text-2xl')}><span className='border-b-2'>AWARDS AND RECOGNITIONS</span></h1>
         </div>
-        <div className='flex flex-row items-center'>
-          <img src="/Cards/Group 6.png" className='mr-6 w-56' alt="" />
-          <img src="/Cards/Group 7.png" className='mr-6 w-56' alt="" />
-          <img src="/Cards/Group 8.png" className='mr-6 w-56' alt="" />
-          <img src="/Cards/Group 9.png" className='mr-6 w-56' alt="" />
+        <div className='flex flex-row gap-4 items-center'>
+          <div data-aos="fade-in" data-aos-delay="200" className='w-1/4 px-8 py-6 rounded bg-gradient-to-r from-gray-100 to-green-200 flex flex-col items-center'>
+            <img src="/ecovadis.png" className='mx-auto w-20' alt="" />
+
+            <div className='flex flex-col  mx-auto items-center'>
+              <h2 className={classNames(JioType.className, 'text-md')}>Ecovadis CSR Audit</h2>
+              <h1 className={classNames(InterBold.className, 'text-2xl text-black')}>2nd Rank in Asia</h1>
+            </div>
+          </div>
+
+
+          <div data-aos="fade-in" data-aos-delay="300" className='w-1/4 px-8 py-6 rounded bg-gradient-to-r from-gray-200 to-yellow-50 flex flex-col items-center'>
+            <div className='flex flex-row gap-2'>
+              <img src="/customer/awards/bosch.png" className='mx-auto w-20' alt="" />
+              <img src="/customer/awards/whirlpool.png" className='mx-auto w-20' alt="" />
+            </div>
+
+            <div className='flex flex-col  mx-auto items-center'>
+              <h2 className={classNames(JioType.className, 'text-md')}>Bosche, Whirlpool, Eurecia</h2>
+              <h1 className={classNames(InterBold.className, 'text-2xl text-black')}>Best Supplier</h1>
+            </div>
+          </div>
+
+          <div data-aos="fade-in" data-aos-delay="400" className='w-1/3 px-8 py-6 rounded bg-gradient-to-r from-gray-200 to-yellow-100 flex flex-col items-center'>
+            <div className='flex flex-row gap-2'>
+              <img src="/customer/awards/hanil-tube.png" className='mx-auto w-14' alt="" />
+              <img src="/customer/awards/faurecia.png" className='mx-auto w-14' alt="" />
+              <img src="/customer/awards/samsung.png" className='mx-auto w-14' alt="" />
+              <img src="/customer/awards/vestas.png" className='mx-auto w-14' alt="" />
+            </div>
+
+            <div className='flex flex-col mt-5 mx-auto items-center'>
+              <h2 className={classNames(JioType.className, 'text-md')}>Hanil Tube, Faurecia, Samsung, Vestas</h2>
+              <h1 className={classNames(InterBold.className, 'text-2xl text-black')}>Zero PPM Award</h1>
+            </div>
+          </div>
+
+          <div data-aos="fade-in" data-aos-delay="500" className='w-1/4 px-8 py-6 rounded bg-gradient-to-r from-gray-100 to-green-200 flex flex-col items-center'>
+            <img src="/customer/awards/whirlpool.png" className='mx-auto w-20' alt="" />
+
+            <div className='flex flex-col  mx-auto items-center'>
+              <h2 className={classNames(JioType.className, 'text-md')}>Whirlpool</h2>
+              <h1 className={classNames(InterBold.className, 'text-2xl text-black')}>Quality Supplier</h1>
+            </div>
+          </div>
         </div>
       </div>
-      
+
       <div data-aos="fade-right" data-aos-delay="200" data-aos-once="false" className='py-12 w-2/3 mx-auto'>
         <div className='flex flex-row gap-2 items-center mb-3'>
           <Globe2 />
           <h1 className={classNames(InterBold.className, 'text-2xl')}><span className='border-b-2'>COMPANY AND EXPORT LOCATIONS</span></h1>
         </div>
-        <div className='flex flex-row items-center'>
-          Maps used are currently being updated, please come back after some time.
+        <div className='flex flex-row gap-2 items-center'>
+          <div className='w-1/2'>
+            <img src="/Maps/india.png" className='' alt="" />
+          </div>
+          <img src="/Maps/world.png" className='w-1/2' alt="" />
         </div>
       </div>
-      
+
       <div data-aos="fade-left" data-aos-delay="200" data-aos-once="false" className='py-12 w-2/3 mx-auto'>
         <div className='flex flex-row gap-2 items-center mb-7'>
           <FileText />

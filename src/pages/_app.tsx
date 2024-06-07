@@ -16,7 +16,7 @@ export const InterFont = Inter({
 export const InterBold = Inter({
   subsets: ["latin"],
   variable: "--font-sans",
-  weight: '800'
+  weight: '700'
 });
 
 export const PlayfairDisplay = Playfair_Display({
