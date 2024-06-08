@@ -171,7 +171,7 @@ const Home = () => {
             </div>
             {/* <div className="flex flex-row -m-4"> */}
             <Marquee direction="right">
-              <div className="p-4">
+              <div className="p-4 w-2/3">
                 <div className="border border-yellow-200 p-6 rounded-lg">
                   <div className="w-10 h-10 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-4">
                     <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" className="w-6 h-6" viewBox="0 0 24 24">
@@ -186,7 +186,7 @@ const Home = () => {
                   </p>
                 </div>
               </div>
-              <div className="p-4">
+              <div className="p-4 w-2/3">
                 <div className="border border-yellow-200 p-6 rounded-lg">
                   <div className="w-10 h-10 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-4">
                     <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" className="w-6 h-6" viewBox="0 0 24 24">
@@ -201,7 +201,7 @@ const Home = () => {
                   </p>
                 </div>
               </div>
-              <div className="p-4">
+              <div className="p-4 w-2/3">
                 <div className="border border-yellow-200 p-6 rounded-lg">
                   <div className="w-10 h-10 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-4">
                     <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" className="w-6 h-6" viewBox="0 0 24 24">
@@ -216,7 +216,7 @@ const Home = () => {
                   </p>
                 </div>
               </div>
-              <div className="p-4">
+              <div className="p-4 w-2/3">
                 <div className="border border-yellow-200 p-6 rounded-lg">
                   <div className="w-10 h-10 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-4">
                     <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" className="w-6 h-6" viewBox="0 0 24 24">
@@ -231,7 +231,7 @@ const Home = () => {
                   </p>
                 </div>
               </div>
-              <div className="p-4">
+              <div className="p-4 w-2/3">
                 <div className="border border-yellow-200 p-6 rounded-lg">
                   <div className="w-10 h-10 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-4">
                     <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" className="w-6 h-6" viewBox="0 0 24 24">
