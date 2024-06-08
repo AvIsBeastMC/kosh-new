@@ -118,7 +118,7 @@ const About = () => {
       </div>
 
       <div data-aos="fade-right" data-aos-delay="200" data-aos-once="false" className='py-12 w-2/3 mx-auto'>
-        <div className='flex flex-row gap-2 items-center mb-3'>
+        <div className='flex flex-row gap-2 items-center'>
           <Globe2 />
           <h1 className={classNames(InterBold.className, 'text-2xl')}><span className='border-b-2'>COMPANY AND EXPORT LOCATIONS</span></h1>
         </div>
