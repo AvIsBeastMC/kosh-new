@@ -143,10 +143,10 @@ const About = () => {
           <h1 className={classNames(InterBold.className, 'text-2xl')}><span className='border-b-2'>CERTIFICATIONS</span></h1>
         </div>
         <Marquee direction="left" pauseOnHover>
-          <img src="/Certifications/Image 10.png" className='w-72 mr-10' alt="" />
-          <img src="/Certifications/Image 11.png" className='w-72 mr-10' alt="" />
-          <img src="/Certifications/Image 12.png" className='w-72 mr-10' alt="" />
-          <img src="/Certifications/Image 13.png" className='w-72 mr-10' alt="" />
+          <img src="/Certifications/Image 10.png" className='border-2 border-gray-200 w-72 mr-10' alt="" />
+          <img src="/Certifications/Image 11.png" className='border-2 border-gray-200 w-72 mr-10' alt="" />
+          <img src="/Certifications/Image 12.png" className='border-2 border-gray-200 w-72 mr-10' alt="" />
+          <img src="/Certifications/Image 13.png" className='border-2 border-gray-200 w-72 mr-10' alt="" />
         </Marquee>
       </div>
 

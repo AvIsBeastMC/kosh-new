@@ -164,7 +164,7 @@ const Home = () => {
         <section className="text-gray-600 body-font">
           <div className="container px-5 py-12 mx-auto">
             <div className="flex flex-wrap w-full mb-12 flex-col items-center text-center">
-              <span className={classNames('border-b-2', InterBold.className)}><h1 className="sm:text-3xl text-2xl font-medium title-font mb-2 text-gray-900 flex flex-row items-center gap-2">
+              <span className={classNames('border-b-2 border-yellow-200', InterBold.className)}><h1 className="sm:text-3xl text-2xl font-medium title-font mb-2 text-gray-900 flex flex-row items-center gap-2">
                 <BarChart4 />
                 Our Values
               </h1></span>
@@ -256,7 +256,7 @@ const Home = () => {
         <section className='px-12 py-4 mt-8'>
           <h1 className={classNames(InterBold.className, 'text-3xl mx-auto justify-center flex flex-row text-center items-center gap-2')}>
             <BookText />
-            <span className='border-b-2'>Our <span className='text-yellow-400'>History</span></span>
+            <span className='border-b-2 border-yellow-200'>Our <span className='text-yellow-400'>History</span></span>
           </h1>
 
           <section data-aos="fade-right" data-aos-delay="200" data-aos-once="false" className="text-gray-600 body-font overflow-hidden">
@@ -506,7 +506,7 @@ const Home = () => {
 
         <h1 className={classNames(InterBold.className, 'text-3xl mx-auto justify-center flex flex-row text-center items-center gap-2')}>
           <Building2 />
-          <span className='border-b-2'>Customers</span>
+          <span className='border-b-2 border-yellow-200'>Customers</span>
         </h1>
 
         {/* @ts-ignore */}
