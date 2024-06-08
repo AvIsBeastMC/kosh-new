@@ -170,80 +170,110 @@ const Home = () => {
               </h1></span>
             </div>
             {/* <div className="flex flex-row -m-4"> */}
-            <Marquee  direction="right" className='flex flex-row'>
+            <Marquee direction="right" className='flex flex-row'>
               <div className="p-4 w-96">
-                <div className="border-2 border-yellow-200 p-6 rounded-lg">
-                  <div className="w-10 h-10 inline-flex items-center justify-center rounded-full bg-gray-200 text-indigo-500 mb-4">
-                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" className="w-6 h-6" viewBox="0 0 24 24">
-                      <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
-                    </svg>
+                <div style={{
+                  borderWidth: '5px'
+                }} className="border-gray-400 rounded-md">
+                  <div className='border-yellow-400 p-6' style={{
+                    borderWidth: '5px'
+                  }}>
+                    <div className="w-10 h-10 inline-flex items-center justify-center rounded-full bg-gray-200 text-indigo-500 mb-4">
+                      <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" className="w-6 h-6" viewBox="0 0 24 24">
+                        <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
+                      </svg>
+                    </div>
+                    <h2 className={classNames("text-lg text-gray-900 font-medium title-font mb-2", PlayfairDisplay.className)}>
+                      Accountability
+                    </h2>
+                    <p className="leading-relaxed text-base">
+                      We are committed to our words, our actions, and our results.
+                    </p>
                   </div>
-                  <h2 className={classNames("text-lg text-gray-900 font-medium title-font mb-2", PlayfairDisplay.className)}>
-                    Accountability
-                  </h2>
-                  <p className="leading-relaxed text-base">
-                    We are committed to our words, our actions, and our results.
-                  </p>
                 </div>
               </div>
               <div className="p-4 w-96">
-                <div className="border-2 border-yellow-200 p-6 rounded-lg">
-                  <div className="w-10 h-10 inline-flex items-center justify-center rounded-full bg-gray-200 text-indigo-500 mb-4">
-                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" className="w-6 h-6" viewBox="0 0 24 24">
-                      <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
-                    </svg>
+                <div style={{
+                  borderWidth: '5px'
+                }} className="border-gray-400 rounded-md">
+                  <div className='border-yellow-400 p-6' style={{
+                    borderWidth: '5px'
+                  }}>
+                    <div className="w-10 h-10 inline-flex items-center justify-center rounded-full bg-gray-200 text-indigo-500 mb-4">
+                      <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" className="w-6 h-6" viewBox="0 0 24 24">
+                        <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
+                      </svg>
+                    </div>
+                    <h2 className={classNames("text-lg text-gray-900 font-medium title-font mb-2", PlayfairDisplay.className)}>
+                      Integrity
+                    </h2>
+                    <p className="leading-relaxed text-base">
+                      We develop trust through our integrity and honest relationships.
+                    </p>
                   </div>
-                  <h2 className={classNames("text-lg text-gray-900 font-medium title-font mb-2", PlayfairDisplay.className)}>
-                    Integrity
-                  </h2>
-                  <p className="leading-relaxed text-base">
-                    We develop trust through our integrity and honest relationships.
-                  </p>
                 </div>
               </div>
               <div className="p-4 w-96">
-                <div className="border-2 border-yellow-200 p-6 rounded-lg">
-                  <div className="w-10 h-10 inline-flex items-center justify-center rounded-full bg-gray-200 text-indigo-500 mb-4">
-                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" className="w-6 h-6" viewBox="0 0 24 24">
-                      <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
-                    </svg>
+                <div style={{
+                  borderWidth: '5px'
+                }} className="border-gray-400 rounded-md">
+                  <div className='border-yellow-400 p-6' style={{
+                    borderWidth: '5px'
+                  }}>
+                    <div className="w-10 h-10 inline-flex items-center justify-center rounded-full bg-gray-200 text-indigo-500 mb-4">
+                      <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" className="w-6 h-6" viewBox="0 0 24 24">
+                        <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
+                      </svg>
+                    </div>
+                    <h2 className={classNames("text-lg text-gray-900 font-medium title-font mb-2", PlayfairDisplay.className)}>
+                      Teamwork
+                    </h2>
+                    <p className="leading-relaxed text-base">
+                      We prioritize the success of the team above individual achievements.
+                    </p>
                   </div>
-                  <h2 className={classNames("text-lg text-gray-900 font-medium title-font mb-2", PlayfairDisplay.className)}>
-                    Teamwork
-                  </h2>
-                  <p className="leading-relaxed text-base">
-                    We prioritize the success of the team above individual achievements.
-                  </p>
                 </div>
               </div>
               <div className="p-4 w-96">
-                <div className="border-2 border-yellow-200 p-6 rounded-lg">
-                  <div className="w-10 h-10 inline-flex items-center justify-center rounded-full bg-gray-200 text-indigo-500 mb-4">
-                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" className="w-6 h-6" viewBox="0 0 24 24">
-                      <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
-                    </svg>
+                <div style={{
+                  borderWidth: '5px'
+                }} className="border-gray-400 rounded-md">
+                  <div className='border-yellow-400 p-6' style={{
+                    borderWidth: '5px'
+                  }}>
+                    <div className="w-10 h-10 inline-flex items-center justify-center rounded-full bg-gray-200 text-indigo-500 mb-4">
+                      <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" className="w-6 h-6" viewBox="0 0 24 24">
+                        <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
+                      </svg>
+                    </div>
+                    <h2 className={classNames("text-lg text-gray-900 font-medium title-font mb-2", PlayfairDisplay.className)}>
+                      Educational Excellence
+                    </h2>
+                    <p className="leading-relaxed text-base">
+                      We ensure consistency and dedication...
+                    </p>
                   </div>
-                  <h2 className={classNames("text-lg text-gray-900 font-medium title-font mb-2", PlayfairDisplay.className)}>
-                    Educational Excellence
-                  </h2>
-                  <p className="leading-relaxed text-base">
-                    We ensure consistency and dedication to every approach we undertake.
-                  </p>
                 </div>
               </div>
               <div className="p-4 w-96">
-                <div className="border-2 border-yellow-200 p-6 rounded-lg">
-                  <div className="w-10 h-10 inline-flex items-center justify-center rounded-full bg-gray-200 text-indigo-500 mb-4">
-                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" className="w-6 h-6" viewBox="0 0 24 24">
-                      <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
-                    </svg>
+                <div style={{
+                  borderWidth: '5px'
+                }} className="border-gray-400 rounded-md">
+                  <div className='border-yellow-400 p-6' style={{
+                    borderWidth: '5px'
+                  }}>
+                    <div className="w-10 h-10 inline-flex items-center justify-center rounded-full bg-gray-200 text-indigo-500 mb-4">
+                      <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" className="w-6 h-6" viewBox="0 0 24 24">
+                        <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
+                      </svg>
+                    </div>
+                    <h2 className={classNames("text-lg text-gray-900 font-medium title-font mb-2", PlayfairDisplay.className)}>
+                      Growth and Diversification
+                    </h2>
+                    <p className="leading-relaxed text-base">
+                      Identifying growth opportunities and embracing...
+                    </p>
                   </div>
-                  <h2 className={classNames("text-lg text-gray-900 font-medium title-font mb-2", PlayfairDisplay.className)}>
-                    Growth and Diversification
-                  </h2>
-                  <p className="leading-relaxed text-base">
-                    Identifying growth opportunities and embracing...
-                  </p>
                 </div>
               </div>
             </Marquee>
@@ -338,7 +368,7 @@ const Home = () => {
                             <b>September 23</b>: Expansion of plant with another plant in Hosur
                           </li>
                           <li>
-                            <b>October 23</b>: Expansion of existing building premises in Hosur 
+                            <b>October 23</b>: Expansion of existing building premises in Hosur
                           </li>
                         </div>
                       </div>
@@ -353,7 +383,7 @@ const Home = () => {
             <section className="text-gray-600 body-font">
               <div className="container px-5 py-12 mx-auto flex flex-wrap">
                 <div className="flex flex-wrap w-full">
-                <img className="lg:w-2/5 md:w-1/2 object-cover object-center rounded-lg md:mt-0 mt-12" src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="step" />
+                  <img className="lg:w-2/5 md:w-1/2 object-cover object-center rounded-lg md:mt-0 mt-12" src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="step" />
 
                   <div className="w-3/5 md:pl-10 md:py-6">
                     <div className="flex relative pb-12">
@@ -430,7 +460,7 @@ const Home = () => {
                             <b>September 23</b>: Expansion of plant with another plant in Hosur
                           </li>
                           <li>
-                            <b>October 23</b>: Expansion of existing building premises in Hosur 
+                            <b>October 23</b>: Expansion of existing building premises in Hosur
                           </li>
                         </div>
                       </div>

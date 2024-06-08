@@ -1,4 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
+import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
+import { Carousel } from 'react-responsive-carousel';
 import classNames from 'classnames'
 import { BookText, FileText, Globe, Globe2, LineChart, Quote, ScanEye, Trophy } from 'lucide-react'
 import React from 'react'
@@ -70,48 +72,89 @@ const About = () => {
           <Trophy />
           <h1 className={classNames(InterBold.className, 'text-2xl')}><span className='border-b-2'>AWARDS AND RECOGNITIONS</span></h1>
         </div>
-        <div className='flex flex-row gap-4 items-center'>
-          <div data-aos="fade-in" data-aos-delay="200" className='w-1/4 px-8 py-6 rounded bg-gradient-to-r from-gray-200 to-yellow-100 flex flex-col items-center'>
+        <div className='grid grid-cols-4 gap-4 items-center'>
+          <div data-aos="fade-in" data-aos-delay="200" className='px-8 py-6 rounded bg-gradient-to-r from-gray-200 to-yellow-100 flex flex-col items-center'>
             <img src="/ecovadis.png" className='mx-auto w-20' alt="" />
 
-            <div className='flex flex-col  mx-auto items-center'>
+            <div className='flex flex-col mx-auto items-center'>
+              <h1 className={classNames(InterBold.className, 'text-xl text-black')}>2nd Rank in Asia</h1>
               <h2 className={classNames(JioType.className, 'text-xs')}>Ecovadis CSR Audit</h2>
-              <h1 className={classNames(InterBold.className, 'text-2xl text-black')}>2nd Rank in Asia</h1>
             </div>
           </div>
 
-          <div data-aos="fade-in" data-aos-delay="300" className='w-1/4 px-8 py-6 rounded bg-gradient-to-r from-gray-200 to-yellow-100 flex flex-col items-center'>
+          <div data-aos="fade-in" data-aos-delay="300" className='px-8 py-6 rounded bg-gradient-to-r from-gray-200 to-yellow-100 flex flex-col items-center'>
             <div className='flex flex-row gap-2'>
               <img src="/customer/awards/bosch.png" className='mx-auto w-20' alt="" />
               <img src="/customer/awards/whirlpool.png" className='mx-auto w-20' alt="" />
             </div>
 
-            <div className='flex flex-col  mx-auto items-center'>
-              <h2 className={classNames(JioType.className, 'text-xs')}>Bosch, Whirlpool, Eurecia</h2>
-              <h1 className={classNames(InterBold.className, 'text-2xl text-black')}>Best Supplier</h1>
+            <div className='flex flex-col mx-auto items-center'>
+              <h1 className={classNames(InterBold.className, 'text-xl text-black')}>Best Supplier</h1>
+              <h2 className={classNames(JioType.className, 'text-xs')}>Bosch, Whirlpool</h2>
+            </div>
+          </div>
+          
+          <div data-aos="fade-in" data-aos-delay="300" className='px-8 py-6 rounded bg-gradient-to-r from-gray-200 to-yellow-100 flex flex-col items-center'>
+            <div className='flex flex-row gap-2'>
+              <img src="/customer/awards/faurecia.png" className='mx-auto w-20' alt="" />
+            </div>
+
+            <div className='flex flex-col mx-auto items-center'>
+              <h1 className={classNames(InterBold.className, 'text-xl text-black')}>Best Supplier</h1>
+              <h2 className={classNames(JioType.className, 'text-xs')}>Faurecia</h2>
             </div>
           </div>
 
-          <div data-aos="fade-in" data-aos-delay="200" className='w-1/4 px-8 py-6 rounded bg-gradient-to-r from-gray-200 to-yellow-100 flex flex-col items-center'>
+          <div data-aos="fade-in" data-aos-delay="400" className='px-8 py-6 rounded bg-gradient-to-r from-gray-200 to-yellow-100 flex flex-col items-center'>
             <img src="/customer/awards/whirlpool.png" className='mx-auto w-20' alt="" />
 
-            <div className='flex flex-col  mx-auto items-center'>
+            <div className='flex flex-col mx-auto items-center'>
+              <h1 className={classNames(InterBold.className, 'text-xl text-black')}>Quality Supplier</h1>
               <h2 className={classNames(JioType.className, 'text-xs')}>Whirlpool</h2>
-              <h1 className={classNames(InterBold.className, 'text-2xl text-black')}>Quality Supplier</h1>
             </div>
           </div>
 
-          <div data-aos="fade-in" data-aos-delay="400" className='w-1/4 px-8 py-6 rounded bg-gradient-to-r from-gray-200 to-yellow-100 flex flex-col items-center'>
+          <div data-aos="fade-in" data-aos-delay="500" className='px-8 py-6 rounded bg-gradient-to-r from-gray-200 to-yellow-100 flex flex-col items-center'>
             <div className='flex flex-row gap-2'>
-              <img src="/customer/awards/hanil-tube.png" className='mx-auto w-14' alt="" />
-              <img src="/customer/awards/faurecia.png" className='mx-auto w-14' alt="" />
-              <img src="/customer/awards/samsung.png" className='mx-auto w-14' alt="" />
-              <img src="/customer/awards/vestas.png" className='mx-auto w-14' alt="" />
+              <img src="/customer/awards/hanil-tube.png" className='mx-auto w-20' alt="" />
             </div>
 
-            <div className='flex flex-col mt-5 mx-auto items-center'>
-              <h2 className={classNames(JioType.className, 'text-xs')}>Hanil Tube, Faurecia, Samsung, Vestas</h2>
-              <h1 className={classNames(InterBold.className, 'text-2xl text-black')}>Zero PPM Award</h1>
+            <div className='flex flex-col mx-auto items-center'>
+              <h1 className={classNames(InterBold.className, 'text-xl text-black')}>Zero PPM Awards</h1>
+              <h2 className={classNames(JioType.className, 'text-xs')}>Hanil Tube</h2>
+            </div>
+          </div>
+
+          <div data-aos="fade-in" data-aos-delay="500" className='px-8 py-6 rounded bg-gradient-to-r from-gray-200 to-yellow-100 flex flex-col items-center'>
+            <div className='flex flex-row gap-2'>
+              <img src="/customer/awards/faurecia.png" className='mx-auto w-20' alt="" />
+            </div>
+
+            <div className='flex flex-col mx-auto items-center'>
+              <h1 className={classNames(InterBold.className, 'text-xl text-black')}>Zero PPM Awards</h1>
+              <h2 className={classNames(JioType.className, 'text-xs')}>Faurecia</h2>
+            </div>
+          </div>
+
+          <div data-aos="fade-in" data-aos-delay="600" className='px-8 py-6 rounded bg-gradient-to-r from-gray-200 to-yellow-100 flex flex-col items-center'>
+            <div className='flex flex-row gap-2'>
+              <img src="/customer/awards/samsung.png" className='mx-auto w-20' alt="" />
+            </div>
+
+            <div className='flex flex-col mx-auto items-center'>
+              <h1 className={classNames(InterBold.className, 'text-xl text-black')}>Zero PPM Awards</h1>
+              <h2 className={classNames(JioType.className, 'text-xs')}>Samsung</h2>
+            </div>
+          </div>
+
+          <div data-aos="fade-in" data-aos-delay="600" className='px-8 py-6 rounded bg-gradient-to-r from-gray-200 to-yellow-100 flex flex-col items-center'>
+            <div className='flex flex-row gap-2'>
+              <img src="/customer/awards/vestas.png" className='mx-auto w-20' alt="" />
+            </div>
+
+            <div className='flex flex-col mx-auto items-center'>
+              <h1 className={classNames(InterBold.className, 'text-xl text-black')}>Zero PPM Awards</h1>
+              <h2 className={classNames(JioType.className, 'text-xs')}>Vestas</h2>
             </div>
           </div>
         </div>
