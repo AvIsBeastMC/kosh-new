@@ -4,7 +4,7 @@ import { BookText, FileText, Globe, Globe2, LineChart, Quote, ScanEye, Trophy } 
 import React from 'react'
 import Navbar from '~/components/Navbar'
 import { InterBold, JioType, PlayfairDisplayBold } from './_app'
-import Marquee from 'react-marquee-slider'
+import Marquee from 'react-fast-marquee'
 import Footer from '~/components/Footer'
 
 const About = () => {
@@ -142,12 +142,12 @@ const About = () => {
           <FileText />
           <h1 className={classNames(InterBold.className, 'text-2xl')}><span className='border-b-2'>CERTIFICATIONS</span></h1>
         </div>
-        <div className='flex flex-row items-center'>
+        <Marquee direction="left" pauseOnHover>
           <img src="/Certifications/Image 10.png" className='w-72 mr-10' alt="" />
           <img src="/Certifications/Image 11.png" className='w-72 mr-10' alt="" />
           <img src="/Certifications/Image 12.png" className='w-72 mr-10' alt="" />
           <img src="/Certifications/Image 13.png" className='w-72 mr-10' alt="" />
-        </div>
+        </Marquee>
       </div>
 
       <Footer />

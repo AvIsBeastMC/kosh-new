@@ -170,10 +170,10 @@ const Home = () => {
               </h1></span>
             </div>
             {/* <div className="flex flex-row -m-4"> */}
-            <Marquee direction="right">
-              <div className="p-4 w-2/3">
-                <div className="border border-yellow-200 p-6 rounded-lg">
-                  <div className="w-10 h-10 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-4">
+            <Marquee  direction="right" className='flex flex-row'>
+              <div className="p-4 w-96">
+                <div className="border-2 border-yellow-200 p-6 rounded-lg">
+                  <div className="w-10 h-10 inline-flex items-center justify-center rounded-full bg-gray-200 text-indigo-500 mb-4">
                     <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" className="w-6 h-6" viewBox="0 0 24 24">
                       <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
                     </svg>
@@ -186,9 +186,9 @@ const Home = () => {
                   </p>
                 </div>
               </div>
-              <div className="p-4 w-2/3">
-                <div className="border border-yellow-200 p-6 rounded-lg">
-                  <div className="w-10 h-10 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-4">
+              <div className="p-4 w-96">
+                <div className="border-2 border-yellow-200 p-6 rounded-lg">
+                  <div className="w-10 h-10 inline-flex items-center justify-center rounded-full bg-gray-200 text-indigo-500 mb-4">
                     <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" className="w-6 h-6" viewBox="0 0 24 24">
                       <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
                     </svg>
@@ -201,9 +201,9 @@ const Home = () => {
                   </p>
                 </div>
               </div>
-              <div className="p-4 w-2/3">
-                <div className="border border-yellow-200 p-6 rounded-lg">
-                  <div className="w-10 h-10 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-4">
+              <div className="p-4 w-96">
+                <div className="border-2 border-yellow-200 p-6 rounded-lg">
+                  <div className="w-10 h-10 inline-flex items-center justify-center rounded-full bg-gray-200 text-indigo-500 mb-4">
                     <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" className="w-6 h-6" viewBox="0 0 24 24">
                       <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
                     </svg>
@@ -216,9 +216,9 @@ const Home = () => {
                   </p>
                 </div>
               </div>
-              <div className="p-4 w-2/3">
-                <div className="border border-yellow-200 p-6 rounded-lg">
-                  <div className="w-10 h-10 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-4">
+              <div className="p-4 w-96">
+                <div className="border-2 border-yellow-200 p-6 rounded-lg">
+                  <div className="w-10 h-10 inline-flex items-center justify-center rounded-full bg-gray-200 text-indigo-500 mb-4">
                     <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" className="w-6 h-6" viewBox="0 0 24 24">
                       <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
                     </svg>
@@ -231,9 +231,9 @@ const Home = () => {
                   </p>
                 </div>
               </div>
-              <div className="p-4 w-2/3">
-                <div className="border border-yellow-200 p-6 rounded-lg">
-                  <div className="w-10 h-10 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-4">
+              <div className="p-4 w-96">
+                <div className="border-2 border-yellow-200 p-6 rounded-lg">
+                  <div className="w-10 h-10 inline-flex items-center justify-center rounded-full bg-gray-200 text-indigo-500 mb-4">
                     <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" className="w-6 h-6" viewBox="0 0 24 24">
                       <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
                     </svg>
@@ -242,7 +242,7 @@ const Home = () => {
                     Growth and Diversification
                   </h2>
                   <p className="leading-relaxed text-base">
-                    Identifying growth opportunities and embracing diversification are core values at our company.
+                    Identifying growth opportunities and embracing...
                   </p>
                 </div>
               </div>
@@ -349,6 +349,97 @@ const Home = () => {
               </div>
             </section>
           </section>
+          <section data-aos="fade-right" data-aos-delay="200" data-aos-once="false" className="text-gray-600 body-font overflow-hidden">
+            <section className="text-gray-600 body-font">
+              <div className="container px-5 py-12 mx-auto flex flex-wrap">
+                <div className="flex flex-wrap w-full">
+                <img className="lg:w-2/5 md:w-1/2 object-cover object-center rounded-lg md:mt-0 mt-12" src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="step" />
+
+                  <div className="w-3/5 md:pl-10 md:py-6">
+                    <div className="flex relative pb-12">
+                      <div className="h-full w-10 absolute inset-0 flex items-center justify-center">
+                        <div className="h-full w-1 bg-gray-200 pointer-events-none"></div>
+                      </div>
+                      <div className="flex-shrink-0 w-10 h-10 rounded-full bg-yellow-500 inline-flex items-center justify-center text-white relative z-10">
+                        <Sparkles size={20} />
+                      </div>
+                      <div className="flex-grow pl-4">
+                        <h2 className="font-medium title-font text-2xl text-gray-900 mb-1 tracking-wider">2008</h2>
+                        <div className="ml-2 leading-relaxed">
+                          <li>
+                            Purchase of Premises
+                          </li>
+                          <li>
+                            Machine Erection
+                          </li>
+                          <li>
+                            Non-woven Production Started
+                          </li>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="flex relative pb-12">
+                      <div className="h-full w-10 absolute inset-0 flex items-center justify-center">
+                        <div className="h-full w-1 bg-gray-200 pointer-events-none"></div>
+                      </div>
+                      <div className="flex-shrink-0 w-10 h-10 rounded-full bg-yellow-500 inline-flex items-center justify-center text-white relative z-10">
+                        <Sparkles size={20} />
+                      </div>
+                      <div className="flex-grow pl-4">
+                        <h2 className="font-medium title-font text-2xl text-gray-900 mb-1 tracking-wider">2010</h2>
+                        <div className="ml-2 leading-relaxed">
+                          <li>
+                            ISO 9001:2018 Certification
+                          </li>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="flex relative pb-12">
+                      <div className="h-full w-10 absolute inset-0 flex items-center justify-center">
+                        <div className="h-full w-1 bg-gray-200 pointer-events-none"></div>
+                      </div>
+                      <div className="flex-shrink-0 w-10 h-10 rounded-full bg-yellow-500 inline-flex items-center justify-center text-white relative z-10">
+                        <Sparkles size={20} />
+                      </div>
+                      <div className="flex-grow pl-4">
+                        <h2 className="font-medium title-font text-2xl text-gray-900 mb-1 tracking-wider">2010</h2>
+                        <div className="ml-2 leading-relaxed">
+                          <li>
+                            Corrugated Tube Production Started
+                          </li>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="flex relative">
+                      <div className="flex-shrink-0 w-10 h-10 rounded-full bg-yellow-500 inline-flex items-center justify-center text-white relative z-10">
+                        <Sparkles size={20} />
+                      </div>
+                      <div className="flex-grow pl-4">
+                        <h2 className="font-medium title-font text-2xl text-gray-900 mb-1 tracking-wider">2023</h2>
+                        <div className="ml-2 leading-relaxed">
+                          <li>
+                            <b>March 23</b>: Won Business from Seoyon-E-Wa for Battery Pack Parts
+                          </li>
+                          <li>
+                            <b>July 23</b>: Won Business from Ola Electric Direct Supply for Battery Pack Parts
+                          </li>
+                          <li>
+                            <b>Aug 23</b>: Capacity Building and Machine Addition Started
+                          </li>
+                          <li>
+                            <b>September 23</b>: Expansion of plant with another plant in Hosur
+                          </li>
+                          <li>
+                            <b>October 23</b>: Expansion of existing building premises in Hosur 
+                          </li>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </section>
         </section>
 
         <div data-aos="fade-in" data-aos-delay="100" data-aos-once="false" className='px-4 py-8  flex items-center justify-center flex-row gap-2 w-4/5 rounded-md mx-auto mb-8'>
@@ -419,8 +510,8 @@ const Home = () => {
         </h1>
 
         {/* @ts-ignore */}
-        <Marquee direction="ltr">
-          {['/customer/extrusion/bosch.png', '/customer/extrusion/samsung.png', '/customer/extrusion/whirlpool.png', '/customer/extrusion/IFB.png'].map((image, i) => (
+        <Marquee direction="left">
+          {['/customer/extrusion/polyhose.png', '/customer/extrusion/seah.png', '/customer/extrusion/voss.png', '/customer/blow/dixon.png', '/customer/extrusion/bosch.png', '/customer/extrusion/samsung.png', '/customer/extrusion/whirlpool.png', '/customer/extrusion/IFB.png'].map((image, i) => (
             <img src={image} className='w-48 mr-12' key={i} />
           ))}
           {/* @ts-ignore */}
