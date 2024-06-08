@@ -22,7 +22,7 @@ const TransparentNavbar = () => {
   const NavLink = ({href, children}: {href: string, children: React.ReactNode}) => {
     return (
       <Link href={href} className='hover:opacity-75 transition-opacity'>
-        <span className={router.pathname == href ? `border-b-2 pb-2 border-${scroll ? 'white' : 'black'}` : ''}>
+        <span className={router.pathname == href ? `border-b-2 pb-2 border-${scroll ? 'black' : 'white'}` : ''}>
           {children}
         </span>
       </Link>

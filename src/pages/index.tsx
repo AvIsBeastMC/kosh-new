@@ -8,9 +8,9 @@ import "slick-carousel/slick/slick-theme.css";
 import { InterBold, InterFont, JioType, PlayfairDisplay, PlayfairDisplayBold } from './_app';
 import classNames from 'classnames';
 import TransparentNavbar from '~/components/TransparentNavbar';
-import { BarChart4, BookText, Building2, Quote } from 'lucide-react';
-import Marquee from "react-marquee-slider";
+import { BarChart4, BookText, Building2, Quote, Sparkles } from 'lucide-react';
 import Footer from '~/components/Footer';
+import Marquee from "react-fast-marquee";
 
 
 const Home = () => {
@@ -170,8 +170,7 @@ const Home = () => {
               </h1></span>
             </div>
             {/* <div className="flex flex-row -m-4"> */}
-            {/* @ts-ignore */}
-        <Marquee velocity={60} direction="ltr">
+            <Marquee direction="right">
               <div className="p-4">
                 <div className="border border-yellow-200 p-6 rounded-lg">
                   <div className="w-10 h-10 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-4">
@@ -247,7 +246,7 @@ const Home = () => {
                   </p>
                 </div>
               </div>
-              </Marquee>
+            </Marquee>
             {/* </div> */}
           </div>
         </section>
@@ -257,24 +256,102 @@ const Home = () => {
         <section className='px-12 py-4 mt-8'>
           <h1 className={classNames(InterBold.className, 'text-3xl mx-auto justify-center flex flex-row text-center items-center gap-2')}>
             <BookText />
-            <span className='border-b-2'>Our History</span>
+            <span className='border-b-2'>Our <span className='text-yellow-400'>History</span></span>
           </h1>
 
           <section data-aos="fade-right" data-aos-delay="200" data-aos-once="false" className="text-gray-600 body-font overflow-hidden">
-            <div className="container py-12 mx-auto">
-              <div className="lg:w-4/5 mx-auto flex flex-wrap">
-                <img alt="ecommerce" className="lg:w-1/2 w-full lg:h-auto h-64 object-cover object-center rounded" src="/assets/photo.png" />
-                <div className="lg:w-1/2 w-full lg:pl-10 lg:py-6 mt-6 lg:mt-0 self-center">
-                  <Quote size={50} className='mb-4' />
-                  <p className="leading-relaxed">Fam locavore kickstarter distillery. Mixtape chillwave tumeric sriracha taximy chia microdosing tilde DIY. XOXO fam indxgo juiceramps cornhole raw denim forage brooklyn. Everyday carry +1 seitan poutine tumeric. Gastropub blue bottle austin listicle pour-over, neutra jean shorts keytar banjo tattooed umami cardigan.</p>
-                  <p className="leading-relaxed">Fam locavore kickstarter distillery. Mixtape chillwave tumeric sriracha taximy chia microdosing tilde DIY. XOXO fam indxgo juiceramps cornhole raw denim forage brooklyn. Everyday carry +1 seitan poutine tumeric. Gastropub blue bottle austin listicle pour-over, neutra jean shorts keytar banjo tattooed umami cardigan.</p>
+            <section className="text-gray-600 body-font">
+              <div className="container px-5 py-12 mx-auto flex flex-wrap">
+                <div className="flex flex-wrap w-full">
+                  <div className="lg:w-2/5 md:w-1/2 md:pr-10 md:py-6">
+                    <div className="flex relative pb-12">
+                      <div className="h-full w-10 absolute inset-0 flex items-center justify-center">
+                        <div className="h-full w-1 bg-gray-200 pointer-events-none"></div>
+                      </div>
+                      <div className="flex-shrink-0 w-10 h-10 rounded-full bg-yellow-500 inline-flex items-center justify-center text-white relative z-10">
+                        <Sparkles size={20} />
+                      </div>
+                      <div className="flex-grow pl-4">
+                        <h2 className="font-medium title-font text-2xl text-gray-900 mb-1 tracking-wider">2008</h2>
+                        <div className="ml-2 leading-relaxed">
+                          <li>
+                            Purchase of Premises
+                          </li>
+                          <li>
+                            Machine Erection
+                          </li>
+                          <li>
+                            Non-woven Production Started
+                          </li>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="flex relative pb-12">
+                      <div className="h-full w-10 absolute inset-0 flex items-center justify-center">
+                        <div className="h-full w-1 bg-gray-200 pointer-events-none"></div>
+                      </div>
+                      <div className="flex-shrink-0 w-10 h-10 rounded-full bg-yellow-500 inline-flex items-center justify-center text-white relative z-10">
+                        <Sparkles size={20} />
+                      </div>
+                      <div className="flex-grow pl-4">
+                        <h2 className="font-medium title-font text-2xl text-gray-900 mb-1 tracking-wider">2010</h2>
+                        <div className="ml-2 leading-relaxed">
+                          <li>
+                            ISO 9001:2018 Certification
+                          </li>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="flex relative pb-12">
+                      <div className="h-full w-10 absolute inset-0 flex items-center justify-center">
+                        <div className="h-full w-1 bg-gray-200 pointer-events-none"></div>
+                      </div>
+                      <div className="flex-shrink-0 w-10 h-10 rounded-full bg-yellow-500 inline-flex items-center justify-center text-white relative z-10">
+                        <Sparkles size={20} />
+                      </div>
+                      <div className="flex-grow pl-4">
+                        <h2 className="font-medium title-font text-2xl text-gray-900 mb-1 tracking-wider">2010</h2>
+                        <div className="ml-2 leading-relaxed">
+                          <li>
+                            Corrugated Tube Production Started
+                          </li>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="flex relative">
+                      <div className="flex-shrink-0 w-10 h-10 rounded-full bg-yellow-500 inline-flex items-center justify-center text-white relative z-10">
+                        <Sparkles size={20} />
+                      </div>
+                      <div className="flex-grow pl-4">
+                        <h2 className="font-medium title-font text-2xl text-gray-900 mb-1 tracking-wider">2023</h2>
+                        <div className="ml-2 leading-relaxed">
+                          <li>
+                            <b>March 23</b>: Won Business from Seoyon-E-Wa for Battery Pack Parts
+                          </li>
+                          <li>
+                            <b>July 23</b>: Won Business from Ola Electric Direct Supply for Battery Pack Parts
+                          </li>
+                          <li>
+                            <b>Aug 23</b>: Capacity Building and Machine Addition Started
+                          </li>
+                          <li>
+                            <b>September 23</b>: Expansion of plant with another plant in Hosur
+                          </li>
+                          <li>
+                            <b>October 23</b>: Expansion of existing building premises in Hosur 
+                          </li>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <img className="lg:w-3/5 md:w-1/2 object-cover object-center rounded-lg md:mt-0 mt-12" src="https://plus.unsplash.com/premium_photo-1713360590902-1ade983e1969?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="step" />
                 </div>
               </div>
-            </div>
+            </section>
           </section>
         </section>
 
-        <div data-aos="fade-in" data-aos-delay="200" data-aos-once="false" className='px-4 py-8  flex items-center justify-center flex-row gap-2 w-4/5 rounded-md mx-auto mb-8'>
+        <div data-aos="fade-in" data-aos-delay="100" data-aos-once="false" className='px-4 py-8  flex items-center justify-center flex-row gap-2 w-4/5 rounded-md mx-auto mb-8'>
           {['/assets/slider/1.jpg', '/assets/slider/2.jpg', '/assets/slider/3.jpg', '/assets/slider/4.jpg'].map((image, i) => (
             <img key={i} src={image} alt="Sample Image" className="rounded-md w-96 h-full object-cover" />
           ))}
@@ -341,12 +418,12 @@ const Home = () => {
           <span className='border-b-2'>Customers</span>
         </h1>
 
-{/* @ts-ignore */}
+        {/* @ts-ignore */}
         <Marquee direction="ltr">
           {['/customer/extrusion/bosch.png', '/customer/extrusion/samsung.png', '/customer/extrusion/whirlpool.png', '/customer/extrusion/IFB.png'].map((image, i) => (
             <img src={image} className='w-48 mr-12' key={i} />
           ))}
-{/* @ts-ignore */}
+          {/* @ts-ignore */}
         </Marquee>
       </div>
 
