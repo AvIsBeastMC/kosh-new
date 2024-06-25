@@ -5,12 +5,13 @@ import Navbar from '~/components/Navbar'
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import { InterBold, InterFont, JioType, PlayfairDisplay, PlayfairDisplayBold } from './_app';
+import { InterBold, InterFont, JioType, ManropeFont, PlayfairDisplay, PlayfairDisplayBold } from './_app';
 import classNames from 'classnames';
 import TransparentNavbar from '~/components/TransparentNavbar';
 import { BarChart4, BookText, Building2, Quote, Sparkles } from 'lucide-react';
 import Footer from '~/components/Footer';
 import Marquee from "react-fast-marquee";
+import { Manrope } from 'next/font/google';
 
 
 const Home = () => {
@@ -126,30 +127,20 @@ const Home = () => {
                 <img src={image} style={{
                   maxHeight: '100vh'
                 }} alt="Sample Image" className="w-full h-full object-cover" />
-
               </div>
             ))}
           </Slider>
           <div className="absolute w-full top-0 left-0 bottom-0 flex text-white">
             <div className={classNames("flex flex-col gap-4 mx-auto w-2/3 text-md my-auto", InterFont.className)}>
-              <p>
-                {`Kosh Innovations Pvt Ltd., an entrepreneurial venture established by my, Mrs. Nalini Kamra, in 2008.
-                What started in our car's garage with a single stitching machine has now grown into a dynamic enterprise.`}
-              </p>
+              <h1 className={classNames('text-6xl', InterBold.className)}>
+                Growth is Life. <sub className='text-sm'>(title can keep changing after we decide)</sub>
+              </h1>
 
-              <p>
-                Kosh Innovations is recognized for being customer centric and its commitment to innovation and excellence,
-                holding certifications such as IATF169492016, ISO90012015, ISO140012015, ISO 450012018, and SQ MARK.
-              </p>
-
-              <p>
-                With a presence in six locations across India and a clientele including esteemed names like Ola, Whirlpool, IFB,
-                BOSCH, Samsung and Exide, we aspire to establish ourselves as a leading global brand in consumer durables,
-                automobiles, engineering goods, and electronics, automotive and consumer durable industries, setting the
-                standard for excellence in manufacturing.
-              </p>
-
-
+              <div className='w-20 rounded-md h-1 bg-blue-400'></div>
+              <div className={classNames(JioType.className, "flex flex-row gap-2")}>
+                <button className="rounded-full border-2 border-gray-400 px-4 py-1 text-xl hover:bg-gray-700 transition-colors">about us <span className={classNames(InterFont.className)}>{"-->"}</span></button>
+                <button className="rounded-full border-2 border-gray-400 px-4 py-1 text-xl hover:bg-gray-700 transition-colors">our history <span className={classNames(InterFont.className)}>{"-->"}</span></button>
+              </div>
               {/*             
             <div className="text-blue-200 mb-4">________________</div>
 
@@ -170,114 +161,77 @@ const Home = () => {
               </h1></span>
             </div>
             {/* <div className="flex flex-row -m-4"> */}
-            <Marquee direction="right" className='flex flex-row'>
-              <div className="p-4 w-96">
-                <div style={{
-                  borderWidth: '5px'
-                }} className="border-gray-400 rounded-md">
-                  <div className='border-yellow-400 p-6' style={{
-                    borderWidth: '5px'
-                  }}>
-                    <div className="w-10 h-10 inline-flex items-center justify-center rounded-full bg-gray-200 text-indigo-500 mb-4">
-                      <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" className="w-6 h-6" viewBox="0 0 24 24">
-                        <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
-                      </svg>
+
+            <div
+              className="flex flex-wrap mx-[-15px] xl:mx-[-20px] lg:mx-[-20px] md:mx-[-20px] mt-[-40px] !text-center !mb-[4.5rem] xl:!mb-[7rem] lg:!mb-[7rem] md:!mb-[7rem]"
+            >
+              {
+                [
+                  {
+                    title: 'Accountability',
+                    p: 'We are committed to our words',
+                    icon: 'verified.png'
+                  },
+                  {
+                    title: 'Integrity',
+                    p: 'We develop trust through our integrity and honest relationships.',
+                    icon: 'handshake.png'
+                  },
+                  {
+                    title: 'Teamwork',
+                    p: 'We prioritize the success of the team above individual achievements.',
+                    icon: 'teamwork.png'
+                  },
+                  {
+                    title: 'Educational Excellence',
+                    p: 'We ensure consistency and dedication to every approach we undertake',
+                    icon: 'electric.png'
+                  },
+                  {
+                    title: 'Growth and Diversification',
+                    p: 'Identifying growth opportunities and embracing diversification are core values at our company.',
+                    icon: 'growth.png'
+                  },
+                  {
+                    title: 'Delight our customers',
+                    p: 'We prioritize our customers by listening and delivering.',
+                    icon: 'pray.png'
+                  },
+                  {
+                    title: 'Abide by commitments',
+                    p: `We're committed to excellence and ethics in all areas of our business.`,
+                    icon: 'trust.png'
+                  },
+                  {
+                    title: 'Developing new Technology',
+                    p: `We're committed to excellence and ethics in all areas of our business.`,
+                    icon: 'technology.png'
+                  },
+                ].map((a, i) => (
+                  <div
+                  data-aos="fade-down"
+                  data-aos-delay={50*i}
+                    key={i}
+                    className="md:w-6/12 lg:w-3/12 xl:w-3/12 w-full flex-[0_0_auto] px-[15px] xl:px-[20px] lg:px-[20px] md:px-[20px] mt-[40px] max-w-full"
+                  >
+                    <div
+                      className="icon btn btn-circle btn-lg btn-primary text-white !bg-[#3f78e0] border-[#3f78e0] hover:text-white hover:bg-[#3f78e0] hover:border-[#3f78e0] focus:shadow-[rgba(92,140,229,1)] active:text-white active:bg-[#3f78e0] active:border-[#3f78e0] disabled:text-white disabled:bg-[#3f78e0] disabled:border-[#3f78e0] pointer-events-none mb-5 !w-[3rem] !h-[3rem] xl:text-[1.3rem] text-[calc(1.255rem_+_0.06vw)] !inline-flex !items-center !justify-center !leading-none !p-0 !rounded-[100%]"
+                    >
+                      <img
+                        src={`/assets/img/icons2/${a.icon}`}
+                        style={{
+                          width: '30px'
+                        }}
+                        alt=""
+                      />
                     </div>
-                    <h2 className={classNames("text-lg text-gray-900 font-medium title-font mb-2", PlayfairDisplay.className)}>
-                      Accountability
-                    </h2>
-                    <p className="leading-relaxed text-base">
-                      We are committed to our words, our actions, and our results.
+                    <h4 className={classNames(ManropeFont.className, 'text-2xl font-bold mb-2')}>{a.title}</h4>
+                    <p className="!mb-3">
+                      {a.p}
                     </p>
                   </div>
-                </div>
-              </div>
-              <div className="p-4 w-96">
-                <div style={{
-                  borderWidth: '5px'
-                }} className="border-gray-400 rounded-md">
-                  <div className='border-yellow-400 p-6' style={{
-                    borderWidth: '5px'
-                  }}>
-                    <div className="w-10 h-10 inline-flex items-center justify-center rounded-full bg-gray-200 text-indigo-500 mb-4">
-                      <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" className="w-6 h-6" viewBox="0 0 24 24">
-                        <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
-                      </svg>
-                    </div>
-                    <h2 className={classNames("text-lg text-gray-900 font-medium title-font mb-2", PlayfairDisplay.className)}>
-                      Integrity
-                    </h2>
-                    <p className="leading-relaxed text-base">
-                      We develop trust through our integrity and honest relationships.
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div className="p-4 w-96">
-                <div style={{
-                  borderWidth: '5px'
-                }} className="border-gray-400 rounded-md">
-                  <div className='border-yellow-400 p-6' style={{
-                    borderWidth: '5px'
-                  }}>
-                    <div className="w-10 h-10 inline-flex items-center justify-center rounded-full bg-gray-200 text-indigo-500 mb-4">
-                      <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" className="w-6 h-6" viewBox="0 0 24 24">
-                        <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
-                      </svg>
-                    </div>
-                    <h2 className={classNames("text-lg text-gray-900 font-medium title-font mb-2", PlayfairDisplay.className)}>
-                      Teamwork
-                    </h2>
-                    <p className="leading-relaxed text-base">
-                      We prioritize the success of the team above individual achievements.
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div className="p-4 w-96">
-                <div style={{
-                  borderWidth: '5px'
-                }} className="border-gray-400 rounded-md">
-                  <div className='border-yellow-400 p-6' style={{
-                    borderWidth: '5px'
-                  }}>
-                    <div className="w-10 h-10 inline-flex items-center justify-center rounded-full bg-gray-200 text-indigo-500 mb-4">
-                      <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" className="w-6 h-6" viewBox="0 0 24 24">
-                        <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
-                      </svg>
-                    </div>
-                    <h2 className={classNames("text-lg text-gray-900 font-medium title-font mb-2", PlayfairDisplay.className)}>
-                      Educational Excellence
-                    </h2>
-                    <p className="leading-relaxed text-base">
-                      We ensure consistency and dedication...
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div className="p-4 w-96">
-                <div style={{
-                  borderWidth: '5px'
-                }} className="border-gray-400 rounded-md">
-                  <div className='border-yellow-400 p-6' style={{
-                    borderWidth: '5px'
-                  }}>
-                    <div className="w-10 h-10 inline-flex items-center justify-center rounded-full bg-gray-200 text-indigo-500 mb-4">
-                      <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" className="w-6 h-6" viewBox="0 0 24 24">
-                        <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
-                      </svg>
-                    </div>
-                    <h2 className={classNames("text-lg text-gray-900 font-medium title-font mb-2", PlayfairDisplay.className)}>
-                      Growth and Diversification
-                    </h2>
-                    <p className="leading-relaxed text-base">
-                      Identifying growth opportunities and embracing...
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </Marquee>
-            {/* </div> */}
+                ))}
+            </div>
           </div>
         </section>
 
@@ -478,35 +432,6 @@ const Home = () => {
           ))}
         </div>
 
-        <section data-aos="fade-left" data-aos-delay="200" data-aos-once="false" className="text-gray-600 body-font">
-          <div
-            className="container mx-auto flex px-5 py-12 md:flex-row flex-col items-center"
-          >
-            <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0">
-              <img
-                className="object-cover object-center rounded"
-                alt="hero"
-                src="https://kosh-innovations.vercel.app/assets/photo.png"
-              />
-            </div>
-            <div
-              className="lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center"
-            >
-              <img
-                src="https://www.supreme.co.in/dist/img/home/quate_one.jpg"
-                alt=""
-                className="mb-4"
-              />
-              <p className="leading-relaxed inter">
-                {`Driven by our vision of "creativity and innovation," we strive for
-                excellence in industries that positively impact community
-                development, foster social advancement, and contribute significantly
-                to national progress`}
-              </p>
-              <div className="mt-4 inter"><b>~ Mr. Samir Kamra</b>, Director</div>
-            </div>
-          </div>
-        </section>
         <section data-aos="fade-right" data-aos-delay="200" data-aos-once="false" className="text-gray-600 body-font">
           <div
             className="container mx-auto flex px-5 py-12 md:flex-row flex-col items-center"

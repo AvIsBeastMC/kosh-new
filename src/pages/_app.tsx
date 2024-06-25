@@ -1,5 +1,5 @@
 import { type AppType } from "next/app";
-import { Inter, Playfair_Display } from "next/font/google";
+import { Inter, Playfair_Display, Manrope } from "next/font/google";
 import localFont from 'next/font/local'
 import "~/styles/globals.css";
 import { useEffect } from "react";
@@ -20,6 +20,12 @@ export const InterBold = Inter({
 });
 
 export const PlayfairDisplay = Playfair_Display({
+  subsets: ["latin"],
+  variable: "--font-sans",
+  weight: '500'
+});
+
+export const ManropeFont = Manrope({
   subsets: ["latin"],
   variable: "--font-sans",
   weight: '500'
