@@ -8,7 +8,7 @@ import "slick-carousel/slick/slick-theme.css";
 import { InterBold, InterFont, JioType, ManropeFont, PlayfairDisplay, PlayfairDisplayBold } from './_app';
 import classNames from 'classnames';
 import TransparentNavbar from '~/components/TransparentNavbar';
-import { BarChart4, BookText, Building2, Quote, Sparkles } from 'lucide-react';
+import { BarChart4, BookText, Building2, Check, Quote, Sparkles } from 'lucide-react';
 import Footer from '~/components/Footer';
 import Marquee from "react-fast-marquee";
 import { Manrope } from 'next/font/google';
@@ -123,34 +123,69 @@ const Home = () => {
         <div className="relative section">
           <Slider autoplay infinite className="cursor-grab object-cover object-center rounded">
             {['/assets/slider/1.jpg', '/assets/slider/2.jpg', '/assets/slider/3.jpg', '/assets/slider/4.jpg'].map((image, i) => (
-              <div key={i} className="w-full">
+              <div key={i} className="w-full relative">
                 <img src={image} style={{
                   maxHeight: '100vh'
                 }} alt="Sample Image" className="w-full h-full object-cover" />
-              </div>
-            ))}
-          </Slider>
-          <div className="absolute w-full top-0 left-0 bottom-0 flex text-white">
-            <div className={classNames("flex flex-col gap-4 mx-auto w-2/3 text-md my-auto", InterFont.className)}>
-              <h1 className={classNames('text-6xl', InterBold.className)}>
-                Growth is Life. <sub className='text-sm'>(title can keep changing after we decide)</sub>
-              </h1>
+                <div className="absolute w-full top-0 left-0 bottom-0 flex text-white">
+                  <div className={classNames("flex flex-col gap-4 mx-auto w-2/3 text-md my-auto", InterFont.className)}>
+                    <h1 className={classNames('text-6xl', InterBold.className)}>
+                      Growth is Life. <sub className='text-sm'>(title can keep changing after we decide)</sub>
+                    </h1>
 
-              <div className='w-20 rounded-md h-1 bg-blue-400'></div>
-              <div className={classNames(JioType.className, "flex flex-row gap-2")}>
-                <button className="rounded-full border-2 border-gray-400 px-4 py-1 text-xl hover:bg-gray-700 transition-colors">about us <span className={classNames(InterFont.className)}>{"-->"}</span></button>
-                <button className="rounded-full border-2 border-gray-400 px-4 py-1 text-xl hover:bg-gray-700 transition-colors">our history <span className={classNames(InterFont.className)}>{"-->"}</span></button>
-              </div>
-              {/*             
+                    <div className='w-20 rounded-md h-1 bg-blue-400'></div>
+                    <div className={classNames(JioType.className, "flex flex-row gap-2")}>
+                      <button className="rounded-full border-2 border-gray-400 px-4 py-1 text-xl hover:bg-gray-700 transition-colors">about us <span className={classNames(InterFont.className)}>{"-->"}</span></button>
+                      <button className="rounded-full border-2 border-gray-400 px-4 py-1 text-xl hover:bg-gray-700 transition-colors">our history <span className={classNames(InterFont.className)}>{"-->"}</span></button>
+                    </div>
+                    {/*             
             <div className="text-blue-200 mb-4">________________</div>
 
             <div className={classNames(JioType.className, "flex flex-row gap-2")}>
               <button className="rounded-full border-2 border-gray-400 px-4 py-1 text-2xl hover:bg-gray-700 transition-colors">about us <span className={classNames(InterFont.className)}>{"-->"}</span></button>
               <button className="rounded-full border-2 border-gray-400 px-4 py-1 text-2xl hover:bg-gray-700 transition-colors">our history <span className={classNames(InterFont.className)}>{"-->"}</span></button>
             </div> */}
+                  </div>
+                </div>
+              </div>
+            ))}
+          </Slider>
+
+        </div>
+
+        <section data-aos="fade-down" data-aos-delay="200" className="text-gray-600 body-font">
+          <div className="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
+            <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0">
+              <img className="object-cover object-center rounded" alt="hero" src="https://plus.unsplash.com/premium_photo-1661284806850-b709cb1262b7?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" />
+            </div>
+            <div className="lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center">
+              <h3 className={classNames('mb-2 text-gray-400', ManropeFont.className)}>REVOLUTIONIZING INDUSTRIES WITH INNOVATION</h3>
+              <h1 className="title-font sm:text-4xl text-3xl mb-6 font-medium text-gray-900">❝Our Commitment to Excellence <br /> and Sustainability❞</h1>
+              <p className="mb-8 leading-relaxed">
+                At Kosh Innovations Pvt. Ltd, we are passionate about
+                revolutionizing industries through innovative plastic solutions.
+                With our state-of-the-art manufacturing facilities and a team of
+                skilled professionals, we specialize in delivering high-quality
+                plastic products that cater to a diverse range of industries.
+                <br /> Some of our domains:
+              </p>
+              <div data-aos="fade-down" data-aos-delay="400" className='flex flex-wrap gap-6'>
+                <div className='flex flex-row gap-3 text-md'>
+                  <Check /> Injection Moulding
+                </div>
+                <div className='flex flex-row gap-3 text-md'>
+                  <Check /> Corrugation
+                </div>
+                <div className='flex flex-row gap-3 text-md'>
+                  <Check /> Blow Moulding
+                </div>
+                <div className='flex flex-row gap-3 text-md'>
+                  <Check /> Non-woven Industrial Pckgng.
+                </div>
+              </div>
             </div>
           </div>
-        </div>
+        </section>
 
         <section className="text-gray-600 body-font">
           <div className="container px-5 py-12 mx-auto">
@@ -209,8 +244,8 @@ const Home = () => {
                   },
                 ].map((a, i) => (
                   <div
-                  data-aos="fade-down"
-                  data-aos-delay={50*i}
+                    data-aos="fade-down"
+                    data-aos-delay={50 * i}
                     key={i}
                     className="md:w-6/12 lg:w-3/12 xl:w-3/12 w-full flex-[0_0_auto] px-[15px] xl:px-[20px] lg:px-[20px] md:px-[20px] mt-[40px] max-w-full"
                   >
