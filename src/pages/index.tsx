@@ -130,7 +130,7 @@ const Home = () => {
                 <div className="absolute w-full top-0 left-0 bottom-0 flex text-white">
                   <div className={classNames("flex flex-col gap-4 mx-auto w-2/3 text-md my-auto", InterFont.className)}>
                     <h1 className={classNames('text-6xl', InterBold.className)}>
-                      Growth is Life. <sub className='text-sm'>(title can keep changing after we decide)</sub>
+                      {i == 0 ? 'Customer Centric Leadership' : i == 1 ? 'Driving innovative solutions' : i == 2 ? 'Excellence in Action: Advanced Manufacturing': i == 3 ? 'Growth mindset': ''}
                     </h1>
 
                     <div className='w-20 rounded-md h-1 bg-blue-400'></div>
