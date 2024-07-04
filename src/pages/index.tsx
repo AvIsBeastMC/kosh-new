@@ -12,6 +12,7 @@ import { BarChart4, BookText, Building2, Check, Quote, Sparkles } from 'lucide-r
 import Footer from '~/components/Footer';
 import Marquee from "react-fast-marquee";
 import { Manrope } from 'next/font/google';
+import { motion } from 'framer-motion';
 
 
 const Home = () => {
@@ -78,7 +79,7 @@ const Home = () => {
     }, [state])
 
     return (
-      <div data-aos="fade-left" className="rounded-md relative w-full">
+      <div data-aos="fade-up" className="rounded-md relative w-full">
         <img src="/assets/image2.png" style={{
           maxHeight: '670px'
         }} alt="Sample Image" className="w-full h-full object-cover" />
@@ -116,7 +117,7 @@ const Home = () => {
   };
 
   return (
-    <>
+    <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} transition={{ duration: 1 }}>
       <TransparentNavbar />
 
       <div className='sections'>
@@ -130,7 +131,7 @@ const Home = () => {
                 <div className="absolute w-full top-0 left-0 bottom-0 flex text-white">
                   <div className={classNames("flex flex-col gap-4 mx-auto w-2/3 text-md my-auto", InterFont.className)}>
                     <h1 className={classNames('text-6xl', InterBold.className)}>
-                      {i == 0 ? 'Customer Centric Leadership' : i == 1 ? 'Driving innovative solutions' : i == 2 ? 'Excellence in Action: Advanced Manufacturing': i == 3 ? 'Growth mindset': ''}
+                      {i == 0 ? 'Customer Centric Leadership' : i == 1 ? 'Driving innovative solutions' : i == 2 ? 'Excellence in Action: Advanced Manufacturing' : i == 3 ? 'Growth mindset' : ''}
                     </h1>
 
                     <div className='w-20 rounded-md h-1 bg-blue-400'></div>
@@ -190,83 +191,75 @@ const Home = () => {
         <section className="text-gray-600 body-font">
           <div className="container px-5 py-12 mx-auto">
             <div className="flex flex-wrap w-full mb-12 flex-col items-center text-center">
-              <span className={classNames('border-b-2 border-yellow-200', InterBold.className)}><h1 className="sm:text-3xl text-2xl font-medium title-font mb-2 text-gray-900 flex flex-row items-center gap-2">
+              <span className={classNames('border-b-2 border-[#b9a063]', InterBold.className)}><h1 className="sm:text-3xl text-2xl font-medium title-font mb-2 text-gray-900 flex flex-row items-center gap-2">
                 <BarChart4 />
                 Our Values
               </h1></span>
             </div>
             {/* <div className="flex flex-row -m-4"> */}
+            <section className="text-gray-600 body-font">
+              <div className="container px-5 mb-12 mx-auto">
+                <Slider slidesToShow={3} slidesToScroll={3} autoplay autoplaySpeed={3000} arrows dots className="flex flex-wrap -m-4">
+                  {
+                    [
+                      {
+                        title: 'Accountability',
+                        p: 'We take responsibility for our actions and their outcomes.',
+                        icon: 'verified.png'
+                      },
+                      {
+                        title: 'Integrity',
+                        p: 'We develop trust through our integrity and honest relationships.',
+                        icon: 'handshake.png'
+                      },
+                      {
+                        title: 'Teamwork',
+                        p: 'We prioritize the success of the team above individual achievements.',
+                        icon: 'teamwork.png'
+                      },
+                      {
+                        title: 'Educational Excellence',
+                        p: 'We ensure consistency and dedication to every approach we undertake',
+                        icon: 'electric.png'
+                      },
+                      {
+                        title: 'Growth and Diversification',
+                        p: 'Identifying growth opportunities and embracing diversification are core values at our company.',
+                        icon: 'growth.png'
+                      },
+                      {
+                        title: 'Delight our customers',
+                        p: 'We exceed expectations through attentive service and tailored solutions.',
+                        icon: 'pray.png'
+                      },
+                      {
+                        title: 'Abide by commitments',
+                        p: `We're committed to excellence and ethics in all areas of our business.`,
+                        icon: 'trust.png'
+                      },
+                      {
+                        title: 'Developing new Technology',
+                        p: `We're committed to excellence and ethics in all areas of our business.`,
+                        icon: 'technology.png'
+                      },
+                    ].map((a, i) => (
+                      <div key={i} data-aos="fade-down" data-aos-delay={i * 50} className="xl:w-1/4 md:w-1/2 p-4">
+                        <div className="border border-gray-200 p-6 rounded-lg h-full flex flex-col justify-between">
+                          <div>
+                            <div className="w-10 h-10 inline-flex items-center justify-center rounded-full bg-gray-700 text-indigo-500 mb-4">
+                              <img src={`/assets/img/icons2/${a.icon}`} className='w-7' alt="" />
+                            </div>
+                            <h2 className={classNames("text-xl text-gray-900 font-medium title-font mb-2", ManropeFont.className)}>{a.title}</h2>
+                            <p className="text-base">{a.p}</p>
+                          </div>
+                        </div>
+                      </div>
+                    ))}
 
-            <div
-              className="flex flex-wrap mx-[-15px] xl:mx-[-20px] lg:mx-[-20px] md:mx-[-20px] mt-[-40px] !text-center !mb-[4.5rem] xl:!mb-[7rem] lg:!mb-[7rem] md:!mb-[7rem]"
-            >
-              {
-                [
-                  {
-                    title: 'Accountability',
-                    p: 'We are committed to our words',
-                    icon: 'verified.png'
-                  },
-                  {
-                    title: 'Integrity',
-                    p: 'We develop trust through our integrity and honest relationships.',
-                    icon: 'handshake.png'
-                  },
-                  {
-                    title: 'Teamwork',
-                    p: 'We prioritize the success of the team above individual achievements.',
-                    icon: 'teamwork.png'
-                  },
-                  {
-                    title: 'Educational Excellence',
-                    p: 'We ensure consistency and dedication to every approach we undertake',
-                    icon: 'electric.png'
-                  },
-                  {
-                    title: 'Growth and Diversification',
-                    p: 'Identifying growth opportunities and embracing diversification are core values at our company.',
-                    icon: 'growth.png'
-                  },
-                  {
-                    title: 'Delight our customers',
-                    p: 'We prioritize our customers by listening and delivering.',
-                    icon: 'pray.png'
-                  },
-                  {
-                    title: 'Abide by commitments',
-                    p: `We're committed to excellence and ethics in all areas of our business.`,
-                    icon: 'trust.png'
-                  },
-                  {
-                    title: 'Developing new Technology',
-                    p: `We're committed to excellence and ethics in all areas of our business.`,
-                    icon: 'technology.png'
-                  },
-                ].map((a, i) => (
-                  <div
-                    data-aos="fade-down"
-                    data-aos-delay={50 * i}
-                    key={i}
-                    className="md:w-6/12 lg:w-3/12 xl:w-3/12 w-full flex-[0_0_auto] px-[15px] xl:px-[20px] lg:px-[20px] md:px-[20px] mt-[40px] max-w-full"
-                  >
-                    <div
-                      className="icon btn btn-circle btn-lg btn-primary text-white !bg-[#3f78e0] border-[#3f78e0] hover:text-white hover:bg-[#3f78e0] hover:border-[#3f78e0] focus:shadow-[rgba(92,140,229,1)] active:text-white active:bg-[#3f78e0] active:border-[#3f78e0] disabled:text-white disabled:bg-[#3f78e0] disabled:border-[#3f78e0] pointer-events-none mb-5 !w-[3rem] !h-[3rem] xl:text-[1.3rem] text-[calc(1.255rem_+_0.06vw)] !inline-flex !items-center !justify-center !leading-none !p-0 !rounded-[100%]"
-                    >
-                      <img
-                        src={`/assets/img/icons2/${a.icon}`}
-                        style={{
-                          width: '30px'
-                        }}
-                        alt=""
-                      />
-                    </div>
-                    <h4 className={classNames(ManropeFont.className, 'text-2xl font-bold mb-2')}>{a.title}</h4>
-                    <p className="!mb-3">
-                      {a.p}
-                    </p>
-                  </div>
-                ))}
-            </div>
+                </Slider>
+              </div>
+            </section>
+
           </div>
         </section>
 
@@ -278,7 +271,7 @@ const Home = () => {
             <span className='border-b-2 border-yellow-200'>Our <span className='text-yellow-400'>History</span></span>
           </h1>
 
-          <section data-aos="fade-right" data-aos-delay="200" data-aos-once="false" className="text-gray-600 body-font overflow-hidden">
+          <section data-aos="fade-down" data-aos-delay="200" data-aos-once="false" className="text-gray-600 body-font overflow-hidden">
             <section className="text-gray-600 body-font">
               <div className="container px-5 py-12 mx-auto flex flex-wrap">
                 <div className="flex flex-wrap w-full">
@@ -461,24 +454,20 @@ const Home = () => {
           </section>
         </section>
 
-        <div data-aos="fade-in" data-aos-delay="100" data-aos-once="false" className='px-4 py-8  flex items-center justify-center flex-row gap-2 w-4/5 rounded-md mx-auto mb-8'>
+        {/* <div data-aos="fade-in" data-aos-delay="100" data-aos-once="false" className='px-4 py-8  flex items-center justify-center flex-row gap-2 w-4/5 rounded-md mx-auto mb-8'>
           {['/assets/slider/1.jpg', '/assets/slider/2.jpg', '/assets/slider/3.jpg', '/assets/slider/4.jpg'].map((image, i) => (
             <img key={i} src={image} alt="Sample Image" className="rounded-md w-96 h-full object-cover" />
           ))}
-        </div>
+        </div> */}
 
-        <section data-aos="fade-right" data-aos-delay="200" data-aos-once="false" className="text-gray-600 body-font">
+        <section data-aos="fade-right" data-aos-delay="200" data-aos-once="false" className="text-gray-600 bg-[#fdf2df] body-font">
           <div
             className="container mx-auto flex px-5 py-12 md:flex-row flex-col items-center"
           >
             <div
               className="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left items-center text-center"
             >
-              <img
-                src="https://www.supreme.co.in/dist/img/home/quate_one.jpg"
-                alt=""
-                className="mb-4"
-              />
+              <Quote size={48} className='mb-4' />
               <p className="leading-relaxed inter">
                 At Kosh, we strongly believe in a holistic approach to management which reflects our firm commitment to upholding our core values and ethics, which have been ingrained in our organizational culture since the beginning. These values have guided us in maintaining high standards of integrity, accountability, and professionalism, ensuring that we operate with transparency and trust in all our endeavours.
               </p>
@@ -494,7 +483,7 @@ const Home = () => {
           </div>
         </section>
 
-        <h1 className={classNames(InterBold.className, 'text-3xl mx-auto justify-center flex flex-row text-center items-center gap-2')}>
+        <h1 className={classNames(InterBold.className, 'text-3xl mx-auto pt-12 justify-center flex flex-row text-center items-center gap-2')}>
           <Building2 />
           <span className='border-b-2 border-yellow-200'>Customers</span>
         </h1>
@@ -509,7 +498,7 @@ const Home = () => {
       </div>
 
       <Footer />
-    </>
+    </motion.div>
   )
 }
 

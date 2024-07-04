@@ -22,7 +22,7 @@ const TransparentNavbar = () => {
   const NavLink = ({href, children}: {href: string, children: React.ReactNode}) => {
     return (
       <Link href={href} className='hover:opacity-75 transition-opacity'>
-        <span className={router.pathname == href ? `border-b-2 pb-2 border-${scroll ? 'black' : 'white'}` : ''}>
+        <span className={router.pathname == href ? `border-b-2 pb-2 border-gray-700` : ''}>
           {children}
         </span>
       </Link>
@@ -30,7 +30,7 @@ const TransparentNavbar = () => {
   }
 
   return (
-    <div className={classNames(scroll ? 'bg-gray-900 text-white' : '', ' text-black transition-colors sticky bg-gray-200 w-full top-0 z-50')}>
+    <div className={classNames(scroll ? 'bg-gray-200 shadow-xl' : '', 'text-black transition-colors sticky bg-gray-200 w-full top-0 z-50')}>
       <div className='flex flex-row py-4 px-12 items-center'>
         <img src="/logo-new.png" alt="" className=' w-72 mr-auto' />
         <div className={classNames('flex gap-8 flex-row  ml-auto', InterFont.className)}>

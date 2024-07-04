@@ -60,7 +60,10 @@ const MyApp: AppType = ({ Component, pageProps }) => {
 
   return (
     <main className={InterFont.className}>
-      <Component {...pageProps} />
+      <AnimatePresence mode="wait">
+
+        <Component {...pageProps} key={router.asPath} />
+      </AnimatePresence>
     </main>
   );
 };
