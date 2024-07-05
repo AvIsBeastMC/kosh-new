@@ -64,28 +64,27 @@ const About = () => {
           </div>
           <div className="w-full md:w-1/2">
             <h2 className="text-red-500 text-xs leading-relaxed">VISION & MISSION</h2>
-            <h1 className={classNames("text-4xl mt-1  font-medium text-gray-800 mb-6", InterFont.className)}>About Us</h1>
+            <h1 className={classNames("text-4xl mt-1 font-medium text-gray-800 mb-8", ManropeFont.className)}><span className="border-b-2 border-double">know more about us</span></h1>
             <div className="text-gray-700 flex flex-row gap-4">
               <div data-aos="fade-right" data-aos-delay="100" className="px-6 py-4 bg-gray-100 rounded-md w-1/2">
-                <h1 className={classNames(ManropeFont.className, "text-xl mb-2 font-medium flex flex-row items-center gap-2")}>
+                <h1 className={classNames(ManropeFont.className, "text-xl mb-4 font-medium flex flex-row items-center gap-2")}>
                   <Goal />
-                  <span className="border-b-2 border-gray-400 border-dotted">
-                  Vision
-                </span></h1>
+                  <span className="border-b-2 border-gray-400 border-dotted font-medium">
+                    Vision
+                  </span></h1>
                 <p>To be the global leader in manufacturing, renowned for our <br /> creativity and innovations.</p>
               </div>
               <div data-aos="fade-left" data-aos-delay="200" className="px-6 py-4 bg-gray-100 rounded-md w-1/2">
-                <h1 className={classNames(ManropeFont.className, "text-xl mb-2 font-medium flex flex-row items-center gap-2")}>
+                <h1 className={classNames(ManropeFont.className, "text-xl mb-4 font-medium flex flex-row items-center gap-2")}>
                   <BarChart4 />
-                  <span className="border-b-2 border-gray-400 border-dotted">
-                  Mission
-                </span></h1>
-                <p>To be the global leader in manufacturing, renowned for our <br /> creativity and innovations.</p>
+                  <span className="border-b-2 border-gray-400 border-dotted font-medium">
+                    Mission
+                  </span></h1>
+                <p className={classNames(InterFont.className)}>To be the global leader in manufacturing, renowned for our <br /> creativity and innovations.</p>
               </div>
             </div>
           </div>
         </div>
-
       </div>
 
 
@@ -98,8 +97,8 @@ const About = () => {
           <Trophy />
           <h1 className={classNames(InterBold.className, 'text-2xl')}><span className='border-b-2'>AWARDS AND RECOGNITIONS</span></h1>
         </div>
-        <div className='grid grid-cols-4 gap-4 items-center'>
-          <div className='px-8 py-6 rounded bg-gradient-to-r from-gray-200 to-yellow-100 flex flex-col items-center'>
+        {/* <div className='grid grid-cols-4 gap-4 items-center'>
+          <div className='px-8 py-6 rounded bg-gradient-to-r from-gray-200 to-yellow-100'>
             <img src="/ecovadis.png" className='mx-auto w-28' alt="" />
 
             <div className='flex flex-col mx-auto items-center'>
@@ -174,6 +173,58 @@ const About = () => {
             <div className='flex flex-col mx-auto items-center'>
               <h1 className={classNames(InterBold.className, 'text-xl text-black')}>Zero PPM Awards</h1>
             </div>
+          </div>
+        </div> */}
+
+        <div className="container mx-auto py-2">
+          <div className="flex flex-wrap -mx-4">
+            {
+              [
+                {
+                  images: ['/ecovadis.png'],
+                  title: '2nd Rank in Asia'
+                },
+                {
+                  images: ['/customer/awards/bosch.png', '/customer/awards/whirlpool.png'],
+                  title: 'Best Supplier'
+                },
+                {
+                  images: ['/customer/awards/tafe.png'],
+                  title: 'Best Supplier'
+                },
+                {
+                  images: ['/customer/awards/whirlpool.png'],
+                  title: 'Quality Supplier'
+                },
+                {
+                  images: ['/customer/awards/hanil-tube.png'],
+                  title: 'Zero PPM Awards'
+                },
+                {
+                  images: ['/customer/awards/tafe.png'],
+                  title: 'Zero PPM Awards'
+                },
+                {
+                  images: ['/customer/awards/samsung.png'],
+                  title: 'Zero PPM Awards'
+                },
+                {
+                  images: ['/customer/awards/vestas.png'],
+                  title: 'Zero PPM Awards'
+                },
+              ].map((c, i) => (
+                <div key={i} className="w-full sm:w-1/2 lg:w-1/4 px-4 mb-8">
+                  <div className="px-8 py-6 rounded bg-gradient-to-r from-gray-200 to-yellow-100 flex flex-col">
+                  <div className="flex mb-4 space-x-2">
+                      {c.images.map((image, i) => (
+                        <img key={i} src={image} alt="Logo 1" className="w-24 h-24 object-contain" />
+                      ))}
+                    </div>
+                    <h2 className="text-xl font-semibold text-gray-800">{c.title}</h2>
+                  </div>
+                </div>
+              ))
+            }
           </div>
         </div>
       </div>
