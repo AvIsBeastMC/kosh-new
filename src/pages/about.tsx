@@ -2,7 +2,7 @@
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from 'react-responsive-carousel';
 import classNames from 'classnames'
-import { BarChart4, BookText, FileText, Globe, Globe2, Goal, LineChart, Quote, ScanEye, Trophy } from 'lucide-react'
+import { BarChart4, BookText, FileText, Globe, Globe2, Goal, LineChart, Quote, ScanEye, Sparkles, Trophy } from 'lucide-react'
 import React from 'react'
 import Navbar from '~/components/Navbar'
 import { InterBold, InterFont, JioType, ManropeFont, PlayfairDisplayBold } from './_app'
@@ -66,16 +66,16 @@ const About = () => {
             <h2 className="text-red-500 text-xs leading-relaxed">VISION & MISSION</h2>
             <h1 className={classNames("text-4xl mt-1 font-medium text-gray-800 mb-8", ManropeFont.className)}><span className="border-b-2 border-double">know more about us</span></h1>
             <div className="text-gray-700 flex flex-row gap-4">
-              <div data-aos="fade-right" data-aos-delay="100" className="px-6 py-4 bg-gray-100 rounded-md w-1/2">
-                <h1 className={classNames(ManropeFont.className, "text-xl mb-4 font-medium flex flex-row items-center gap-2")}>
+              <div data-aos="fade-right" data-aos-delay="100" className="px-6 py-6 bg-gray-100 rounded-md w-1/2">
+                <h1 className={classNames(InterBold.className, "text-3xl mb-4 font-medium flex flex-row items-center gap-2")}>
                   <Goal />
                   <span className="border-b-2 border-gray-400 border-dotted font-medium">
                     Vision
                   </span></h1>
                 <p>To be the global leader in manufacturing, renowned for our <br /> creativity and innovations.</p>
               </div>
-              <div data-aos="fade-left" data-aos-delay="200" className="px-6 py-4 bg-gray-100 rounded-md w-1/2">
-                <h1 className={classNames(ManropeFont.className, "text-xl mb-4 font-medium flex flex-row items-center gap-2")}>
+              <div data-aos="fade-left" data-aos-delay="200" className="px-6 py-6 bg-gray-100 rounded-md w-1/2">
+                <h1 className={classNames(InterBold.className, "text-3xl mb-4 font-medium flex flex-row items-center gap-2")}>
                   <BarChart4 />
                   <span className="border-b-2 border-gray-400 border-dotted font-medium">
                     Mission
@@ -220,7 +220,7 @@ const About = () => {
                         <img key={i} src={image} alt="Logo 1" className="w-24 h-24 object-contain" />
                       ))}
                     </div>
-                    <h2 className="text-xl font-semibold text-gray-800">{c.title}</h2>
+                    <h2 className="text-xl font-semibold text-gray-800 flex flex-row gap-2 items-center"><Sparkles /> {c.title}</h2>
                   </div>
                 </div>
               ))
