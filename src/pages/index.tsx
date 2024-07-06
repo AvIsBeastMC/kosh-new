@@ -536,7 +536,7 @@ const Home = () => {
                   </h2>
                   <div className='mb-6 p-1 rounded-full w-24 bg-[#b9a063]'></div>
                   <p className="text-base text-gray-700">
-                    {`As a director of our rapidly expanding manufacturing company, I stand in awe of the remarkable journey we've embarked upon. From humble beginnings, we've surged forward, propelled by innovation and a relentless dedication to excellence. Our exponential growth stands as a testament to the unwavering commitment of our team, whose passion and expertise have propelled us to new heights. With each passing milestone, we've not only expanded our reach but also deepened our impact, revolutionizing the industry with cutting-edge solutions and unparalleled quality.`}
+                    {`Driven by our vision of "creativity and innovation," we strive for excellence in industries that positively impact community development, foster social advancement, and contribute significantly to national progress.`}
                   </p>
                   <div className="mt-4 flex flex-col">
                     <span className={classNames(InterBold.className, 'mt-4 uppercase')}>~ Samir Kamra</span>
