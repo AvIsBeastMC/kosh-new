@@ -575,7 +575,7 @@ const Home = () => {
         </h1>
 
         {/* @ts-ignore */}
-        <Marquee direction="left">
+        <Marquee direction="left" className='blur-effect'>
           {['/customer/extrusion/polyhose.png', '/customer/extrusion/seah.png', '/customer/extrusion/voss.png', '/customer/blow/dixon.png', '/customer/extrusion/bosch.png', '/customer/extrusion/samsung.png', '/customer/extrusion/whirlpool.png', '/customer/extrusion/IFB.png'].map((image, i) => (
             <img src={image} className='w-48 mr-12' key={i} />
           ))}
