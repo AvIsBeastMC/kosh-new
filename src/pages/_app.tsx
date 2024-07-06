@@ -7,6 +7,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import { AnimatePresence } from "framer-motion";
 import { useRouter } from "next/router";
+import { ThemeProvider } from "@material-tailwind/react";
 
 export const InterFont = Inter({
   subsets: ["latin"],
@@ -56,15 +57,16 @@ const MyApp: AppType = ({ Component, pageProps }) => {
     setTimeout(() => {
       window.addEventListener('load', () => AOS.refresh());
     }, 200);
-  }, [router.pathname]);
+  }, [router.asPath]);
 
   return (
-    <main className={InterFont.className}>
-      <AnimatePresence mode="wait">
-
-        <Component {...pageProps} key={router.asPath} />
-      </AnimatePresence>
-    </main>
+    <ThemeProvider>
+      <main className={InterFont.className}>
+        <AnimatePresence mode="wait">
+          <Component {...pageProps} key={router.asPath} />
+        </AnimatePresence>
+      </main>
+    </ThemeProvider>
   );
 };
 
