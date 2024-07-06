@@ -62,8 +62,8 @@ const About = () => {
             <img src="https://images.unsplash.com/photo-1577962917302-cd874c4e31d2?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Vision Image" className="rounded-lg shadow-lg w-full h-full object-cover" />
           </div>
           <div className="w-full md:w-1/2">
-            <h2 className="text-red-500 text-xs leading-relaxed">VISION & MISSION</h2>
-            <h1 className={classNames("text-4xl mt-1 font-medium text-gray-800 mb-8", ManropeFont.className)}><span className="border-b-2 border-double">know more about us</span></h1>
+            <h2 className="text-red-500 text-xs leading-relaxed mb-2">VISION & MISSION</h2>
+            {/* <h1 className={classNames("text-4xl mt-1 font-medium text-gray-800 mb-8", ManropeFont.className)}><span className="border-b-2 border-double">know more about us</span></h1> */}
             <div className="text-gray-700 flex flex-row gap-4">
               <div data-aos="fade-right" data-aos-delay="100" className="px-6 py-6 bg-gray-100 rounded-md w-1/2">
                 <h1 className={classNames(InterBold.className, "text-3xl mb-4 font-medium flex flex-row items-center gap-2")}>
