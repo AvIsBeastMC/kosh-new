@@ -115,7 +115,7 @@ const About = () => {
                 <div className="flex rounded-lg h-full bg-gray-100 p-8 flex-col">
                   <div className="flex items-center gap-2 w-1/3">
                     {a.images.map((image, i) => (
-                      <img src={image} alt={i.toString()} />
+                      <img src={image} key={i} alt={i.toString()} />
                     ))}
                   </div>
                   <div className="flex items-center mt-4">
