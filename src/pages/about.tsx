@@ -88,7 +88,7 @@ const About = () => {
         </div>
       </section>
 
-      <section data-aos="fade-left" data-aos-delay="300" className="text-gray-600 body-font">
+      {/* <section className="text-gray-600 body-font">
         <div className="container mx-auto flex px-5 py-12 md:flex-row flex-col items-center">
           <div className="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
             <h1 className={classNames("title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900", InterBold.className)}>Vision</h1>
@@ -100,8 +100,24 @@ const About = () => {
             <img className="object-cover object-center rounded" alt="hero" src="https://plus.unsplash.com/premium_photo-1682141558548-80e9d3bfb15c?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" />
           </div>
         </div>
-      </section>
+      </section> */}
 
+      <section data-aos="fade-left" data-aos-delay="300" className="text-gray-600 body-font">
+  <div className="container px-5 py-12 mx-auto flex flex-wrap">
+    <h2 className="sm:text-3xl text-2xl text-gray-900 font-medium title-font mb-2 md:w-2/5">Kickstarter Actually Pinterest Brunch Bitters Occupy</h2>
+    <div className="md:w-3/5 md:pl-6">
+      <p className="leading-relaxed text-base">Taxidermy bushwick celiac master cleanse microdosing seitan. Fashion axe four dollar toast truffaut, direct trade kombucha brunch williamsburg keffiyeh gastropub tousled squid meh taiyaki drinking vinegar tacos.</p>
+      <div className="flex md:mt-4 mt-6">
+        <button className="inline-flex text-white bg-indigo-500 border-0 py-1 px-4 focus:outline-none hover:bg-indigo-600 rounded">Button</button>
+        <a className="text-indigo-500 inline-flex items-center ml-4">Learn More
+          <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" className="w-4 h-4 ml-2" viewBox="0 0 24 24">
+            <path d="M5 12h14M12 5l7 7-7 7"></path>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
 
       <section data-aos="fade-down" data-aos-delay="400" className="text-gray-600 body-font">
         <div className="container px-5 py-12 mx-auto">

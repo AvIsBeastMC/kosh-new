@@ -9,7 +9,7 @@ import "slick-carousel/slick/slick-theme.css";
 import { InterBold, InterFont, JioType, ManropeFont, PlayfairDisplay, PlayfairDisplayBold } from './_app';
 import classNames from 'classnames';
 import TransparentNavbar from '~/components/TransparentNavbar';
-import { BarChart4, BookText, Building2, Check, Quote, Sparkles } from 'lucide-react';
+import { BarChart4, BookText, Building2, Check, CircleArrowDown, Quote, Sparkles } from 'lucide-react';
 import Footer from '~/components/Footer';
 import Marquee from "react-fast-marquee";
 import { Manrope } from 'next/font/google';
@@ -155,37 +155,30 @@ const Home = () => {
 
         </div>
 
-        <section data-aos="fade-down" data-aos-delay="200" className="text-gray-600 body-font">
-          <div className="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
-            <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0">
-              <img className="object-cover object-center rounded" alt="hero" src="https://plus.unsplash.com/premium_photo-1661284806850-b709cb1262b7?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" />
-            </div>
-            <div className="lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center">
-              <h3 className={classNames('mb-2 text-gray-400', ManropeFont.className)}>REVOLUTIONIZING INDUSTRIES WITH INNOVATION</h3>
-              <h1 className="title-font sm:text-4xl text-3xl mb-6 font-medium text-gray-900">❝Our Commitment to Excellence <br /> and Sustainability❞</h1>
-              <p className="mb-8 leading-relaxed">
-                Kosh Innovations established in 2008, is recognized for being customer centric and its commitment to innovation and excellence, holding certifications such as IATF169492016, ISO90012015, ISO140012015, ISO 450012018, and SQ MARK. <br /> With a presence in six locations across India and a clientele including esteemed names like Ola, Whirlpool, IFB, BOSCH, Samsung, Dixon, TAFE, Exide etc. We aspire to establish ourselves as a leading global product supplier orgnisation for consumer durables, automotive,  electronics and green-tech industries.
-                {/* <br /> Some of our domains: */}
-              </p>
-              {/* <div data-aos="fade-down" data-aos-delay="400" className='flex flex-wrap gap-6'>
-                <div className='flex flex-row gap-3 text-md'>
-                  <Check /> Injection Moulding
-                </div>
-                <div className='flex flex-row gap-3 text-md'>
-                  <Check /> Corrugation
-                </div>
-                <div className='flex flex-row gap-3 text-md'>
-                  <Check /> Blow Moulding
-                </div>
-                <div className='flex flex-row gap-3 text-md'>
-                  <Check /> Non-woven Industrial Pckgng.
-                </div>
-              </div> */}
-            </div>
+        <section style={{
+          minHeight: '70vh',
+          backgroundImage: "url('/lycs-architecture-U2BI3GMnSSE-unsplash.jpg')",
+          backgroundRepeat: 'no-repeat',
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+          display: 'flex',            // Add this line
+          justifyContent: 'center',   // Add this line
+          alignItems: 'center'        // Add this line
+        }} data-aos="fade-left" className='text-white my-6 mx-8 py-2 rounded-md flex-col'>
+          <div data-aos="fade-in" data-aos-delay="400" className='px-12 py-6 w-2/3'>
+            <h1 className={classNames(InterBold.className, 'text-4xl mb-4')}>About Us</h1>
+            <div className='mb-6 p-1 rounded-full w-24 bg-[#b9a063]'></div>
+
+            <p className={classNames(InterFont.className, '')}>
+              Kosh Innovations established in 2008, is recognized for being customer centric and its commitment to innovation and excellence, holding certifications such as IATF169492016, ISO90012015, ISO140012015, ISO 450012018, and SQ MARK.
+              <br /> <br />
+              With a presence in six locations across India and a clientele including esteemed names like Ola, Whirlpool, IFB, BOSCH, Samsung,Dixon,TAFE, Exide etc. we aspire to establish ourselves as a
+              leading global product supplier orgnisation for consumer durables, automotive,  electronics and green-techindustries.
+            </p>
           </div>
         </section>
 
-        <section className="text-gray-600 body-font">
+        <section className="text-gray-600 body-font mt-12">
           <div className="container px-5 pb-12 mx-auto">
             <div className="flex flex-wrap w-full mb-12 flex-col items-center text-center">
               <span className={classNames('border-b-2 border-[#b9a063]', InterBold.className)}><h1 className="sm:text-3xl text-2xl font-medium title-font mb-2 text-gray-900 flex flex-row items-center gap-2">
@@ -461,50 +454,9 @@ const Home = () => {
           ))}
         </div> */}
 
-        <div data-aos="fade-down" data-aos-delay="200" className="bg-white relative flex items-center  n justify-center overflow-hidden ">
-          <div className="relative mx-auto h-full px-4  pb-20   md:pb-10 sm:max-w-xl md:max-w-full md:px-24 lg:max-w-screen-xl lg:px-8">
-            <div className="flex flex-col items-center justify-between lg:flex-row py-16">
-              <div className=" relative ">
-                <div className="lg:max-w-xl lg:pr-5 relative z-40">
-                  <h2 className={classNames("flex flex-row items-center gap-4 text-3xl sm:leading-snug mb-2", JioType.className)}>
-                    <Quote />
-                    DIRECTORS MESSAGE
-                  </h2>
-                  <div className='mb-6 p-1 rounded-full w-24 bg-[#b9a063]'></div>
-                  <p className="text-base text-gray-700">
-                    At Kosh, we strongly believe in a holistic approach to management which reflects our firm commitment to upholding our core values and ethics, which have been ingrained in our organizational culture since the beginning. These values have guided us in maintaining high standards of integrity, accountability, and professionalism, ensuring that we operate with transparency and trust in all our endeavours.
-                  </p>
-                  <div className="mt-4 flex flex-col">
-                    <span className={classNames(InterBold.className, 'mt-4 uppercase')}>~ Nalini Kamra</span>
-                    Director, Kosh Innovations
-                  </div>
-                </div>
-
-
-              </div>
-              <div className="relative hidden lg:ml-32 lg:block lg:w-1/2">
-                <svg xmlns="http://www.w3.org/2000/svg" className="my-6 mx-auto h-10 w-10 animate-bounce rounded-full bg-white p-2 lg:hidden" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                  <path stroke-linecap="round" stroke-linejoin="round" d="M16 17l-4 4m0 0l-4-4m4 4V3"></path>
-                </svg>
-                <div className="abg-orange-400 mx-auto w-fit overflow-hidden rounded-[6rem] rounded-br-none rounded-tl-none">
-                  <img src="https://kosh-innovations.vercel.app/assets/photo.png" />
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="hidden text-9xl varien absolute top-6 left-1/4 text-g/10  ">
-            About Us
-          </div>
-          <div className=" absolute -bottom-24 left-10 z-0  opacity-10 ">
-            <svg width="800px" height="800px" viewBox="0 0 24 24" className="w-96 z-0  h-full    object-fill fill-gray-300 text-gray-300" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path fill-rule="evenodd" clip-rule="evenodd" d="M12 6C12 5.44772 11.5523 5 11 5C10.4477 5 10 5.44772 10 6V16C10 16.5523 10.4477 17 11 17C11.5523 17 12 16.5523 12 16V6ZM9 9C9 8.44772 8.55228 8 8 8C7.44772 8 7 8.44772 7 9V16C7 16.5523 7.44772 17 8 17C8.55228 17 9 16.5523 9 16V9ZM15 9C15 8.44772 14.5523 8 14 8C13.4477 8 13 8.44772 13 9V16C13 16.5523 13.4477 17 14 17C14.5523 17 15 16.5523 15 16V9ZM18 13C18 12.4477 17.5523 12 17 12C16.4477 12 16 12.4477 16 13V16C16 16.5523 16.4477 17 17 17C17.5523 17 18 16.5523 18 16V13ZM6 15C6 14.4477 5.55228 14 5 14C4.44772 14 4 14.4477 4 15V16C4 16.5523 4.44772 17 5 17C5.55228 17 6 16.5523 6 16V15ZM21 15C21 14.4477 20.5523 14 20 14C19.4477 14 19 14.4477 19 15V16C19 16.5523 19.4477 17 20 17C20.5523 17 21 16.5523 21 16V15ZM4 18C3.44772 18 3 18.4477 3 19C3 19.5523 3.44772 20 4 20H21C21.5523 20 22 19.5523 22 19C22 18.4477 21.5523 18 21 18H4Z"></path>
-            </svg>
-          </div>
-          <div className=" absolute top-10 left-3/4 z-0  opacity-10 ">
-
-            <svg fill="#000000" width="800px" height="800px" viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg" className="w-96 z-0  h-full    object-fill fill-blue-300 text-blue-300">
-              <path d="M230.704 99.2a4.004 4.004 0 0 0-4.01-3.995h-50.981c-2.215 0-5.212-1.327-6.693-2.964L155.289 77.08c-17.795-19.65-41.628-16.256-53.234 7.58l-38.736 79.557C60.42 170.172 52.705 175 46.077 175H29.359a3.996 3.996 0 0 0-3.994 3.995v10.01A4 4 0 0 0 29.372 193h24.7c8.835 0 19.208-6.395 23.174-14.293l43.645-86.914c3.964-7.894 12.233-9.228 18.473-2.974l17.184 17.219c3.123 3.13 9.242 5.667 13.647 5.667H226.7a4.005 4.005 0 0 0 4.004-3.994v-8.512z" fill-rule="evenodd"></path>
-            </svg>
+        <div data-aos="fade-down" data-aos-delay="200" className="bg-[#d3d3d3] relative flex items-center justify-center overflow-hidden ">
+          <div className="relative mx-auto h-full sm:max-w-xl md:max-w-full md:px-24 lg:max-w-screen-xl lg:px-8">
+            <img src='/nalini.jpg' />
           </div>
         </div>
         <div data-aos="fade-left" data-aos-delay="200" className="bg-white relative flex items-center  n justify-center overflow-hidden ">
