@@ -12,6 +12,7 @@ import { motion } from "framer-motion";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import Head from "next/head";
 
 const About = () => {
   const awards = [
@@ -51,6 +52,10 @@ const About = () => {
 
   return (
     <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} transition={{ duration: 1 }}>
+      <Head>
+        <title>About Us - Kosh Innovations</title>
+      </Head>
+      
       <Navbar />
 
       <div className="relative bg-black">
@@ -106,7 +111,7 @@ const About = () => {
         backgroundImage: "url('https://a.storyblok.com/f/90078/ade9a4f8e6/2020-11_visionarticle.png')",
         backgroundRepeat: 'no-repeat'
       }} data-aos="fade-left" data-aos-delay="300" className="text-gray-600 body-font border-t-2 border-b-2">
-        <div className="container px-5 py-12 mx-auto flex flex-wrap items-center">
+        <div className="container px-5 py-12 mx-auto flex flex-wrap items-center backdrop-blur-sm">
           <h2 className={classNames("sm:text-3xl text-2xl text-gray-900 font-medium title-font mb-2 md:w-2/5", InterBold.className)}>Our Vision</h2>
           <div className="md:w-3/5 md:pl-6">
             <p className="leading-relaxed text-base">
@@ -186,7 +191,7 @@ const About = () => {
               <h1 className={classNames(JioType.className, 'mb-4 text-3xl text-black')}><span className="border-b-2">manufacturing units</span></h1>
               <div className="gap-2 flex flex-col ml-1 mt-2">
                 <li><b>HO/CO</b> Puducherry 1</li>
-                <li>Puducherry</li>
+                <li>Rawthankuppam</li>
                 <li>Chennai</li>
                 <li>Hosur</li>
                 <li>Chennai</li>

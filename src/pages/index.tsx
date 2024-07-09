@@ -14,6 +14,7 @@ import Footer from '~/components/Footer';
 import Marquee from "react-fast-marquee";
 import { Manrope } from 'next/font/google';
 import { motion } from 'framer-motion';
+import Head from 'next/head';
 
 
 const Home = () => {
@@ -119,6 +120,10 @@ const Home = () => {
 
   return (
     <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} transition={{ duration: 1 }}>
+      <Head>
+        <title>Welcome to Kosh Innovations!</title>
+      </Head>
+
       <TransparentNavbar />
 
       <div className='sections'>
@@ -350,7 +355,7 @@ const Home = () => {
                       </div>
                     </div>
                   </div>
-                  <img className="lg:w-3/5 md:w-1/2 object-cover object-center rounded-lg md:mt-0 mt-12" src="https://plus.unsplash.com/premium_photo-1713360590902-1ade983e1969?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="step" />
+                  <img className="lg:w-3/5 md:w-1/2 object-cover object-center rounded-lg md:mt-0 mt-12" src="/our_history.jpeg" alt="step" />
                 </div>
               </div>
             </section>
