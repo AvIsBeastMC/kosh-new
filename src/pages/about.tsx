@@ -108,8 +108,6 @@ const About = () => {
       </section> */}
 
       <section style={{
-        backgroundImage: "url('https://a.storyblok.com/f/90078/ade9a4f8e6/2020-11_visionarticle.png')",
-        backgroundRepeat: 'no-repeat'
       }} data-aos="fade-left" data-aos-delay="300" className="text-gray-600 body-font border-t-2 border-b-2">
         <div className="container px-5 py-12 mx-auto flex flex-wrap items-center backdrop-blur-sm">
           <h2 className={classNames("sm:text-3xl text-2xl text-gray-900 font-medium title-font mb-2 md:w-2/5", InterBold.className)}>Our Vision</h2>

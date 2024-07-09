@@ -461,7 +461,7 @@ const Home = () => {
 
         <div data-aos="fade-down" data-aos-delay="200" className="bg-[#d3d3d3] relative flex items-center justify-center overflow-hidden ">
           <div className="relative mx-auto h-full sm:max-w-xl md:max-w-full md:px-24 lg:max-w-screen-xl lg:px-8">
-            <img src='/nalini.jpg' />
+            <img src='/nalini copy.jpg' />
           </div>
         </div>
         <div data-aos="fade-left" data-aos-delay="200" className="bg-white relative flex items-center  n justify-center overflow-hidden ">
