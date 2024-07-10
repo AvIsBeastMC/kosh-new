@@ -18,8 +18,8 @@ const TransparentNavbar = () => {
       }
     })
   }, [])
-  
-  const NavLink = ({href, children}: {href: string, children: React.ReactNode}) => {
+
+  const NavLink = ({ href, children }: { href: string, children: React.ReactNode }) => {
     return (
       <Link href={href} className='hover:opacity-75 transition-opacity'>
         <span className={router.pathname == href ? 'border-b-2 pb-2 border-gray-700' : ''}>
@@ -37,8 +37,8 @@ const TransparentNavbar = () => {
           <NavLink href="/">Home</NavLink>
           <NavLink href="/about">About</NavLink>
           <NavLink href="/products">Products</NavLink>
+          <NavLink href="/careers">Careers</NavLink>
           <NavLink href="/contact">Contact</NavLink>
-          <NavLink href="/enquiry">Enquiry</NavLink>
         </div>
       </div>
     </div>
