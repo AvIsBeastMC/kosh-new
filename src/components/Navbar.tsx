@@ -37,8 +37,8 @@ const TransparentNavbar = () => {
           <NavLink href="/">Home</NavLink>
           <NavLink href="/about">About</NavLink>
           <NavLink href="/products">Products</NavLink>
+          <NavLink href="/careers">Careers</NavLink>
           <NavLink href="/contact">Contact</NavLink>
-          <NavLink href="/enquiry">Enquiry</NavLink>
         </div>
       </div>
     </div>
