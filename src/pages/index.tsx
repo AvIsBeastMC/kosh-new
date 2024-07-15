@@ -129,11 +129,11 @@ const Home = () => {
       <div className='sections'>
         <div className="relative section">
           <Slider autoplay infinite className="cursor-grab object-cover object-center rounded">
-            {['/assets/slider/1.jpg', '/assets/slider/2.jpg', '/assets/slider/3.jpg', '/assets/slider/4.jpg'].map((image, i) => (
-              <div key={i} className="w-full relative">
+            {['/slider/1.jpg', '/slider/2.jpg', '/slider/3.jpg', 'slider/4.jpg'].map((image, i) => (
+              <div key={i} className="w-full relative bg-black">
                 <img src={image} style={{
                   maxHeight: '100vh'
-                }} alt="Sample Image" className="w-full h-full object-cover" />
+                }} alt="Sample Image" className="w-full h-full object-cover opacity-35" />
                 <div className="absolute w-full top-0 left-0 bottom-0 flex text-white">
                   <div className={classNames("flex flex-col gap-4 mx-auto w-2/3 text-md my-auto", InterFont.className)}>
                     <h1 className={classNames('text-6xl', InterBold.className)}>
