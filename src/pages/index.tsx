@@ -13,7 +13,7 @@ import { BarChart4, BookText, Building2, Check, CircleArrowDown, Quote, Sparkles
 import Footer from '~/components/Footer';
 import Marquee from "react-fast-marquee";
 import { Manrope } from 'next/font/google';
-import { motion } from 'framer-motion';
+import { AnimatePresence, motion } from 'framer-motion';
 import Head from 'next/head';
 
 
@@ -78,7 +78,46 @@ const Home = () => {
             description: "Nonwoven disposable products are widely used in the medical field for various applications due to their versatility, cost-effectiveness, and ability to provide a barrier against contaminants. Nonwoven disposable products find applications in the medical field, hospitals, and the hospitality sector. "
           }
       }
-    }, [state])
+    }, [state]);
+
+
+    return (
+      <>
+        <div data-aos="fade-up" className="rounded-md relative w-full">
+          <img src="/assets/image2.png" style={{
+            height: '670px',
+          }} alt="Sample Image" className="w-full h-full object-cover" />
+          <div className="absolute w-full top-0 right-0 left-0 bottom-0 flex text-white">
+            <div className="flex flex-row mx-36 my-24 align-top items-start">
+              <div className='gap-7 flex flex-col self-center'>
+                <span onClick={() => setState('Injection')} className='cursor-pointer hover:opacity-75 transition-opacity border-b-2 pb-2 pr-12 border-gray-600 w-full'>Injection Moulding</span>
+                <span onClick={() => setState('Blow')} className='cursor-pointer hover:opacity-75 transition-opacity border-b-2 pb-2 pr-12 border-gray-600 w-full'>Blow Moulding</span>
+                <span onClick={() => setState('Extrusion')} className='cursor-pointer hover:opacity-75 transition-opacity border-b-2 pb-2 pr-12 border-gray-600 w-full'>Extrusion Moulding</span>
+                <span onClick={() => setState('Non-woven Packaging')} className='cursor-pointer hover:opacity-75 transition-opacity border-b-2 pb-2 pr-12 border-gray-600 w-full'>Non-woven Packaging</span>
+                <span onClick={() => setState('Electronics')} className='cursor-pointer hover:opacity-75 transition-opacity border-b-2 pb-2 pr-12 border-gray-600 w-full'>Electronics</span>
+                <span onClick={() => setState('Medicare')} className='cursor-pointer hover:opacity-75 transition-opacity border-b-2 pb-2 pr-12 border-gray-600 w-full'>Medicare</span>
+              </div>
+
+              <AnimatePresence mode='wait'>
+                <motion.div initial={{ opacity: 0 }} key={state} animate={{ opacity: 1 }} exit={{ opacity: 0 }} className="ml-auto w-2/3 self-center">
+                  <h2 className={classNames("text-sm text-white mb-2", InterFont.className)}>🧬 OUR BUSINESSES</h2>
+                  <h1 className={classNames(PlayfairDisplayBold.className, 'text-5xl')}>{data.title}</h1>
+
+                  <div className="text-blue-200 mb-4">________________</div>
+
+                  <div className={classNames(JioType.className, "flex flex-row gap-2 w-1/2 mb-8")}>
+                    <p className="text-xl">
+                      {data.description}
+                    </p>
+                  </div>
+                  <a href={link} className={classNames("hover:bg-gray-600 transition-colors rounded-full border-2 border-white px-4 py-1", PlayfairDisplay.className)}>read more <span className={classNames(InterFont.className)}>{"-->"}</span></a>
+                </motion.div>
+              </AnimatePresence>
+            </div>
+          </div>
+        </div>
+      </>
+    )
 
     return (
       <div data-aos="fade-up" className="rounded-md relative w-full">
