@@ -4,7 +4,7 @@ import { motion } from 'framer-motion'
 import Head from 'next/head'
 import React from 'react'
 import AnotherNavbar from '~/components/Navbar'
-import { PlayfairDisplayBold, PlayfairDisplay, InterBold, InterFont, ManropeFont } from './_app'
+import { PlayfairDisplayBold, PlayfairDisplay, InterBold, InterFont, ManropeFont } from '../_app'
 import Footer from '~/components/Footer'
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
@@ -16,7 +16,7 @@ const BlowMoulding = () => {
   return (
     <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} transition={{ duration: 1 }}>
       <Head>
-        <title>Blow Moulding - Our Businesses - Kosh Innovations</title>
+        <title>Careers at Kosh Innovations</title>
       </Head>
 
       <TransparentNavbar />
@@ -92,19 +92,19 @@ const BlowMoulding = () => {
                 location: 'Hosur, Tamil Nadu',
                 locationLink: 'https://maps.app.goo.gl/pFmQSjbmYTGDEW519',
                 datePosted: '15th July, 2024',
-                description: 'Swag shoivdigoitch literally meditation subway tile tumblr cold-pressed. Gastropub street art beard dreamcatcher neutra, ethical XOXO lumbersexual.'
+                description: 'Swag shoivdigoitch literally meditation subway tile tumblr cold-pressed. Gastropub street art beard dreamcatcher neutra, ethical XOXO.'
               },
               {
                 title: 'Plant Engineer',
                 location: 'Rawthunkuppam, Puducherry',
                 datePosted: '13th July, 2024',
-                description: 'Swag shoivdigoitch literally meditation subway tile tumblr cold-pressed. Gastropub street art beard dreamcatcher neutra, ethical XOXO lumbersexual.'
+                description: 'Swag shoivdigoitch literally meditation subway tile tumblr cold-pressed. Gastropub street art beard dreamcatcher neutra, ethical XOXO.'
               },
               {
                 title: 'Quality Assurance Engineer',
                 location: 'Selaqui, Uttarakhand',
                 datePosted: '13th July, 2024',
-                description: 'Swag shoivdigoitch literally meditation subway tile tumblr cold-pressed. Gastropub street art beard dreamcatcher neutra, ethical XOXO lumbersexual.'
+                description: 'Swag shoivdigoitch literally meditation subway tile tumblr cold-pressed. Gastropub street art beard dreamcatcher neutra, ethical XOXO.'
               },
             ].map((job, i) => (
               <div key={i} className="p-4 md:w-1/3 sm:mb-0 mb-6">

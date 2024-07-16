@@ -167,7 +167,7 @@ const Home = () => {
 
       <div className='sections'>
         <div className="relative section">
-          <Slider autoplay autoplaySpeed={3000} infinite className="cursor-grab object-cover object-center rounded">
+          <Slider pauseOnHover={false} autoplay autoplaySpeed={3000} infinite className="cursor-grab object-cover object-center rounded">
             {['/slider/1.jpg', '/slider/2.jpg', '/slider/3.jpg', 'slider/4.jpg'].map((image, i) => (
               <div key={i} className="w-full relative bg-black">
                 <img src={image} style={{
