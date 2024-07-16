@@ -188,11 +188,10 @@ const About = () => {
             <div className="">
               <h1 className={classNames(JioType.className, 'mb-4 text-3xl text-black')}><span className="border-b-2">manufacturing units</span></h1>
               <div className="gap-2 flex flex-col ml-1 mt-2">
-                <li><b>HO/CO</b> Puducherry 1</li>
+                <li><b>HO/CO</b> Puducherry</li>
                 <li>Rawthankuppam</li>
                 <li>Chennai</li>
                 <li>Hosur</li>
-                <li>Chennai</li>
                 <li>Pune</li>
                 <li>Dehradun</li>
               </div>
