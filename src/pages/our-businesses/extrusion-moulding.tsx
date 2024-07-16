@@ -9,6 +9,7 @@ import Footer from '~/components/Footer'
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import Marquee from 'react-fast-marquee'
 
 const BlowMoulding = () => {
   return (
@@ -60,7 +61,26 @@ const BlowMoulding = () => {
             <div className='flex flex-col gap-2' data-aos="fade-left" data-aos-delay="400">
               <div className={classNames('text-2xl border-b-2 pb-2 border-gray-600', PlayfairDisplay.className)}>Customers</div>
 
-              <Slider slidesToShow={4} autoplaySpeed={3000} slidesToScroll={4} autoplay dots>
+              <Marquee direction="left" className='blur-effect'>
+                {[
+                  "/customer/extrusion/seah.png",
+                  "/customer/extrusion/bosch.png",
+                  "/customer/extrusion/dixon.png",
+                  "/customer/extrusion/generalconnectors.png",
+                  "/customer/extrusion/hanil-tube.png",
+                  "/customer/extrusion/IFB.png",
+                  "/customer/extrusion/moderngeneral.png",
+                  "/customer/extrusion/polyhose.png",
+                  "/customer/extrusion/samsung.png",
+                  "/customer/extrusion/voss.png",
+                  "/customer/extrusion/whilrpool.png"
+                ]
+                  .map((image, i) => (
+                    <img src={image} className='w-48 mr-12' key={i} />
+                  ))}
+              </Marquee>
+
+              {/* <Slider slidesToShow={4} autoplaySpeed={3000} slidesToScroll={4} autoplay dots>
                 <img src="/customer/extrusion/seah.png" loading='lazy' alt="" />
                 <img src="/customer/extrusion/bosch.png" loading='lazy' alt="" />
                 <img src="/customer/extrusion/dixon.png" loading='lazy' alt="" />
@@ -72,7 +92,7 @@ const BlowMoulding = () => {
                 <img src="/customer/extrusion/samsung.png" loading='lazy' alt="" />
                 <img src="/customer/extrusion/voss.png" loading='lazy' alt="" />
                 <img src="/customer/extrusion/whilrpool.png" loading='lazy' alt="" />
-              </Slider>
+              </Slider> */}
             </div>
           </div>
         </div>

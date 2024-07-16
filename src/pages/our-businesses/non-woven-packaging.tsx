@@ -9,6 +9,7 @@ import Footer from '~/components/Footer'
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import Marquee from 'react-fast-marquee'
 
 const BlowMoulding = () => {
   return (
@@ -60,7 +61,21 @@ const BlowMoulding = () => {
             <div className='flex flex-col gap-2' data-aos="fade-left" data-aos-delay="400">
               <div className={classNames('text-2xl border-b-2 pb-2 border-gray-600', PlayfairDisplay.className)}>Customers</div>
 
-              <Slider slidesToShow={4} autoplaySpeed={3000} slidesToScroll={4} autoplay dots>
+              <Marquee direction="left" className='blur-effect'>
+                {[
+                  "/customer/non-woven/bosch.png",
+                  "/customer/non-woven/brite.png",
+                  "/customer/non-woven/dixon.png",
+                  "/customer/non-woven/eureka-forbes.png",
+                  "/customer/non-woven/IFB.png",
+                  "/customer/non-woven/samsung.png",
+                  "/customer/non-woven/whirlpool.png"
+                ]
+                  .map((image, i) => (
+                    <img src={image} className='w-48 mr-12' key={i} />
+                  ))}
+              </Marquee>
+              {/* <Slider slidesToShow={4} autoplaySpeed={3000} slidesToScroll={4} autoplay dots>
                 <img src="/customer/non-woven/bosch.png" loading='lazy' alt="" />
                 <img src="/customer/non-woven/brite.png" loading='lazy' alt="" />
                 <img src="/customer/non-woven/dixon.png" loading='lazy' alt="" />
@@ -68,7 +83,7 @@ const BlowMoulding = () => {
                 <img src="/customer/non-woven/IFB.png" loading='lazy' alt="" />
                 <img src="/customer/non-woven/samsung.png" loading='lazy' alt="" />
                 <img src="/customer/non-woven/whirlpool.png" loading='lazy' alt="" />
-              </Slider>
+              </Slider> */}
             </div>
           </div>
         </div>

@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/ban-ts-comment */
 /* eslint-disable @next/next/no-img-element */
 import classNames from 'classnames'
 import { motion } from 'framer-motion'
@@ -9,6 +10,7 @@ import Footer from '~/components/Footer'
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import Marquee from 'react-fast-marquee'
 
 const BlowMoulding = () => {
   return (
@@ -59,23 +61,37 @@ const BlowMoulding = () => {
             </div>
             <div className='flex flex-col gap-2' data-aos="fade-left" data-aos-delay="400">
               <div className={classNames('text-2xl border-b-2 pb-2 border-gray-600', PlayfairDisplay.className)}>Customers</div>
-
-              <Slider slidesToShow={4} autoplaySpeed={3000} slidesToScroll={4} autoplay dots>
-                {/* <div><img src="/customer/injection/bapl.png" loading='lazy' alt="" /></div> */}
+              <Marquee direction="left" className='blur-effect'>
+                {[
+                  "/customer/injection/bosch.png",
+                  "/customer/injection/brite.png",
+                  "/customer/injection/dixon.png",
+                  "/customer/injection/eureka.png",
+                  "/customer/injection/exide.png",
+                  "/customer/injection/hyundai.png",
+                  "/customer/injection/samsung.png",
+                  "/customer/injection/tafe.png",
+                  "/customer/injection/tata.png",
+                  "/customer/injection/vestas.png",
+                  "/customer/injection/whirlpool.png"
+                ].map((image, i) => (
+                  <img src={image} className='w-48 mr-12' key={i} />
+                ))}
+                {/* @ts-ignore */}
+              </Marquee>
+              {/* <Slider slidesToShow={4} autoplaySpeed={3000} slidesToScroll={4} autoplay dots>
                 <div><img src="/customer/injection/bosch.png" loading='lazy' alt="" /></div>
                 <div><img src="/customer/injection/brite.png" loading='lazy' alt="" /></div>
                 <div><img src="/customer/injection/dixon.png" loading='lazy' alt="" /></div>
                 <div><img src="/customer/injection/eureka.png" loading='lazy' alt="" /></div>
                 <div><img src="/customer/injection/exide.png" loading='lazy' alt="" /></div>
                 <div><img src="/customer/injection/hyundai.png" loading='lazy' alt="" /></div>
-                {/* <div><img src="/customer/injection/kia.png" loading='lazy' alt="" /></div> */}
-                {/* <div><img src="/customer/injection/ola.png" loading='lazy' alt="" /></div> */}
                 <div><img src="/customer/injection/samsung.png" loading='lazy' alt="" /></div>
                 <div><img src="/customer/injection/tafe.png" loading='lazy' alt="" /></div>
                 <div><img src="/customer/injection/tata.png" loading='lazy' alt="" /></div>
                 <div><img src="/customer/injection/vestas.png" loading='lazy' alt="" /></div>
                 <div><img src="/customer/injection/whirlpool.png" loading='lazy' alt="" /></div>
-              </Slider>
+              </Slider> */}
             </div>
           </div>
         </div>
