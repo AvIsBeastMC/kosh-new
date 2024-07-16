@@ -101,9 +101,9 @@ const Home = () => {
               <AnimatePresence mode='wait'>
                 <motion.div initial={{ opacity: 0 }} key={state} animate={{ opacity: 1 }} exit={{ opacity: 0 }} className="ml-auto w-2/3 self-center">
                   <h2 className={classNames("text-sm text-white mb-2", InterFont.className)}>🧬 OUR BUSINESSES</h2>
-                  <h1 className={classNames(PlayfairDisplayBold.className, 'text-5xl')}>{data.title}</h1>
+                  <h1 className={classNames(PlayfairDisplayBold.className, 'text-5xl mb-6')}>{data.title}</h1>
+                  <div className='mb-6 p-1 rounded-full w-24 bg-[#b9a063]'></div>
 
-                  <div className="text-blue-200 mb-4">________________</div>
 
                   <div className={classNames(JioType.className, "flex flex-row gap-2 w-1/2 mb-8")}>
                     <p className="text-xl">
