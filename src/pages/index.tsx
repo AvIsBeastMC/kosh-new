@@ -161,6 +161,8 @@ const Home = () => {
     <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} transition={{ duration: 1 }}>
       <Head>
         <title>Welcome to Kosh Innovations!</title>
+        <link rel="preload" href="/logo-new-white.png" />
+        <link rel="preload" href="/logo-new.png" />
       </Head>
 
       <TransparentNavbar />
@@ -201,7 +203,7 @@ const Home = () => {
 
         <section style={{
           minHeight: '70vh',
-          backgroundImage: "url('/lycs-architecture-U2BI3GMnSSE-unsplash.jpg')",
+          backgroundImage: "url('/about-us-home.jpg')",
           backgroundRepeat: 'no-repeat',
           backgroundSize: 'cover',
           backgroundPosition: 'center',
@@ -214,7 +216,7 @@ const Home = () => {
             <div className='mb-6 p-1 rounded-full w-24 bg-[#b9a063]'></div>
 
             <p className={classNames(InterFont.className, '')}>
-              Kosh Innovations established in 2008, is recognized for being customer centric and its commitment to innovation and excellence, holding certifications such as IATF169492016, ISO90012015, ISO140012015, ISO 450012018, and SQ MARK.
+              Kosh Innovations established in 2008, is recognized for being customer centric and its commitment to innovation and excellence, holding certifications such as IATF 169492016, ISO 90012015, ISO 140012015, ISO 450012018, and SQ MARK.
               <br /> <br />
               With a presence in six locations across India and a clientele including esteemed names like Ola, Whirlpool, IFB, BOSCH, Samsung,Dixon,TAFE, Exide etc. we aspire to establish ourselves as a
               leading global product supplier orgnisation for consumer durables, automotive,  electronics and green-techindustries.

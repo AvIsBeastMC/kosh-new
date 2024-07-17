@@ -66,7 +66,7 @@ const About = () => {
         }} alt="" />
         <div data-aos='fade-in' data-aos-delay="400" className="absolute bottom-4 left-4 bg-black bg-opacity-50">
           <div className=" text-white p-4 rounded">
-            <h1 className={classNames("text-4xl font-bold", JioType.className)}>Summary</h1>
+            <h1 className={classNames("text-4xl font-bold", ManropeFont.className)}>What We Are</h1>
             <p className="mt-2">
               Kosh Innovations is an IATF16949:2016, ISO9001:2015, ISO14001:2015 & ISO 45001:2018 & SQ MARK certified Company, established in 2008. <br />
               We are an organization, constantly striving for innovative solutions in the field of automotive ,consumer durable and Greentech industries.
@@ -86,9 +86,9 @@ const About = () => {
             <p className="mb-8 leading-relaxed">
               At KOSH, our Mission is to become a leading provider of efficient and customer-centric innovative and sustainable solutions for the automotive and consumer durable industries, setting the standard for excellence in manufacturing.
             </p>
-            <div className="flex justify-center">
+            {/* <div className="flex justify-center">
               <button className="inline-flex text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">Button</button>
-            </div>
+            </div> */}
           </div>
         </div>
       </section>

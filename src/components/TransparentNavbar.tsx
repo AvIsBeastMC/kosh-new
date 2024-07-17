@@ -30,9 +30,9 @@ const TransparentNavbar = () => {
   }
 
   return (
-    <div className={classNames(scroll ? 'bg-gray-200 text-black' : 'text-white', 'transition-colors fixed w-full top-0 z-50')}>
+    <div className={classNames(scroll ? 'bg-gray-100 text-black' : 'text-white', 'transition-colors fixed w-full top-0 z-50')}>
       <div className='flex flex-row py-4 px-12 items-center'>
-        <img src="/logo-new.png" alt="" className='w-72 mr-auto' />
+        <img src={scroll ? '/logo-new.png' : '/logo-new-white.png'} alt="" className='w-72 mr-auto' />
         <div className={classNames('flex gap-8 flex-row  ml-auto', InterFont.className)}>
           <NavLink href="/">Home</NavLink>
           <NavLink href="/about">About</NavLink>
