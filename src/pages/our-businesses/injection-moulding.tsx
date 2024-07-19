@@ -44,19 +44,19 @@ const BlowMoulding = () => {
             <div data-aos="fade-left" className='flex flex-col gap-2'>
               <h1 className={classNames(PlayfairDisplay.className, 'text-2xl text-black')}><span className='border-b-2 pb-2 border-gray-400'>Superior Injection Moulding Products</span></h1>
               <p className={classNames(InterFont.className, ' mt-4')}>
-                {`Our dedication to excellence resonates in the superior quality of our injection molding supplies. Recognizing the distinct needs of each project, Our injection molding production guarantees that every mold created complies with stringent quality and safety standards. Thanks to our superior manufacturing processes and great Team , we are trusted suppliers to both automotive and non-automotive industries.`}
+                {`We are dedicated to providing high-quality injection molding supplies. Each product meets strict quality and safety standards to fit your project's needs. Thanks to our great team and manufacturing process, we are trusted suppliers in the automotive, consumer durables, and Greentech industries.`}
               </p>
             </div>
             <div data-aos="fade-left" data-aos-delay="200" className='flex flex-col gap-2'>
               <h1 className={classNames(PlayfairDisplay.className, 'text-2xl')}><span className='border-b-2 pb-2 border-gray-400'>Wide-ranging Injection Moulding Assembly</span></h1>
               <p className={classNames(InterFont.className, ' mt-4')}>
-                {`Embracing versatility across industries like automotive and healthcare, our injection molding process is adept at meeting unique demands, guaranteeing perfect product performance. We proudly supply renowned companies worldwide, providing battery cases to a leading EV scooter manufacturer, as well as interior and lighting parts for four-wheelers, windmill parts, water-purifier & water-filter products.`}
+                {`Our versatile injection molding process meets the unique demands of various industries, ensuring perfect product performance. We proudly supply renowned companies worldwide with battery cases for leading EV scooters, interior and lighting parts for four-wheelers, windmill components, water purifiers and filters, and parts for washing machines and refrigerators.`}
               </p>
             </div>
             <div data-aos="fade-left" data-aos-delay="300" className='flex flex-col gap-2'>
               <h1 className={classNames(PlayfairDisplay.className, 'text-2xl')}><span className='border-b-2 pb-2 border-gray-400'>Leading-edge Innovations</span></h1>
               <p className={classNames(InterFont.className, ' mt-4')}>
-                {`In our quest for perfection, we allocate resources to adopt high tech solutions, our cutting-edge tools and equipment empower us to uphold precision and efficiency at every stage of the injection molding process.Through advanced technology integration, we ensure optimal performance and quality in every stage of production.`}
+                {`In our quest for perfection, we allocate resources to adopt high tech solutions., our cutting-edge tools and equipment empower us to uphold precision and efficiency at every stage of the injection molding process.Through advanced technology integration, we ensure optimal performance and quality in every stage of production.`}
               </p>
             </div>
             <div className='flex flex-col gap-2' data-aos="fade-left" data-aos-delay="400">

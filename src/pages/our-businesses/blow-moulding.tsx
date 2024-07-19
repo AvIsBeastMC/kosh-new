@@ -43,7 +43,7 @@ const BlowMoulding = () => {
             <div data-aos="fade-left" className='flex flex-col gap-2'>
               <h1 className={classNames(PlayfairDisplay.className, 'text-2xl text-black')}><span className='border-b-2 pb-2 border-gray-400'>Superior Blow Moulding Products</span></h1>
               <p className={classNames(InterFont.className, ' mt-4')}>
-                {`We specialize in crafting premium blow molding products, ensuring superior quality and performance. Our company's expertise and dedication to excellence result in products that surpass industry standards. From design to production, we prioritize precision and innovation to deliver superior blow molding solution. Through our exceptional manufacturing processes and dedicated team, we've earned the trust of automotive and non-automotive industries as reliable suppliers.`}
+                {`We create high-quality blow molding products that exceed industry standards. Our focus on precision and innovation ensures top performance from design to production. Trusted by both automotive and non-automotive industries, our exceptional manufacturing and dedicated team make us reliable suppliers.`}
               </p>
             </div>
             <div data-aos="fade-left" data-aos-delay="200" className='flex flex-col gap-2'>
@@ -55,7 +55,7 @@ const BlowMoulding = () => {
             <div data-aos="fade-left" data-aos-delay="300" className='flex flex-col gap-2'>
               <h1 className={classNames(PlayfairDisplay.className, 'text-2xl')}><span className='border-b-2 pb-2 border-gray-400'>Leading-edge Innovations</span></h1>
               <p className={classNames(InterFont.className, ' mt-4')}>
-                {`In our pursuit of excellence, we invest in cutting-edge technology to enhance our blow molding operations. By leveraging high-tech solutions, we ensure precision and efficiency are maintained throughout the production process, aligning with our commitment to perfection. By integrating advanced technology and prioritizing customer-centric approaches, we guarantee optimal performance and quality throughout every stage of production.`}
+                {`To achieve excellence, we use the latest technology in our blow molding operations. This ensures precision and efficiency in production, staying true to our commitment to perfection. By combining advanced technology with a focus on customer needs, we ensure top performance and quality at every stage of production.`}
               </p>
             </div>
             <div className='flex flex-col gap-2' data-aos="fade-left" data-aos-delay="400">

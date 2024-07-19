@@ -39,13 +39,13 @@ const BlowMoulding = () => {
             <div data-aos="fade-left" className='flex flex-col gap-2'>
               <h1 className={classNames(PlayfairDisplay.className, 'text-2xl text-black')}><span className='border-b-2 pb-2 border-gray-400'>Superior Medicare Products</span></h1>
               <p className={classNames(InterFont.className, ' mt-4')}>
-                {`Our company specializes in providing an exceptional array of nonwoven disposable materials tailored to meet the needs of various industries.We supply a comprehensive range of high-quality nonwoven disposable materials, serving diverse sectors from healthcare facilities to hospitality establishments. With a commitment to excellence, we ensure that our range of disposable materials meets stringent quality standards.`}
+                {`We provide high-quality nonwoven disposable materials for various industries, including healthcare and hospitality. Our commitment to excellence ensures that all our products meet high quality standards.`}
               </p>
             </div>
             <div data-aos="fade-left" data-aos-delay="200" className='flex flex-col gap-2'>
-              <h1 className={classNames(PlayfairDisplay.className, 'text-2xl')}><span className='border-b-2 pb-2 border-gray-400'>Wide-ranging SMT Products</span></h1>
+              <h1 className={classNames(PlayfairDisplay.className, 'text-2xl')}><span className='border-b-2 pb-2 border-gray-400'>Wide-ranging Medicare Products</span></h1>
               <p className={classNames(InterFont.className, ' mt-4')}>
-                {`We provide a range of protective face masks, including PP spun bond, meltblown, ear loop, nose clip wire, surgical cap PPE kits, Surgical gowns and drapes, disposable shoes, Disposable bed sheets and pillowcases, and other composite nonwovens for industrial and packaging applications. These are just a few examples of the many nonwoven disposable products used in the medical field. The specific type of product used depends on the intended application and level of protection required.`}
+                {`We offer a variety of protective face masks, including those with PP spun bond and meltblown materials, as well as ear loops and nose clip wires. Additionally, we offer surgical caps, gowns, and drapes, along with disposable shoes, bed sheets, and pillowcases. These products serve various purposes in the medical field, depending on the required level of protection.`}
               </p>
             </div>
             <div data-aos="fade-left" data-aos-delay="300" className='flex flex-col gap-2'>
