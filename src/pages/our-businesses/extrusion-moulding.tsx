@@ -15,7 +15,7 @@ const BlowMoulding = () => {
   return (
     <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} transition={{ duration: 1 }}>
       <Head>
-        <title>Extrusion Moulding - Our Businesses - Kosh Innovations</title>
+        <title>Corrugated Tube and Tube Extrusion - Our Businesses - Kosh Innovations</title>
       </Head>
 
       <AnotherNavbar />
@@ -26,7 +26,7 @@ const BlowMoulding = () => {
         }} alt="Sample Image" className="w-full h-full object-cover" />
         <div className="absolute w-full top-0 left-0 bottom-0 flex text-white">
           <div className="flex flex-col ml-36 my-auto">
-            <h1 className={classNames(PlayfairDisplayBold.className, 'text-7xl')}>Extrusion Moulding</h1>
+            <h1 className={classNames(PlayfairDisplayBold.className, 'text-7xl')}>Corrugated Tube and Tube Extrusion</h1>
 
             <div className={classNames(PlayfairDisplay.className, "text-3xl mt-4 mb-4")}>our expertise!</div>
           </div>
@@ -34,28 +34,28 @@ const BlowMoulding = () => {
       </div>
 
       <div className={classNames('px-14 py-4 bg-[#fff4dc] text-xl', InterBold.className)}>
-        HOME <span className='text-blue-400'>{">"}</span> OUR BUSINESSES <span className='text-blue-400'>{">"}</span> EXTRUSION MOULDING
+        HOME <span className='text-blue-400'>{">"}</span> OUR BUSINESSES <span className='text-blue-400'>{">"}</span> CORRUGATED TUBE AND TUBE EXTRUSION
       </div>
 
       <div className='py-6 px-2 md:px-24 my-12 '>
         <div className='ml-auto px-16'>
           <div className='text-black ml-auto flex flex-col gap-8 text-md'>
             <div data-aos="fade-left" className='flex flex-col gap-2'>
-              <h1 className={classNames(PlayfairDisplay.className, 'text-2xl text-black')}><span className='border-b-2 pb-2 border-gray-400'>Superior Non-Woven Products</span></h1>
+              <h1 className={classNames(PlayfairDisplay.className, 'text-2xl text-black')}><span className='border-b-2 pb-2 border-gray-400'>Superior Corrugated & Extrusion Molding</span></h1>
               <p className={classNames(InterFont.className, ' mt-4')}>
-                {`At KOSH, experience the difference with our cutting-edge extrusion molding products, meticulously crafted to meet the highest standards of durability and functionality. From design to delivery, our commitment to excellence guarantees that our customers receive top-of-the-line extrusion molding solutions tailored to their specific needs. Our commitment to excellence in manufacturing, combined with our exceptional team, has established us as preferred suppliers across automotive and non-automotive sectors.`}
+                {`At KOSH, we provide top-quality extrusion molding products designed for durability and functionality. From design to delivery, our commitment to excellence ensures our customers get customized solutions. Our superior manufacturing and exceptional team make us preferred suppliers in the automotive and consumer durable sectors.`}
               </p>
             </div>
             <div data-aos="fade-left" data-aos-delay="200" className='flex flex-col gap-2'>
-              <h1 className={classNames(PlayfairDisplay.className, 'text-2xl')}><span className='border-b-2 pb-2 border-gray-400'>Wide-ranging Non-woven Assembly</span></h1>
+              <h1 className={classNames(PlayfairDisplay.className, 'text-2xl')}><span className='border-b-2 pb-2 border-gray-400'>Wide-ranging Corrugated & Extrusion Assembly</span></h1>
               <p className={classNames(InterFont.className, ' mt-4')}>
-                {`Explore the depth of our extrusion molding assembly capabilities, designed to accommodate a broad range of applications across different sectors. From concept to creation, our team is committed to manufacturing extrusion molding products that stand out for their unparalleled craftsmanship and reliability. Thanks to our top-notch manufacturing processes and talented workforce, we are trusted providers of wiring harnesses and interior parts of home appliances`}
+                {`Discover our versatile extrusion molding capabilities, suitable for various sectors. Our team ensures exceptional craftsmanship and reliability from concept to creation. With top-notch manufacturing and a skilled workforce, we are trusted providers of wiring harnesses and parts for home appliances.`}
               </p>
             </div>
             <div data-aos="fade-left" data-aos-delay="300" className='flex flex-col gap-2'>
               <h1 className={classNames(PlayfairDisplay.className, 'text-2xl')}><span className='border-b-2 pb-2 border-gray-400'>Leading-edge Innovations</span></h1>
               <p className={classNames(InterFont.className, ' mt-4')}>
-                {`In our company, we lead with innovation in extrusion technology. Through continuous research and development, we pioneer cutting-edge solutions, setting new industry standards. Our commitment to pushing boundaries ensures advancements in efficiency, precision, and versatility. With our leading-edge innovations, we provide clients with state-of-the-art products and services.`}
+                {`At our company, we lead in extrusion technology innovation. Continuous research and development allow us to set new industry standards, enhancing efficiency, precision, and versatility. Our cutting-edge solutions provide clients with state-of-the-art products and services.`}
               </p>
             </div>
             <div className='flex flex-col gap-2' data-aos="fade-left" data-aos-delay="400">
@@ -73,7 +73,7 @@ const BlowMoulding = () => {
                   "/customer/extrusion/polyhose.png",
                   "/customer/extrusion/samsung.png",
                   "/customer/extrusion/voss.png",
-                  "/customer/extrusion/whilrpool.png"
+                  "/customer/extrusion/whirlpool.png"
                 ]
                   .map((image, i) => (
                     <img src={image} className='w-48 mr-12' key={i} />

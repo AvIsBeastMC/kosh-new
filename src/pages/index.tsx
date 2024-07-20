@@ -216,10 +216,12 @@ const Home = () => {
             <div className='mb-6 p-1 rounded-full w-24 bg-[#b9a063]'></div>
 
             <p className={classNames(InterFont.className, '')}>
-              Kosh Innovations established in 2008, is recognized for being customer centric and its commitment to innovation and excellence, holding certifications such as IATF 16949:2016; 9001:2015; 14001:2015; 45001:2018, and SQ MARK.
+              Kosh Innovations established in 2008, is recognized for being customer centric and its commitment to innovation and excellence, holding
+              certifications such as IATF 16949:2016, ISO 9001:2015, ISO 14001:2015, ISO 45001:2018, and SQ MARK.
               <br /> <br />
-              With a presence in six locations across India and a clientele including esteemed names like Ola, Whirlpool, IFB, BOSCH, Samsung,Dixon,TAFE, Exide etc. we aspire to establish ourselves as a
-              leading global product supplier orgnisation for consumer durables, automotive,  electronics and green-techindustries.
+              With a presence in six locations across India and a clientele including esteemed names like Ola, Whirlpool, IFB, BOSCH, Samsung, Dixon, TAFE,
+              Exide etc. We aspire to establish ourselves as a leading global product supplier organisation for consumer durables, automotive, electronics and
+              green-tech industries.
             </p>
           </div>
         </section>

@@ -69,7 +69,7 @@ const About = () => {
             <h1 className={classNames("text-4xl font-bold", ManropeFont.className)}>What We Are</h1>
             <p className="mt-2">
               Kosh Innovations is an IATF16949:2016, ISO9001:2015, ISO14001:2015 & ISO 45001:2018 & SQ MARK certified Company, established in 2008. <br />
-              We are an organization, constantly striving for innovative solutions in the field of automotive ,consumer durable and Greentech industries.
+              We are an organisation, constantly striving for innovative solutions in the field of automotive ,consumer durable and Greentech industries.
             </p>
           </div>
         </div>
