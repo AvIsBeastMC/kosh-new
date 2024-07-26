@@ -4,7 +4,7 @@ import { motion } from 'framer-motion'
 import Head from 'next/head'
 import React from 'react'
 import AnotherNavbar from '~/components/Navbar'
-import { PlayfairDisplayBold, PlayfairDisplay, InterBold, InterFont } from '../_app'
+import { PlayfairDisplayBold, PlayfairDisplay, InterBold, InterFont, ManropeFont } from '../_app'
 import Footer from '~/components/Footer'
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
@@ -57,6 +57,236 @@ const BlowMoulding = () => {
               <p className={classNames(InterFont.className, ' mt-4')}>
                 {`At our company, we lead in extrusion technology innovation. Continuous research and development allow us to set new industry standards, enhancing efficiency, precision, and versatility. Our cutting-edge solutions provide clients with state-of-the-art products and services.`}
               </p>
+            </div>
+            <div className='flex flex-col gap-2 py-6' data-aos="fade-left" data-aos-delay="400">
+              {/* <h1 className={classNames(PlayfairDisplay.className, 'text-2xl')}><span className='border-b-2 pb-2 border-gray-400'>Before Customers</span></h1> */}
+
+              <section data-aos="fade-left" data-aos-delay="100" className="text-gray-600 bg-gray-200 rounded-md body-font">
+                <div className="container mx-auto flex py-12 md:flex-row flex-col items-center">
+                  <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0">
+                    <img className="object-cover object-center rounded" alt="hero" src="/extrusion/standard-corrugated-tube.png" />
+                  </div>
+                  <div className="lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center">
+                    <h1 className="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">
+                      <span className={classNames(ManropeFont.className, 'font-medium')}>
+                        Standard Corrugated Tube
+                      </span>
+                    </h1>
+                    <div className="mb-8 leading-relaxed flex flex-col gap-2">
+                      <div>
+                        (Fire retardant type) (PP) is used for wiring of electronic equipment of car.
+                        <li>Easy to bend and strong to shock and compression.</li>
+                        <li>It protects multiple bundled electric cables.</li>
+                        <li>Inner diameter size from 3mm to 32mm.</li>
+                        <li>*Fire retardant with self-extinguishing.</li>
+                      </div>
+                      <div>
+                        <b>Applications</b>：corrugated conduit, wiring protection, cable protection, pipe protection, corrugated tube.
+                      </div>
+                      <div>
+                        <b>CDP-B Heatproof temperature</b>：95 degrees over 20000 hours (theoretical value)
+                      </div>
+                      <div>
+                        <b>Freezing resistance</b>：-50 degrees (No deformation, breaking and crack in mandrel bend test after 24 hours)
+                      </div>
+                      <div>
+                        <b>Material</b>: Fire retardant PP corrugated tube
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </section>
+
+              <section data-aos="fade-right" data-aos-delay="100" className="text-gray-600 body-font">
+                <div className="container mx-auto flex py-12 md:flex-row flex-col items-center">
+                  <div className="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left items-center text-center">
+                    <h1 className="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">
+                      <span className={classNames(ManropeFont.className, 'font-medium')}>
+                        White Corrugated Tube
+                      </span>
+                    </h1>
+                    <div className="mb-8 leading-relaxed flex flex-col gap-2">
+                      <div>
+                        It is used for wiring of medical equipment, agricultural machines, special motor vehicle, etc.
+                        <li>Protect multiple bundled electric cables.</li>
+                        <li>Used for in-house wiring with design property.</li>
+                        <li>Easy to bend and strong to shock and compression.</li>
+                        <li>The inner diameter of standard product is 7mm.</li>
+                      </div>
+                      <div>
+                        <b>Applications</b>：corrugated conduit, wiring protection, cable protection, pipe protection, corrugated tube.
+                      </div>
+                      <div>
+                        <b>CDP-B Heatproof temperature</b>：95 degrees over 20000 hours (theoretical value)
+                      </div>
+                      <div>
+                        <b>Freezing resistance</b>：-50 degrees (No deformation, breaking and crack in mandrel bend test after 24 hours)
+                      </div>
+                      <div>
+                        <b>Material</b>: Fire retardant polyethylene
+                      </div>
+                    </div>
+                  </div>
+                  <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
+                    <img className="object-cover object-center rounded" alt="hero" src="/extrusion/white-corrugated-tube.png" />
+                  </div>
+                </div>
+              </section>
+
+              <section data-aos="fade-left" data-aos-delay="100" className="text-gray-600 bg-gray-200 rounded-md body-font">
+                <div className="container mx-auto flex py-12 md:flex-row flex-col items-center">
+                  <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0">
+                    <img className="object-cover object-center rounded" alt="hero" src="/extrusion/white-transparent-corrugated-tube.png" />
+                  </div>
+                  <div className="lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center">
+                    <h1 className="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">
+                      <span className={classNames(ManropeFont.className, 'font-medium')}>
+                        White Transparent Corrugated Tube
+                      </span>
+                    </h1>
+                    <div className="mb-8 leading-relaxed flex flex-col gap-2">
+                      <div>
+                        Cables in the tube are visible that’s why it is used for medical equipment and gaming machine. Also it is soft, so it can be used for narrow place.
+                        <li>Protect multiple bundled electric cables. </li>
+                      </div>
+                      <div>
+                        <b>Applications</b>：corrugated conduit, wiring protection, cable protection, pipe protection, corrugated tube.
+                      </div>
+                      <div>
+                        <b>CDE-N Material</b>: non-fire retardant polyethylene
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </section>
+
+              <section data-aos="fade-right" data-aos-delay="100" className="text-gray-600 body-font">
+                <div className="container mx-auto flex py-12 md:flex-row flex-col items-center">
+                  <div className="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left items-center text-center">
+                    <h1 className="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">
+                      <span className={classNames(ManropeFont.className, 'font-medium')}>
+                        Mouse‐proof corrugated tube
+                      </span>
+                    </h1>
+                    <div className="mb-8 leading-relaxed flex flex-col gap-2">
+                      <div>
+                        Corrugated tube with repellent, mouse will not bite the tube because it taste hot. It is used for wiring of electronic equipment of car.
+                        <li>Protect multiple bundled electric cables. </li>
+                        <li>Easy to bend and strong to shock and compression.</li>
+                        <li>Inner diameter size from 5mm to 32mm.</li>
+                        <li>*Slit type and no slit type are available.</li>
+                      </div>
+                      <div>
+                        <b>Applications</b>：Mouse‐proof corrugate, corrugated conduit, wiring protection, pipe protection, corrugated tube.
+                      </div>
+                      <div>
+                        <b>CDP-K Heatproof temperature</b>：95 degrees over 20000 hours (theoretical value)
+                      </div>
+                      <div>
+                        <b>Freezing resistance</b>：-50 degrees (No deformation, breaking and crack in mandrel bend test after 24 hours)
+                      </div>
+                      <div>
+                        <b>Material</b>: Mouse‐proof PP corrugate Notice：
+                        <li>Because there are individual differences of animals, we cannot warrant the effect of mouse-proof.</li>
+                        <li>Touch the tube in long time or the weak part of the mucosa such as eye will feel hurt.</li>
+                        <li>Please be careful of children</li>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
+                    <img className="object-cover object-center rounded" alt="hero" src="/extrusion/mouseproof-corrugated-tube.png" />
+                  </div>
+                </div>
+              </section>
+
+              <section data-aos="fade-left" data-aos-delay="100" className="text-gray-600 bg-gray-200 rounded-md body-font">
+                <div className="container mx-auto flex py-12 md:flex-row flex-col items-center">
+                  <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0">
+                    <img className="object-cover object-center rounded" alt="hero" src="/extrusion/orange-corrugated-tube.png" />
+                  </div>
+                  <div className="lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center">
+                    <h1 className="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">
+                      <span className={classNames(ManropeFont.className, 'font-medium')}>
+                        Orange Corrugated tube of EV Car
+                      </span>
+                    </h1>
+                    <div className="mb-8 leading-relaxed flex flex-col gap-2">
+                      <div className='mb-4'>
+                        Orange corrugated tube is used for EV、HV、PHV. 
+                        <li>Protect multiple bundled electric cables.</li> 
+                        <li>Easy to bend and strong to shock and compression.</li> 
+                        <li>It is widely used for wiring of electronic equipment of car.</li>
+                      </div>
+                      <div className='mb-4'>
+                        <li><b>Heat‐resistant orange corrugate of EV Applications</b>:</li> EV、HV、PHV power supply wiring protection.
+                        <div className='pl-8 mt-2'>
+                          <li>
+                            Heatproof temperature: 125 degrees over 10000 hours (theoretical value)
+                          </li>
+                          <li>
+                            Freezing resistance: -50 degrees (No deformation, breaking and crack in mandrel bend test after 24 hours)
+                          </li>
+                          <li>
+                            Material: Nylon
+                          </li>
+                        </div>
+                      </div>
+                      <div className='mb-4'>
+                        <li><b>Orange corrugate of EV Applications</b>:</li> EV、HV、PHV power supply wiring protection.
+                        <div className='pl-8 mt-2'>
+                          <li>
+                            Heatproof temperature: 95 degrees over 20000 hours (theoretical value)
+                          </li>
+                          <li>
+                            Freezing resistance: -50 degrees (No deformation, breaking and crack in mandrel bend test after 24 hours)
+                          </li>
+                          <li>
+                            Material: Fire retardant polyethylene
+                          </li>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </section>
+              
+              <section data-aos="fade-right" data-aos-delay="100" className="text-gray-600 body-font">
+                <div className="container mx-auto flex py-12 md:flex-row flex-col items-center">
+                  <div className="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left items-center text-center">
+                    <h1 className="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">
+                      <span className={classNames(ManropeFont.className, 'font-medium')}>
+                        Heat‐resistant corrugated tube
+                      </span>
+                    </h1>
+                    <div className="mb-8 leading-relaxed flex flex-col gap-2">
+                      <div>
+                      (Heat‐resistant type) (PA) Harder than products made by polypropylene. 
+                        <li>Easy to bend and strong to shock and compression. </li>
+                        <li>It is used for wiring of electronic equipment of car.</li>
+                        <li>Inner diameter size size from 3mm to 32mm.</li>
+                        <li>Protect multiple bundled electric cables.</li>
+                      </div>
+                      <div>
+                        <b>Applications</b>：corrugated conduit, wiring protection, cable protection, pipe protection, corrugated tube.
+                      </div>
+                      <div>
+                        <b>CDA-Z Heatproof temperature</b>：125 degrees over 10000 hours (theoretical value)
+                      </div>
+                      <div>
+                        <b>Freezing resistance</b>：-50 degrees (No deformation, breaking and crack in mandrel bend test after 24 hours) 
+                      </div>
+                      <div>
+                        <b>Material</b>: Heat-resistant PA corrugate.
+                        <li>*The photo is polypropylene corrugated tube, the actual product is deep gray.</li>
+                        <li>*Fire retardant with self-extinguishing.</li>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
+                    <img className="object-cover object-center rounded" alt="hero" src="/extrusion/heat-resistant-corrugated-tube.png" />
+                  </div>
+                </div>
+              </section>
             </div>
             <div className='flex flex-col gap-2' data-aos="fade-left" data-aos-delay="400">
               <div className={classNames('text-2xl border-b-2 pb-2 border-gray-600', PlayfairDisplay.className)}>Customers</div>

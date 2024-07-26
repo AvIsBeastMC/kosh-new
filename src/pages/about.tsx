@@ -68,8 +68,8 @@ const About = () => {
           <div className=" text-white p-4 rounded">
             <h1 className={classNames("text-4xl font-bold", ManropeFont.className)}>What We Are</h1>
             <p className="mt-2">
-              Kosh Innovations is an IATF16949:2016, ISO9001:2015, ISO14001:2015 & ISO 45001:2018 & SQ MARK certified Company, established in 2008. <br />
-              We are an organisation, constantly striving for innovative solutions in the field of automotive ,consumer durable and Greentech industries.
+            Kosh Innovations is an IATF 16949:2016, ISO 9001:2015, ISO 14001:2015 & ISO 45001:2018 & SQ MARK certified Company, established in 2008. <br />
+            We are an organisation, constantly striving for innovative solutions in the field of automotive, consumer durable and Greentech industries.
             </p>
           </div>
         </div>
@@ -110,7 +110,7 @@ const About = () => {
       <section style={{
       }} data-aos="fade-left" data-aos-delay="300" className="text-gray-600 body-font border-t-2 border-b-2">
         <div className="container px-5 py-12 mx-auto flex flex-wrap items-center backdrop-blur-sm">
-          <h2 className={classNames("sm:text-3xl text-2xl text-gray-900 font-medium title-font mb-2 md:w-2/5", InterBold.className)}>Our Vision</h2>
+          <h2 className={classNames("sm:text-3xl text-2xl text-gray-900 font-medium title-font mb-2 md:w-2/5", InterBold.className)}>Vision</h2>
           <div className="md:w-3/5 md:pl-6">
             <p className="leading-relaxed text-base">
               To be the global leader in manufacturing, renowned for our
