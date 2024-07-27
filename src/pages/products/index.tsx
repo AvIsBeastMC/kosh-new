@@ -17,15 +17,14 @@ const Products = () => {
 
       <TransparentNavbar />
 
-      <div className="relative w-full bg-black">
-        <img src="https://images.unsplash.com/photo-1532186773960-85649e5cb70b?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" style={{
-          maxHeight: '400px'
-        }} alt="Sample Image" className="opacity-25 w-full h-full object-cover" />
-        <div className="absolute w-full top-0 left-0 bottom-0 flex text-white">
+      <div className="relative  bg-black">
+        <img src="/KOSH_OUR_PRODUCTS.jpg" style={{
+        }} alt="Sample Image" className="w-full h-full object-cover" />
+        {/* <div className="absolute w-full top-0 left-0 bottom-0 flex text-white">
           <div className="flex flex-col ml-36 my-auto">
             <h1 className={classNames(InterBold.className, 'text-7xl')}>Our Product Range</h1>
           </div>
-        </div>
+        </div> */}
       </div>
       <div className={classNames('px-14 py-4 bg-[#fff4dc] text-xl', InterBold.className)}>
         HOME <span className='text-blue-400'>{">"}</span> PRODUCTS
@@ -34,14 +33,14 @@ const Products = () => {
       <div className='w-full md:w-4/5 mx-auto px-0 md:px-14 py-12'>
         <section className="text-gray-600 body-font pb-24">
           <div className="">
-            <table className="mb-12 table-auto w-1/2 text-left whitespace-no-wrap">
+            {/* <table className="mb-12 table-auto w-1/2 text-left whitespace-no-wrap">
               <thead className=''>
                 <tr className={classNames(InterBold.className, 'divide-x-4 divide-white')}>
                   <th className="bg-[#fff4dc] px-4 py-3 title-font tracking-wider font-medium text-gray-900 text-sm rounded-tl rounded-bl">Sleeve Colour</th>
                   <th className={classNames("px-4 py-3 title-font tracking-wider font-medium text-gray-900 text-sm rounded-tl rounded-bl bg-gray-200", InterFont.className)}>Black, Grey, Yellow and White</th>
                 </tr>
               </thead>
-            </table>
+            </table> */}
 
             <div className="flex flex-col w-full mb-6">
               <h1 className={classNames("sm:text-4xl text-3xl font-medium title-font mb-4 text-gray-900", ManropeFont.className)}>Corrugated Non-Automotive</h1>

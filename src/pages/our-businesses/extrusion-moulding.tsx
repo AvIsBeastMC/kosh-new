@@ -59,7 +59,7 @@ const BlowMoulding = () => {
               </p>
             </div>
             <div className='flex flex-col gap-2 py-6' data-aos="fade-left" data-aos-delay="400">
-              <h1 className={classNames(PlayfairDisplay.className, 'text-2xl mb-6')}><span className='border-b-2 pb-2 border-gray-400'>Before Customers</span></h1>
+              <h1 className={classNames(PlayfairDisplay.className, 'text-2xl mb-6')}><span className='border-b-2 pb-2 border-gray-400'>Types of Corrugated Tubes</span></h1>
 
               <section data-aos="fade-left" data-aos-delay="100" className="text-gray-600 bg-gray-200 rounded-md body-font">
                 <div className="container mx-auto flex py-12 md:flex-row flex-col items-center">
