@@ -203,7 +203,7 @@ const Home = () => {
 
         <section style={{
           minHeight: '70vh',
-          backgroundImage: "url('/about-us-home.jpg')",
+          backgroundImage: "url('/home/_DSC5637- About us.jpg')",
           backgroundRepeat: 'no-repeat',
           backgroundSize: 'cover',
           backgroundPosition: 'center',

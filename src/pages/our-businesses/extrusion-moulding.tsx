@@ -21,7 +21,7 @@ const BlowMoulding = () => {
       <AnotherNavbar />
 
       <div className="relative w-full">
-        <img src="/assets/moulding2/manu.jpg" style={{
+        <img src="/home/_DSC5574- Extrusion Moulding.jpg" style={{
           maxHeight: '700px'
         }} alt="Sample Image" className="w-full h-full object-cover" />
         <div className="absolute w-full top-0 left-0 bottom-0 flex text-white">

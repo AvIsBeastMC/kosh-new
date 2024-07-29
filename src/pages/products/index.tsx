@@ -5,8 +5,9 @@ import Head from 'next/head'
 import React from 'react'
 import TransparentNavbar from '~/components/Navbar'
 import { PlayfairDisplayBold, ManropeFont, InterBold, InterFont } from '../_app'
-import { Check, LayoutGrid } from 'lucide-react'
+import { Check, ExternalLink, LayoutGrid, SquareArrowUpRight } from 'lucide-react'
 import Footer from '~/components/Footer'
+import Link from 'next/link'
 
 const Products = () => {
   return (
@@ -26,11 +27,108 @@ const Products = () => {
           </div>
         </div> */}
       </div>
-      <div className={classNames('px-14 py-4 bg-[#fff4dc] text-xl', InterBold.className)}>
+      <div className={classNames('px-4 md:px-14 py-4 bg-[#fff4dc] text-xl', InterBold.className)}>
         HOME <span className='text-blue-400'>{">"}</span> PRODUCTS
       </div>
 
-      <div className='w-full md:w-4/5 mx-auto px-0 md:px-14 py-12'>
+      <div className='w-full px-8 md:w-4/5 mx-auto md:px-14 py-12'>
+        <section className="text-gray-600 body-font">
+          <div className="container pb-20 items-center">
+            <div className="flex flex-col text-center w-full mb-12">
+              <h1 className="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">Our Products</h1>
+              <p className="lg:w-2/3 mx-auto leading-relaxed text-base">{`Whatever cardigan tote bag tumblr hexagon brooklyn asymmetrical gentrify, subway tile poke farm-to-table. Franzen you probably haven't heard of them man bun deep jianbing selfies heirloom.`}</p>
+            </div>
+            <div className="flex flex-wrap -m-4">
+              <div className="lg:w-1/3 sm:w-1/2 p-4">
+                <div className="flex ">
+                  <div className="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white rounded-md">
+                    {/* <h2 className="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1">THE SUBTITLE</h2> */}
+                    <h1 className="title-font text-xl font-bold text-gray-900 mb-2">Injection Moulding</h1>
+                    <Link href="/our-businesses/injection-moulding" className="text-blue-400 mb-3 flex flex-row items-center gap-2">
+                      <ExternalLink />
+                      Visit Page
+                    </Link>
+                    <div className="flex flex-col gap-2 leading-relaxed">
+                      <li>Automotive</li>
+                      <li>Non Automotive</li>
+                      <li>Greentech</li>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="lg:w-1/3 sm:w-1/2 p-4">
+                <div className="flex ">
+                  <div className="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white rounded-md">
+                    {/* <h2 className="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1">THE SUBTITLE</h2> */}
+                    <h1 className="title-font text-xl font-bold text-gray-900 mb-2">Blow Moulding</h1>
+                    <Link href="/our-businesses/blow-moulding" className="text-blue-400 mb-3 flex flex-row items-center gap-2">
+                      <ExternalLink />
+                      Visit Page
+                    </Link>
+                    <div className="flex flex-col gap-2 leading-relaxed">
+                      <li>Automotive</li>
+                      <li>Non Automotive</li>
+                      <li className='invisible'>Greentech</li>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="lg:w-1/3 sm:w-1/2 p-4">
+                <div className="flex ">
+                  <div className="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white rounded-md">
+                    {/* <h2 className="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1">THE SUBTITLE</h2> */}
+                    <h1 className="title-font text-xl font-bold text-gray-900 mb-2">Extrusion Moulding</h1>
+                    <Link href="/our-businesses/extrusion-moulding" className="text-blue-400 mb-3 flex flex-row items-center gap-2">
+                      <ExternalLink />
+                      Visit Page
+                    </Link>
+                    <div className="flex flex-col gap-2 leading-relaxed">
+                      <li>Automotive</li>
+                      <li>Non Automotive</li>
+                      <li>Greentech</li>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="lg:w-1/3 sm:w-1/2 p-4">
+                <div className="flex ">
+                  <div className="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white rounded-md">
+                    {/* <h2 className="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1">THE SUBTITLE</h2> */}
+                    <h1 className="title-font text-xl font-bold text-gray-900 mb-3">Non-woven Packaging</h1>
+                    <Link href="/our-businesses/non-woven-packaging" className="text-blue-400 flex flex-row items-center gap-2">
+                      <ExternalLink />
+                      Visit Page
+                    </Link>
+                  </div>
+                </div>
+              </div>
+              <div className="lg:w-1/3 sm:w-1/2 p-4">
+                <div className="flex ">
+                  <div className="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white rounded-md">
+                    {/* <h2 className="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1">THE SUBTITLE</h2> */}
+                    <h1 className="title-font text-xl font-bold text-gray-900 mb-3">Electronics</h1>
+                    <Link href="/our-businesses/electronics" className="text-blue-400 flex flex-row items-center gap-2">
+                      <ExternalLink />
+                      Visit Page
+                    </Link>
+                  </div>
+                </div>
+              </div>
+              <div className="lg:w-1/3 sm:w-1/2 p-4">
+                <div className="flex ">
+                  <div className="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white rounded-md">
+                    {/* <h2 className="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1">THE SUBTITLE</h2> */}
+                    <h1 className="title-font text-xl font-bold text-gray-900 mb-3">Medicare</h1>
+                    <Link href="/our-businesses/medicare" className="text-blue-400 flex flex-row items-center gap-2">
+                      <ExternalLink />
+                      Visit Page
+                    </Link>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
         <section className="text-gray-600 body-font pb-24">
           <div className="">
             {/* <table className="mb-12 table-auto w-1/2 text-left whitespace-no-wrap">
@@ -146,6 +244,85 @@ const Products = () => {
               </table>
             </div>
           </div>
+
+          <section className="text-gray-600 body-font">
+            <div className="container py-12">
+              <div className="flex flex-wrap gap-y-4">
+                <div className="w-1/2 sm:w-1/3 md:w-1/4">
+                  <div className="relative card p-5">
+                    <img src="/corrugated-non-automotive/4B5A4485.jpg" alt="Random Image 2" className="rounded-md border-2 w-full h-48 object-cover object-center" />
+                    <div className="overlay absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 overlay transition-opacity duration-300">
+                      <h2 className={classNames("text-white text-lg font-medium", InterBold.className)}>
+                        Drain Hose for Front Load WM
+                      </h2>
+                    </div>
+                  </div>
+                </div>
+                <div className="w-1/2 sm:w-1/3 md:w-1/4">
+                  <div className="relative card p-5">
+                    <img src="/corrugated-non-automotive/4B5A4518.jpg" alt="Random Image 2" className="rounded-md border-2 w-full h-48 object-cover object-center" />
+                    <div className="overlay absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 overlay transition-opacity duration-300">
+                      <h2 className={classNames("text-white text-lg font-medium", InterBold.className)}>
+                        Drain Hose
+                      </h2>
+                    </div>
+                  </div>
+                </div>
+                <div className="w-1/2 sm:w-1/3 md:w-1/4">
+                  <div className="relative card p-5">
+                    <img src="/corrugated-non-automotive/4B5A4405.jpg" alt="Random Image 2" className="rounded-md border-2 w-full h-48 object-cover object-center" />
+                    <div className="overlay absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 overlay transition-opacity duration-300">
+                      <h2 className={classNames("text-white text-lg font-medium", InterBold.className)}>
+                        Inlet Hose Assy for  <br />Front load WM
+                      </h2>
+                    </div>
+                  </div>
+                </div>
+                <div className="w-1/2 sm:w-1/3 md:w-1/4">
+                  <div className="relative card p-5">
+                    <img src="/corrugated-non-automotive/4B5A4508.jpg" alt="Random Image 2" className="rounded-md border-2 w-full h-48 object-cover object-center" />
+                    <div className="overlay absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 overlay transition-opacity duration-300">
+                      <h2 className={classNames("text-white text-lg font-medium", InterBold.className)}>
+                        Inlet Hose
+                      </h2>
+                    </div>
+                  </div>
+                </div>
+                <div className='flex flex-row mx-auto w-full items-center justify-center'>
+                  <div className="w-1/2 sm:w-1/3 md:w-1/4">
+                    <div className="relative card p-5">
+                      <img src="/corrugated-non-automotive/4B5A4408.jpg" alt="Random Image 2" className="rounded-md border-2 w-full h-48 object-cover object-center" />
+                      <div className="overlay absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 overlay transition-opacity duration-300">
+                        <h2 className={classNames("text-white text-lg font-medium", InterBold.className)}>
+                          Inlet Hose Assy for Front load WM
+                        </h2>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="w-1/2 sm:w-1/3 md:w-1/4">
+                    <div className="relative card p-5">
+                      <img src="/corrugated-non-automotive/4B5A4509.jpg" alt="Random Image 2" className="rounded-md border-2 w-full h-48 object-cover object-center" />
+                      <div className="overlay absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 overlay transition-opacity duration-300">
+                        <h2 className={classNames("text-white text-lg font-medium", InterBold.className)}>
+                          Tub to DV Hoses
+                        </h2>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="w-1/2 sm:w-1/3 md:w-1/4">
+                    <div className="relative card p-5">
+                      <img src="/corrugated-non-automotive/4B5A4504.jpg" alt="Random Image 2" className="rounded-md border-2 w-full h-48 object-cover object-center" />
+                      <div className="overlay absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 overlay transition-opacity duration-300">
+                        <h2 className={classNames("text-white text-lg font-medium", InterBold.className)}>
+                          Drain Hose for AC Drain
+                        </h2>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
         </section>
         <section className="text-gray-600 body-font">
           <div className="">
@@ -615,6 +792,34 @@ const Products = () => {
               </table>
             </div>
           </div>
+
+          <section className="text-gray-600 body-font">
+            <div className="container py-12">
+              <div className="flex flex-wrap gap-4">
+                <div className="w-1/2 sm:w-1/4 md:w-1/4">
+                  <div className="relative card">
+                    <img src="/products/dispenser_hose.png" alt="Random Image 2" className="rounded-md border-2 w-full h-48 object-cover object-center" />
+                    <div className="overlay absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 overlay transition-opacity duration-300">
+                      <h2 className={classNames("text-white text-lg font-medium", InterBold.className)}>
+                        Dispenser Hose
+                      </h2>
+                    </div>
+                  </div>
+                </div>
+                <div className="w-1/2 sm:w-1/4 md:w-1/4">
+                  <div className="relative card">
+                    <img src="/products/exhaust_hose.png" alt="Random Image 2" className="rounded-md border-2 w-full h-48 object-cover object-center" />
+                    <div className="overlay absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 overlay transition-opacity duration-300">
+                      <h2 className={classNames("text-white text-lg font-medium", InterBold.className)}>
+                        Exhaust Hose
+                      </h2>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </section>
         </section>
       </div>
 
