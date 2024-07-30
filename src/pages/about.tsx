@@ -1,8 +1,10 @@
+/* eslint-disable @typescript-eslint/ban-ts-comment */
+/* eslint-disable @typescript-eslint/no-unsafe-call */
 /* eslint-disable @next/next/no-img-element */
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from 'react-responsive-carousel';
 import classNames from 'classnames'
-import { BarChart4, BookText, FileText, Globe, Globe2, Goal, LineChart, Quote, ScanEye, Sparkles, Trophy } from 'lucide-react'
+import { BarChart4, BookText, CheckIcon, FileText, Globe, Globe2, Goal, LineChart, Quote, ScanEye, Sparkles, Trophy, BarChartBigIcon } from 'lucide-react'
 import React from 'react'
 import Navbar from '~/components/Navbar'
 import { InterBold, InterFont, JioType, ManropeFont, PlayfairDisplayBold } from './_app'
@@ -15,6 +17,10 @@ import "slick-carousel/slick/slick-theme.css";
 import Head from "next/head";
 
 const About = () => {
+  const [hogaya, setHogaya] = React.useState(false);
+  const section1Ref = React.useRef(null);
+  const section2Ref = React.useRef(null);
+
   const awards = [
     {
       images: ['/ecovadis.png'],
@@ -55,10 +61,10 @@ const About = () => {
       <Head>
         <title>About Us - Kosh Innovations</title>
       </Head>
-      
+
       <Navbar />
 
-      <div className="relative bg-black">
+      {/* <div className="relative bg-black">
         <img src="https://images.unsplash.com/photo-1593106410288-caf65eca7c9d?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" className="opacity-50  object-cover object-center" style={{
           width: "100%",
           minHeight: '70vh',
@@ -68,15 +74,81 @@ const About = () => {
           <div className=" text-white p-4 rounded">
             <h1 className={classNames("text-4xl font-bold", ManropeFont.className)}>What We Are</h1>
             <p className="mt-2">
-            Kosh Innovations is an IATF 16949:2016, ISO 9001:2015, ISO 14001:2015 & ISO 45001:2018 & SQ MARK certified Company, established in 2008. <br />
-            We are an organisation, constantly striving for innovative solutions in the field of automotive, consumer durable and Greentech industries.
+              Kosh Innovations is an IATF 16949:2016, ISO 9001:2015, ISO 14001:2015 & ISO 45001:2018 & SQ MARK certified Company, established in 2008. <br />
+              We are an organisation, constantly striving for innovative solutions in the field of automotive, consumer durable and Greentech industries.
             </p>
           </div>
         </div>
+      </div> */}
+
+      <div className="scroll-container">
+        <section ref={section1Ref} className="scroll-section relative min-h-screen flex items-center justify-center bg-cover bg-center" style={{ backgroundImage: 'url(/home/about.jpg)' }}>
+          <div className="absolute inset-0 bg-gradient-to-r from-black via-transparent to-black opacity-70"></div>
+          <div className="relative p-8 max-w-3xl text-center text-white">
+            <h1 className="text-5xl font-extrabold mb-6">What We Are</h1>
+            <p className="text-lg leading-relaxed">
+              Kosh Innovations is an IATF 16949:2016, ISO 9001:2015, ISO 14001:2015 & ISO 45001:2018 & SQ MARK certified Company, established in 2008. <br />
+              We are an organisation, constantly striving for innovative solutions in the field of automotive, consumer durable and Greentech industries.
+            </p>
+            <button className="mt-8 px-6 py-3 bg-white text-black font-semibold rounded-md transition-transform transform hover:scale-105">
+              Learn More
+            </button>
+          </div>
+        </section>
       </div>
 
-      <section data-aos="fade-right" data-aos-delay="300" className="text-gray-600 body-font">
-        <div className="container mx-auto flex px-5 py-12 md:flex-row flex-col items-center">
+      <section className="flex flex-col mx-auto items-center wrapper !bg-[#ffffff]">
+        <div className="container py-[4.5rem]">
+          <div className="flex flex-wrap mx-[-15px] xl:mx-[-35px] lg:mx-[-20px] mt-[-70px] items-center mb-10 xl:!mb-16 lg:!mb-16 md:!mb-16">
+            <div className="xl:w-6/12 lg:w-6/12 w-full flex-[0_0_auto] xl:px-[35px] lg:px-[20px] px-[15px] max-w-full mt-[70px] !relative">
+              <div className="btn btn-circle btn-violet text-white !bg-[#a07cc5] border-[#a07cc5] hover:text-white hover:bg-[#a07cc5] hover:border-[#a07cc5] focus:shadow-[rgba(92,140,229,1)] active:text-white active:bg-[#a07cc5] active:border-[#a07cc5] disabled:text-white disabled:bg-[#a07cc5] disabled:border-[#a07cc5]  pointer-events-none !absolute counter-wrapper  flex-col sm:!hidden xsm:!hidden xl:flex lg:flex md:flex !items-center !justify-center !text-[1rem] !leading-none !p-0 !rounded-[100%]" style={{ top: "50%", left: "50%", transform: "translate(-50%, -50%)", width: "170px", height: "170px" }}>
+                <h3 className="text-white mb-1 mt-[-0.5rem] relative z-[3]"><span className="counter counter-lg text-[calc(1.345rem_+_1.14vw)] tracking-[normal] leading-none mb-2 xl:text-[2.2rem] ">20+</span></h3>
+                <p className="text-[0.8rem] font-medium mb-0">Year Experience</p>
+              </div>
+              <div className="flex flex-wrap mx-[-12.5px] mt-[-25px] items-center">
+                <div className="xl:w-6/12 lg:w-6/12 md:w-6/12 w-full flex-[0_0_auto] px-[12.5px] max-w-full mt-[25px]">
+                  <div className="flex flex-wrap mx-[-15px] xl:mx-[-12.5px] lg:mx-[-12.5px] md:mx-[-12.5px] mt-[-25px]">
+                    <div className="xl:w-10/12 xl:!ml-[16.66666667%] lg:w-10/12 lg:!ml-[16.66666667%] md:w-10/12 md:!ml-[16.66666667%] w-full flex-[0_0_auto] px-[12.5px] max-w-full mt-[25px]">
+                      <figure className="rounded-[0.4rem]"><img className="!rounded-[0.4rem]" src="/slider/1.jpg" alt="image" /></figure>
+                    </div>
+                    <div className="w-full flex-[0_0_auto] px-[12.5px] max-w-full mt-[25px]">
+                      <figure className="rounded-[0.4rem]"><img className="!rounded-[0.4rem]" src="/slider/2.jpg" alt="image" /></figure>
+                    </div>
+                  </div>
+                </div>
+                <div className="xl:w-6/12 lg:w-6/12 md:w-6/12 w-full flex-[0_0_auto] px-[12.5px] max-w-full mt-[25px]">
+                  <figure className="rounded-[0.4rem]"><img className="!rounded-[0.4rem]" src="/slider/3.jpg" alt="image" /></figure>
+                </div>
+              </div>
+            </div>
+            <div className="xl:w-6/12 lg:w-6/12 w-full flex-[0_0_auto] xl:px-[35px] lg:px-[20px] px-[15px] max-w-full mt-[70px]">
+              <h3 className="text-3xl font-bold py-8 flex flex-row items-center gap-3">
+                <BarChartBigIcon />
+                <span className="border-b-2 border-dotted border-gray-400">Vision and Mission</span>
+              </h3>
+              {/* <p className="!mb-7">Nulla vitae elit libero, a pharetra augue. Aenean lacinia bibendum nulla sed consectetur. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Vestibulum id ligula porta felis euismod semper. Vestibulum id ligula.</p> */}
+
+              <div className="flex flex-wrap mx-[-15px] mt-[-15px]">
+                <div className="xl:w-6/12 w-full flex-[0_0_auto] mt-[15px] px-[15px] max-w-full">
+                  <ul className="pl-0 list-none bullet-bg bullet-soft-primary  !mb-0">
+                    <li className="relative pl-6"><span><CheckIcon className="w-4 h-4 text-[0.8rem] leading-none tracking-[normal] !text-center flex justify-center items-center bg-[#eee7f5] text-[#a07cc5] rounded-[100%] top-[0.2rem] before:content-['\e9dd'] before:align-middle before:table-cell absolute left-0"></CheckIcon></span><span>Our Mission is to become a leading provider of efficient and customer-centric innovative and sustainable solutions for the automotive and consumer durable industries, setting the standard for excellence in manufacturing.</span></li>
+                  </ul>
+                </div>
+                <div className="xl:w-6/12 w-full flex-[0_0_auto] mt-[15px] px-[15px] max-w-full">
+                  <ul className="pl-0 list-none bullet-bg bullet-soft-primary  !mb-0">
+                    <li className="relative pl-6"><span><CheckIcon className="w-4 h-4 text-[0.8rem] leading-none tracking-[normal] !text-center flex justify-center items-center bg-[#eee7f5] text-[#a07cc5] rounded-[100%] top-[0.2rem] before:content-['\e9dd'] before:align-middle before:table-cell absolute left-0"></CheckIcon></span><span>To be the global leader in manufacturing, <br /> renowned for our
+                      creativity and innovations.</span></li>
+                    {/* <li className="relative pl-6 mt-3"><span><i className="uil uil-check w-4 h-4 text-[0.8rem] leading-none tracking-[normal] !text-center flex justify-center items-center bg-[#eee7f5] text-[#a07cc5] rounded-[100%] top-[0.2rem] before:content-['\e9dd'] before:align-middle before:table-cell absolute left-0"></i></span><span>Vivamus sagittis lacus augue rutrum maecenas.</span></li> */}
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* <section data-aos="fade-right" data-aos-delay="300" className="text-gray-600 body-font">
+        <div className="container mx-auto flex px-5 pb-12 md:flex-row flex-col items-center">
           <div className="lg:w-2/3 md:w-2/3 w-5/6 mb-10 md:mb-0">
             <img className="object-cover object-center rounded" alt="hero" src="https://images.unsplash.com/photo-1610891015188-5369212db097?q=80&w=1829&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" />
           </div>
@@ -89,9 +161,9 @@ const About = () => {
             {/* <div className="flex justify-center">
               <button className="inline-flex text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">Button</button>
             </div> */}
-          </div>
+          {/* </div>
         </div>
-      </section>
+      </section> */}
 
       {/* <section className="text-gray-600 body-font">
         <div className="container mx-auto flex px-5 py-12 md:flex-row flex-col items-center">
@@ -107,21 +179,22 @@ const About = () => {
         </div>
       </section> */}
 
-      <section style={{
-      }} data-aos="fade-left" data-aos-delay="300" className="text-gray-600 body-font border-t-2 border-b-2">
-        <div className="container px-5 py-12 mx-auto flex flex-wrap items-center backdrop-blur-sm">
-          <h2 className={classNames("sm:text-3xl text-2xl text-gray-900 font-medium title-font mb-2 md:w-2/5", InterBold.className)}>Vision</h2>
-          <div className="md:w-3/5 md:pl-6">
-            <p className="leading-relaxed text-base">
-              To be the global leader in manufacturing, renowned for our
-              creativity and innovations.
-            </p>
-          </div>
-        </div>
-      </section>
+      {/* <section style={{
+      // }} data-aos="fade-left" data-aos-delay="300" className="text-gray-600 body-font border-t-2 border-b-2">
+      //   <div className="container px-5 py-12 mx-auto flex flex-wrap items-center backdrop-blur-sm">
+      //     <h2 className={classNames("sm:text-3xl text-2xl text-gray-900 font-medium title-font mb-2 md:w-2/5", InterBold.className)}>Vision</h2>
+      //     <div className="md:w-3/5 md:pl-6">
+      //       <p className="leading-relaxed text-base">
+      //         To be the global leader in manufacturing, renowned for our
+      //         creativity and innovations.
+      //       </p>
+      //     </div>
+      //   </div>
+      // </section>
+      */}
 
       <section data-aos="fade-down" data-aos-delay="400" className="text-gray-600 body-font">
-        <div className="container px-5 py-12 mx-auto">
+        <div className="container px-5 pb-16 mx-auto">
           <div className="flex flex-col text-center w-full mb-6">
             <h2 className="text-xs text-indigo-500 tracking-widest font-medium title-font mb-1">ABOUT US</h2>
             <h1 className={classNames("sm:text-3xl text-2xl font-medium title-font text-gray-900", InterBold.className)}>awards and recognitions</h1>

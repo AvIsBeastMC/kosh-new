@@ -248,8 +248,8 @@ const Products = () => {
           <section className="text-gray-600 body-font">
             <div className="container py-12">
               <div className="flex flex-wrap gap-y-4">
-                <div className="w-1/2 sm:w-1/3 md:w-1/4">
-                  <div className="relative card p-5">
+                <div className="w-1/2 sm:w-1/3 md:w-1/4 p-5">
+                  <div className="relative card ">
                     <img src="/corrugated-non-automotive/4B5A4485.jpg" alt="Random Image 2" className="rounded-md border-2 w-full h-48 object-cover object-center" />
                     <div className="overlay absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 overlay transition-opacity duration-300">
                       <h2 className={classNames("text-white text-lg font-medium", InterBold.className)}>
@@ -258,8 +258,8 @@ const Products = () => {
                     </div>
                   </div>
                 </div>
-                <div className="w-1/2 sm:w-1/3 md:w-1/4">
-                  <div className="relative card p-5">
+                <div className="w-1/2 sm:w-1/3 md:w-1/4 p-5">
+                  <div className="relative card">
                     <img src="/corrugated-non-automotive/4B5A4518.jpg" alt="Random Image 2" className="rounded-md border-2 w-full h-48 object-cover object-center" />
                     <div className="overlay absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 overlay transition-opacity duration-300">
                       <h2 className={classNames("text-white text-lg font-medium", InterBold.className)}>
@@ -268,8 +268,8 @@ const Products = () => {
                     </div>
                   </div>
                 </div>
-                <div className="w-1/2 sm:w-1/3 md:w-1/4">
-                  <div className="relative card p-5">
+                <div className="w-1/2 sm:w-1/3 md:w-1/4 p-5">
+                  <div className="relative card">
                     <img src="/corrugated-non-automotive/4B5A4405.jpg" alt="Random Image 2" className="rounded-md border-2 w-full h-48 object-cover object-center" />
                     <div className="overlay absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 overlay transition-opacity duration-300">
                       <h2 className={classNames("text-white text-lg font-medium", InterBold.className)}>
@@ -278,8 +278,8 @@ const Products = () => {
                     </div>
                   </div>
                 </div>
-                <div className="w-1/2 sm:w-1/3 md:w-1/4">
-                  <div className="relative card p-5">
+                <div className="w-1/2 sm:w-1/3 md:w-1/4 p-5">
+                  <div className="relative card">
                     <img src="/corrugated-non-automotive/4B5A4508.jpg" alt="Random Image 2" className="rounded-md border-2 w-full h-48 object-cover object-center" />
                     <div className="overlay absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 overlay transition-opacity duration-300">
                       <h2 className={classNames("text-white text-lg font-medium", InterBold.className)}>
@@ -289,18 +289,18 @@ const Products = () => {
                   </div>
                 </div>
                 <div className='flex flex-row mx-auto w-full items-center justify-center'>
-                  <div className="w-1/2 sm:w-1/3 md:w-1/4">
-                    <div className="relative card p-5">
-                      <img src="/corrugated-non-automotive/4B5A4408.jpg" alt="Random Image 2" className="rounded-md border-2 w-full h-48 object-cover object-center" />
-                      <div className="overlay absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 overlay transition-opacity duration-300">
-                        <h2 className={classNames("text-white text-lg font-medium", InterBold.className)}>
-                          Inlet Hose Assy for Front load WM
-                        </h2>
-                      </div>
+                <div className="w-1/2 sm:w-1/3 md:w-1/4 p-5">
+                  <div className="relative card">
+                    <img src="/corrugated-non-automotive/4B5A4408.jpg" alt="Random Image 2" className="rounded-md border-2 w-full h-48 object-cover object-center" />
+                    <div className="overlay absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 overlay transition-opacity duration-300">
+                      <h2 className={classNames("text-white text-lg font-medium", InterBold.className)}>
+                        Inlet Hose Assy <br /> for Front Load WM
+                      </h2>
                     </div>
                   </div>
-                  <div className="w-1/2 sm:w-1/3 md:w-1/4">
-                    <div className="relative card p-5">
+                </div>
+                  <div className="w-1/2 sm:w-1/3 md:w-1/4 p-5">
+                    <div className="relative card">
                       <img src="/corrugated-non-automotive/4B5A4509.jpg" alt="Random Image 2" className="rounded-md border-2 w-full h-48 object-cover object-center" />
                       <div className="overlay absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 overlay transition-opacity duration-300">
                         <h2 className={classNames("text-white text-lg font-medium", InterBold.className)}>
@@ -309,8 +309,8 @@ const Products = () => {
                       </div>
                     </div>
                   </div>
-                  <div className="w-1/2 sm:w-1/3 md:w-1/4">
-                    <div className="relative card p-5">
+                  <div className="w-1/2 sm:w-1/3 md:w-1/4 p-5">
+                    <div className="relative card">
                       <img src="/corrugated-non-automotive/4B5A4504.jpg" alt="Random Image 2" className="rounded-md border-2 w-full h-48 object-cover object-center" />
                       <div className="overlay absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 overlay transition-opacity duration-300">
                         <h2 className={classNames("text-white text-lg font-medium", InterBold.className)}>

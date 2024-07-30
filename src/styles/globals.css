@@ -9,6 +9,7 @@ body {
   scroll-snap-points-y: repeat(100vh);
   scroll-snap-type: y mandatory; */
 }
+
 /* 
 .sections {
   scroll-snap-type: mandatory;
@@ -26,30 +27,42 @@ body {
   padding: 20px;
   text-align: center;
 }
+
 .blur-effect::before,
-  .blur-effect::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    width: 20%;
-    height: 100%;
-    z-index: 2;
-    pointer-events: none;
-  }
+.blur-effect::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  width: 20%;
+  height: 100%;
+  z-index: 2;
+  pointer-events: none;
+}
 
-  .blur-effect::before {
-    left: 0;
-    background: linear-gradient(to right, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0));
-  }
+.blur-effect::before {
+  left: 0;
+  background: linear-gradient(to right, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0));
+}
 
-  .blur-effect::after {
-    right: 0;
-    background: linear-gradient(to left, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0));
-  }
+.blur-effect::after {
+  right: 0;
+  background: linear-gradient(to left, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0));
+}
 
-  .card:hover .overlay {
-    opacity: 1;
-  }
-  .overlay {
-    @apply rounded-md;
-  }
+.card:hover .overlay {
+  opacity: 1;
+}
+
+.overlay {
+  @apply rounded-md;
+}
+
+.scroll-container {
+  scroll-snap-type: y mandatory;
+  /* Enable scroll snap on the y-axis */
+}
+
+.scroll-section {
+  scroll-snap-align: center;
+  /* Snap to the start of each section */
+}
