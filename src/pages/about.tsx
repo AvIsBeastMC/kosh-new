@@ -167,7 +167,8 @@ const About = () => {
               Vision
             </h1>
             <p className="text-gray-700 text-lg lg:text-xl">
-              Our Vision is to lead the industry with cutting-edge technology and innovative solutions that enhance the lives of our customers and drive sustainable progress.
+            To be the global leader in manufacturing, <br />
+            renowned for our creativity and innovations.
             </p>
           </div>
         </div>
@@ -181,7 +182,7 @@ const About = () => {
               Mission
             </h1>
             <p className="text-gray-700 text-lg lg:text-xl">
-              Our Mission is to provide exceptional services and products that are sustainable, innovative, and tailored to our customers’ needs, setting the standard for excellence in our industry.
+              Our Mission is to become a leading provider of efficient and customer-centric innovative and sustainable solutions for the automotive and consumer durable industries, setting the standard for excellence in manufacturing.
             </p>
           </div>
         </div>
