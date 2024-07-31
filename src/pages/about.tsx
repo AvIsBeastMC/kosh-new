@@ -97,7 +97,7 @@ const About = () => {
         </section>
       </div>
 
-      <section className="flex flex-col mx-auto items-center wrapper !bg-[#ffffff]">
+      {/* <section className="flex flex-col mx-auto items-center wrapper !bg-[#ffffff]">
         <div className="container py-[4.5rem]">
           <div className="flex flex-wrap mx-[-15px] xl:mx-[-35px] lg:mx-[-20px] mt-[-70px] items-center mb-10 xl:!mb-16 lg:!mb-16 md:!mb-16">
             <div className="xl:w-6/12 lg:w-6/12 w-full flex-[0_0_auto] xl:px-[35px] lg:px-[20px] px-[15px] max-w-full mt-[70px] !relative">
@@ -126,7 +126,7 @@ const About = () => {
                 <BarChartBigIcon />
                 <span className="border-b-2 border-dotted border-gray-400">Vision and Mission</span>
               </h3>
-              {/* <p className="!mb-7">Nulla vitae elit libero, a pharetra augue. Aenean lacinia bibendum nulla sed consectetur. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Vestibulum id ligula porta felis euismod semper. Vestibulum id ligula.</p> */}
+              <p className="!mb-7">Nulla vitae elit libero, a pharetra augue. Aenean lacinia bibendum nulla sed consectetur. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Vestibulum id ligula porta felis euismod semper. Vestibulum id ligula.</p>
 
               <div className="flex flex-wrap mx-[-15px] mt-[-15px]">
                 <div className="xl:w-6/12 w-full flex-[0_0_auto] mt-[15px] px-[15px] max-w-full">
@@ -138,14 +138,54 @@ const About = () => {
                   <ul className="pl-0 list-none bullet-bg bullet-soft-primary  !mb-0">
                     <li className="relative pl-6"><span><CheckIcon className="w-4 h-4 text-[0.8rem] leading-none tracking-[normal] !text-center flex justify-center items-center bg-[#eee7f5] text-[#a07cc5] rounded-[100%] top-[0.2rem] before:content-['\e9dd'] before:align-middle before:table-cell absolute left-0"></CheckIcon></span><span>To be the global leader in manufacturing, <br /> renowned for our
                       creativity and innovations.</span></li>
-                    {/* <li className="relative pl-6 mt-3"><span><i className="uil uil-check w-4 h-4 text-[0.8rem] leading-none tracking-[normal] !text-center flex justify-center items-center bg-[#eee7f5] text-[#a07cc5] rounded-[100%] top-[0.2rem] before:content-['\e9dd'] before:align-middle before:table-cell absolute left-0"></i></span><span>Vivamus sagittis lacus augue rutrum maecenas.</span></li> */}
+                    <li className="relative pl-6 mt-3"><span><i className="uil uil-check w-4 h-4 text-[0.8rem] leading-none tracking-[normal] !text-center flex justify-center items-center bg-[#eee7f5] text-[#a07cc5] rounded-[100%] top-[0.2rem] before:content-['\e9dd'] before:align-middle before:table-cell absolute left-0"></i></span><span>Vivamus sagittis lacus augue rutrum maecenas.</span></li>
                   </ul>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
+
+      <div className="relative h-screen mb-12">
+        {/* Background Image */}
+        <div className="absolute inset-0">
+          <img
+            src="/about/vision-mission.jpg" // Replace with your image URL
+            alt="Background"
+            className="object-cover w-full h-full"
+          />
+          <div className="absolute inset-0 bg-black opacity-50"></div>
+        </div>
+
+        {/* Vision Section */}
+        <div className="relative flex items-center justify-center h-1/2" data-aos="fade-down">
+          {/* <div className="absolute inset-0 bg-gradient-to-r from-black via-transparent to-transparent transform -skew-y-6"></div> */}
+          <div className="rounded-md relative z-10 p-10 bg-white bg-opacity-80 backdrop-blur-md w-full max-w-lg lg:max-w-xl">
+            <h1 className="text-gray-900 text-4xl lg:text-5xl font-bold mb-4 flex flex-row items-center gap-3">
+              <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" className="lucide lucide-chart-line"><path d="M3 3v16a2 2 0 0 0 2 2h16" /><path d="m19 9-5 5-4-4-3 3" /></svg>
+              Vision
+            </h1>
+            <p className="text-gray-700 text-lg lg:text-xl">
+              Our Vision is to lead the industry with cutting-edge technology and innovative solutions that enhance the lives of our customers and drive sustainable progress.
+            </p>
+          </div>
+        </div>
+
+        {/* Mission Section */}
+        <div className="relative flex items-center justify-center h-1/2" data-aos="fade-up">
+          {/* <div className="absolute inset-0 bg-gradient-to-l from-black via-transparent to-transparent transform skew-y-6"></div> */}
+          <div className="rounded-md relative z-10 p-10 bg-white bg-opacity-80 backdrop-blur-md w-full max-w-lg lg:max-w-xl">
+            <h1 className="text-gray-900 text-4xl lg:text-5xl font-bold mb-4 flex flex-row items-center gap-3">
+              <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" className="lucide lucide-earth"><path d="M21.54 15H17a2 2 0 0 0-2 2v4.54" /><path d="M7 3.34V5a3 3 0 0 0 3 3a2 2 0 0 1 2 2c0 1.1.9 2 2 2a2 2 0 0 0 2-2c0-1.1.9-2 2-2h3.17" /><path d="M11 21.95V18a2 2 0 0 0-2-2a2 2 0 0 1-2-2v-1a2 2 0 0 0-2-2H2.05" /><circle cx="12" cy="12" r="10" /></svg>
+              Mission
+            </h1>
+            <p className="text-gray-700 text-lg lg:text-xl">
+              Our Mission is to provide exceptional services and products that are sustainable, innovative, and tailored to our customers’ needs, setting the standard for excellence in our industry.
+            </p>
+          </div>
+        </div>
+      </div>
 
       {/* <section data-aos="fade-right" data-aos-delay="300" className="text-gray-600 body-font">
         <div className="container mx-auto flex px-5 pb-12 md:flex-row flex-col items-center">
@@ -161,7 +201,7 @@ const About = () => {
             {/* <div className="flex justify-center">
               <button className="inline-flex text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">Button</button>
             </div> */}
-          {/* </div>
+      {/* </div>
         </div>
       </section> */}
 

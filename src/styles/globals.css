@@ -66,3 +66,12 @@ body {
   scroll-snap-align: center;
   /* Snap to the start of each section */
 }
+
+/* Custom styles for unique shape cuts */
+.bg-gradient-to-r {
+  clip-path: polygon(0 0, 100% 0, 80% 100%, 0% 100%);
+}
+
+.bg-gradient-to-l {
+  clip-path: polygon(20% 0, 100% 0, 100% 100%, 0% 100%);
+}
