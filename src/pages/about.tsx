@@ -159,16 +159,15 @@ const About = () => {
         </div>
 
         {/* Vision Section */}
-        <div className="relative flex items-center justify-center h-1/2" data-aos="fade-down">
-          {/* <div className="absolute inset-0 bg-gradient-to-r from-black via-transparent to-transparent transform -skew-y-6"></div> */}
+        <div className="relative flex items-center justify-center h-1/2" data-aos="fade-up">
+          {/* <div className="absolute inset-0 bg-gradient-to-l from-black via-transparent to-transparent transform skew-y-6"></div> */}
           <div className="rounded-md relative z-10 p-10 bg-white bg-opacity-80 backdrop-blur-md w-full max-w-lg lg:max-w-xl">
-            <h1 className="text-gray-900 text-4xl lg:text-5xl font-bold mb-4 flex flex-row items-center gap-3">
-              <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" className="lucide lucide-chart-line"><path d="M3 3v16a2 2 0 0 0 2 2h16" /><path d="m19 9-5 5-4-4-3 3" /></svg>
-              Vision
+            <h1 className={classNames("text-gray-900 text-4xl lg:text-5xl font-bold mb-6 flex flex-row items-center gap-3", InterBold.className)}>
+              <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" className="lucide lucide-earth"><path d="M21.54 15H17a2 2 0 0 0-2 2v4.54" /><path d="M7 3.34V5a3 3 0 0 0 3 3a2 2 0 0 1 2 2c0 1.1.9 2 2 2a2 2 0 0 0 2-2c0-1.1.9-2 2-2h3.17" /><path d="M11 21.95V18a2 2 0 0 0-2-2a2 2 0 0 1-2-2v-1a2 2 0 0 0-2-2H2.05" /><circle cx="12" cy="12" r="10" /></svg>
+              Mission
             </h1>
-            <p className="text-gray-700 text-lg lg:text-xl">
-            To be the global leader in manufacturing, <br />
-            renowned for our creativity and innovations.
+            <p className={classNames("text-gray-700 text-lg lg:text-xl", ManropeFont.className)}>
+              Our Mission is to become a leading provider of efficient and customer-centric innovative and sustainable solutions for the automotive and consumer durable industries, setting the standard for excellence in manufacturing.
             </p>
           </div>
         </div>
@@ -176,13 +175,14 @@ const About = () => {
         {/* Mission Section */}
         <div className="relative flex items-center justify-center h-1/2" data-aos="fade-up">
           {/* <div className="absolute inset-0 bg-gradient-to-l from-black via-transparent to-transparent transform skew-y-6"></div> */}
-          <div className="rounded-md relative z-10 p-10 bg-white bg-opacity-80 backdrop-blur-md w-full max-w-lg lg:max-w-xl">
-            <h1 className="text-gray-900 text-4xl lg:text-5xl font-bold mb-4 flex flex-row items-center gap-3">
-              <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" className="lucide lucide-earth"><path d="M21.54 15H17a2 2 0 0 0-2 2v4.54" /><path d="M7 3.34V5a3 3 0 0 0 3 3a2 2 0 0 1 2 2c0 1.1.9 2 2 2a2 2 0 0 0 2-2c0-1.1.9-2 2-2h3.17" /><path d="M11 21.95V18a2 2 0 0 0-2-2a2 2 0 0 1-2-2v-1a2 2 0 0 0-2-2H2.05" /><circle cx="12" cy="12" r="10" /></svg>
-              Mission
+          <div className="card2 relative z-10 p-10 bg-white bg-opacity-80 backdrop-blur-md w-1/6">
+            <h1 className={classNames("text-gray-900 text-4xl lg:text-5xl font-bold mb-6 flex flex-row items-center gap-3", InterBold.className)}>
+            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" className="lucide lucide-chart-no-axes-combined"><path d="M12 16v5"/><path d="M16 14v7"/><path d="M20 10v11"/><path d="m22 3-8.646 8.646a.5.5 0 0 1-.708 0L9.354 8.354a.5.5 0 0 0-.707 0L2 15"/><path d="M4 18v3"/><path d="M8 14v7"/></svg>
+              Vision
             </h1>
-            <p className="text-gray-700 text-lg lg:text-xl">
-              Our Mission is to become a leading provider of efficient and customer-centric innovative and sustainable solutions for the automotive and consumer durable industries, setting the standard for excellence in manufacturing.
+            <p className={classNames("text-gray-700 text-lg lg:text-xl", ManropeFont.className)}>
+              To be the global leader in manufacturing, <br />
+              renowned for our creativity and innovations.
             </p>
           </div>
         </div>

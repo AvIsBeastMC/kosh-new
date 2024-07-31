@@ -75,3 +75,7 @@ body {
 .bg-gradient-to-l {
   clip-path: polygon(20% 0, 100% 0, 100% 100%, 0% 100%);
 }
+
+.card2 {
+  border-radius: 100px 100px 30px 30px / 60px 60px 30px 30px
+}
