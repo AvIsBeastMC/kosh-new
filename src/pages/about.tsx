@@ -175,15 +175,22 @@ const About = () => {
         {/* Mission Section */}
         <div className="relative flex items-center justify-center h-1/2" data-aos="fade-up">
           {/* <div className="absolute inset-0 bg-gradient-to-l from-black via-transparent to-transparent transform skew-y-6"></div> */}
-          <div className="card2 relative z-10 p-10 bg-white bg-opacity-80 backdrop-blur-md w-1/6">
-            <h1 className={classNames("text-gray-900 text-4xl lg:text-5xl font-bold mb-6 flex flex-row items-center gap-3", InterBold.className)}>
+          <div className="mx-auto flex justify-center items-center flex-col relative z-10 p-4 bg-white bg-opacity-80 backdrop-blur-md rounded-md w-1/6 clip-card">
+          <div className="border-2 p-6 border-[#b9a063] border-dotted flex flex-row">
+            <div className="flex flex-col">
+            <h1 className={classNames("text-gray-900 text-4xl lg:text-5xl font-bold flex flex-row items-center gap-3", InterBold.className)}>
             <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" className="lucide lucide-chart-no-axes-combined"><path d="M12 16v5"/><path d="M16 14v7"/><path d="M20 10v11"/><path d="m22 3-8.646 8.646a.5.5 0 0 1-.708 0L9.354 8.354a.5.5 0 0 0-.707 0L2 15"/><path d="M4 18v3"/><path d="M8 14v7"/></svg>
               Vision
             </h1>
-            <p className={classNames("text-gray-700 text-lg lg:text-xl", ManropeFont.className)}>
-              To be the global leader in manufacturing, <br />
+            <div className='flex mx-auto mt-3 mb-4 p-1 rounded-full w-24 bg-[#b9a063]'></div>
+            <p className={classNames("text-gray-700 text-lg lg:text-md", ManropeFont.className)}>
+              To be the global leader in manufacturing,
               renowned for our creativity and innovations.
             </p>
+
+            </div>
+
+          </div>
           </div>
         </div>
       </div>
