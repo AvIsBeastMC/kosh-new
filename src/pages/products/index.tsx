@@ -16,8 +16,6 @@ const Products = () => {
         <title>Products at Kosh Innovations</title>
       </Head>
 
-      <TransparentNavbar />
-
       <div className="relative  bg-black">
         <img src="/KOSH_OUR_PRODUCTS.jpg" style={{
         }} alt="Sample Image" className="w-full h-full object-cover" />
