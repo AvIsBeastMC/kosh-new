@@ -36,7 +36,7 @@ const BlowMoulding = () => {
   return (
     <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} transition={{ duration: 1 }}>
       <Head>
-        <title>SMT-EMS (Electronic Mnaufacturing Service) - Our Businesses - Kosh Innovations</title>
+        <title>SMT-EMS (Electronic Manufacturing Service) - Our Businesses - Kosh Innovations</title>
       </Head>
 
       <AnotherNavbar />
