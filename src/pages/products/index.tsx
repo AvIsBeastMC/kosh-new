@@ -8,6 +8,7 @@ import { PlayfairDisplayBold, ManropeFont, InterBold, InterFont } from '../_app'
 import { Check, ExternalLink, LayoutGrid, SquareArrowUpRight } from 'lucide-react'
 import Footer from '~/components/Footer'
 import Link from 'next/link'
+import TransparentNavbar2 from '~/components/TransparentNavbar2'
 
 const Products = () => {
   return (
@@ -16,9 +17,11 @@ const Products = () => {
         <title>Products at Kosh Innovations</title>
       </Head>
 
-      <div className="relative  bg-black">
-        <img src="/KOSH_OUR_PRODUCTS.jpg" style={{
-        }} alt="Sample Image" className="w-full h-full object-cover" />
+      <TransparentNavbar2 />
+
+      <div className="relative">
+        <img src="/PRODUCT-CATALOGUE.png" style={{
+        }} alt="Sample Image" className="py-12 px-12 w-full h-full object-cover" />
         {/* <div className="absolute w-full top-0 left-0 bottom-0 flex text-white">
           <div className="flex flex-col ml-36 my-auto">
             <h1 className={classNames(InterBold.className, 'text-7xl')}>Our Product Range</h1>
@@ -30,7 +33,7 @@ const Products = () => {
       </div>
 
       <div className='w-full px-8 md:w-4/5 mx-auto md:px-14 py-12'>
-        <section className="text-gray-600 body-font">
+        {/* <section className="text-gray-600 body-font">
           <div className="container pb-20 items-center">
             <div className="flex flex-col text-center w-full mb-12">
               <h1 className="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">Our Products</h1>
@@ -40,7 +43,7 @@ const Products = () => {
               <div className="lg:w-1/3 sm:w-1/2 p-4">
                 <div className="flex ">
                   <div className="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white rounded-md">
-                    {/* <h2 className="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1">THE SUBTITLE</h2> */}
+                    {/* <h2 className="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1">THE SUBTITLE</h2>
                     <h1 className="title-font text-xl font-bold text-gray-900 mb-2">Injection Moulding</h1>
                     <Link href="/our-businesses/injection-moulding" className="text-blue-400 mb-3 flex flex-row items-center gap-2">
                       <ExternalLink />
@@ -57,7 +60,6 @@ const Products = () => {
               <div className="lg:w-1/3 sm:w-1/2 p-4">
                 <div className="flex ">
                   <div className="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white rounded-md">
-                    {/* <h2 className="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1">THE SUBTITLE</h2> */}
                     <h1 className="title-font text-xl font-bold text-gray-900 mb-2">Blow Moulding</h1>
                     <Link href="/our-businesses/blow-moulding" className="text-blue-400 mb-3 flex flex-row items-center gap-2">
                       <ExternalLink />
@@ -74,7 +76,6 @@ const Products = () => {
               <div className="lg:w-1/3 sm:w-1/2 p-4">
                 <div className="flex ">
                   <div className="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white rounded-md">
-                    {/* <h2 className="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1">THE SUBTITLE</h2> */}
                     <h1 className="title-font text-xl font-bold text-gray-900 mb-2">Extrusion Moulding</h1>
                     <Link href="/our-businesses/extrusion-moulding" className="text-blue-400 mb-3 flex flex-row items-center gap-2">
                       <ExternalLink />
@@ -91,7 +92,6 @@ const Products = () => {
               <div className="lg:w-1/3 sm:w-1/2 p-4">
                 <div className="flex ">
                   <div className="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white rounded-md">
-                    {/* <h2 className="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1">THE SUBTITLE</h2> */}
                     <h1 className="title-font text-xl font-bold text-gray-900 mb-3">Non-woven Packaging</h1>
                     <Link href="/our-businesses/non-woven-packaging" className="text-blue-400 flex flex-row items-center gap-2">
                       <ExternalLink />
@@ -103,7 +103,6 @@ const Products = () => {
               <div className="lg:w-1/3 sm:w-1/2 p-4">
                 <div className="flex ">
                   <div className="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white rounded-md">
-                    {/* <h2 className="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1">THE SUBTITLE</h2> */}
                     <h1 className="title-font text-xl font-bold text-gray-900 mb-3">Electronics</h1>
                     <Link href="/our-businesses/electronics" className="text-blue-400 flex flex-row items-center gap-2">
                       <ExternalLink />
@@ -115,7 +114,6 @@ const Products = () => {
               <div className="lg:w-1/3 sm:w-1/2 p-4">
                 <div className="flex ">
                   <div className="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white rounded-md">
-                    {/* <h2 className="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1">THE SUBTITLE</h2> */}
                     <h1 className="title-font text-xl font-bold text-gray-900 mb-3">Medicare</h1>
                     <Link href="/our-businesses/medicare" className="text-blue-400 flex flex-row items-center gap-2">
                       <ExternalLink />
@@ -126,7 +124,7 @@ const Products = () => {
               </div>
             </div>
           </div>
-        </section>
+        </section> */}
         <section className="text-gray-600 body-font pb-24">
           <div className="">
             {/* <table className="mb-12 table-auto w-1/2 text-left whitespace-no-wrap">

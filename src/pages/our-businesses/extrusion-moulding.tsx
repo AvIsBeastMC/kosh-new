@@ -22,7 +22,6 @@ const BlowMoulding = () => {
 
       <div className="relative w-full">
         <img src="/home/_DSC5574- Extrusion Moulding.jpg" style={{
-          maxHeight: '700px'
         }} alt="Sample Image" className="w-full h-full object-cover" />
         <div className="absolute w-full top-0 left-0 bottom-0 flex text-white">
           <div className="flex flex-col ml-36 my-auto">
