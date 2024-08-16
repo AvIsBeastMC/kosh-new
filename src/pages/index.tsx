@@ -174,10 +174,10 @@ const Home = () => {
               <div key={i} className="w-full relative bg-black">
                 <img src={image} style={{
                   maxHeight: '100vh'
-                }} alt="Sample Image" className="w-full h-full object-cover opacity-35" />
+                }} alt="Sample Image" className="w-full h-full object-cover opacity-65" />
                 <div className="absolute w-full top-0 left-0 bottom-0 flex text-white">
-                  <div className={classNames("flex flex-col gap-4 mx-auto w-2/3 text-md my-auto", InterFont.className)}>
-                    <h1 className={classNames('text-6xl', InterBold.className)}>
+                  <div className={classNames("drop-shadow-2xl flex flex-col gap-4 mx-auto w-2/3 text-md my-auto", InterFont.className)}>
+                    <h1 className={classNames('text-6xl drop-shadow-2xl', InterBold.className)}>
                       {i == 0 ? 'Customer Centric Leadership' : i == 1 ? 'Driving innovative solutions' : i == 2 ? 'Excellence in Action: Advanced Manufacturing' : i == 3 ? 'Growth mindset' : ''}
                     </h1>
 
@@ -308,7 +308,7 @@ const Home = () => {
         <section className='px-12 py-4 mt-8'>
           <h1 className={classNames(InterBold.className, 'text-3xl mx-auto justify-center flex flex-row text-center items-center gap-2')}>
             <BookText />
-            <span className='border-b-2 border-yellow-200'>Our <span className='text-yellow-400'>History</span></span>
+            <span className='border-b-2 border-[#b9a063]'>Our <span className='text-[#b9a063]'>History</span></span>
           </h1>
 
           <section data-aos="fade-down" data-aos-delay="200" data-aos-once="false" className="text-gray-600 body-font overflow-hidden">
@@ -320,7 +320,7 @@ const Home = () => {
                       <div className="h-full w-10 absolute inset-0 flex items-center justify-center">
                         <div className="h-full w-1 bg-gray-200 pointer-events-none"></div>
                       </div>
-                      <div className="flex-shrink-0 w-10 h-10 rounded-full bg-yellow-500 inline-flex items-center justify-center text-white relative z-10">
+                      <div className="flex-shrink-0 w-10 h-10 rounded-full bg-[#b9a063] inline-flex items-center justify-center text-white relative z-10">
                         <Sparkles size={20} />
                       </div>
                       <div className="flex-grow pl-4">
@@ -334,7 +334,7 @@ const Home = () => {
                       <div className="h-full w-10 absolute inset-0 flex items-center justify-center">
                         <div className="h-full w-1 bg-gray-200 pointer-events-none"></div>
                       </div>
-                      <div className="flex-shrink-0 w-10 h-10 rounded-full bg-yellow-500 inline-flex items-center justify-center text-white relative z-10">
+                      <div className="flex-shrink-0 w-10 h-10 rounded-full bg-[#b9a063] inline-flex items-center justify-center text-white relative z-10">
                         <Sparkles size={20} />
                       </div>
                       <div className="flex-grow pl-4">
@@ -348,7 +348,7 @@ const Home = () => {
                       <div className="h-full w-10 absolute inset-0 flex items-center justify-center">
                         <div className="h-full w-1 bg-gray-200 pointer-events-none"></div>
                       </div>
-                      <div className="flex-shrink-0 w-10 h-10 rounded-full bg-yellow-500 inline-flex items-center justify-center text-white relative z-10">
+                      <div className="flex-shrink-0 w-10 h-10 rounded-full bg-[#b9a063] inline-flex items-center justify-center text-white relative z-10">
                         <Sparkles size={20} />
                       </div>
                       <div className="flex-grow pl-4">
@@ -362,7 +362,7 @@ const Home = () => {
                       <div className="h-full w-10 absolute inset-0 flex items-center justify-center">
                         <div className="h-full w-1 bg-gray-200 pointer-events-none"></div>
                       </div>
-                      <div className="flex-shrink-0 w-10 h-10 rounded-full bg-yellow-500 inline-flex items-center justify-center text-white relative z-10">
+                      <div className="flex-shrink-0 w-10 h-10 rounded-full bg-[#b9a063] inline-flex items-center justify-center text-white relative z-10">
                         <Sparkles size={20} />
                       </div>
                       <div className="flex-grow pl-4">
@@ -376,7 +376,7 @@ const Home = () => {
                       <div className="h-full w-10 absolute inset-0 flex items-center justify-center">
                         <div className="h-full w-1 bg-gray-200 pointer-events-none"></div>
                       </div>
-                      <div className="flex-shrink-0 w-10 h-10 rounded-full bg-yellow-500 inline-flex items-center justify-center text-white relative z-10">
+                      <div className="flex-shrink-0 w-10 h-10 rounded-full bg-[#b9a063] inline-flex items-center justify-center text-white relative z-10">
                         <Sparkles size={20} />
                       </div>
                       <div className="flex-grow pl-4">
@@ -387,7 +387,7 @@ const Home = () => {
                       </div>
                     </div>
                     <div className="flex relative">
-                      <div className="flex-shrink-0 w-10 h-10 rounded-full bg-yellow-500 inline-flex items-center justify-center text-white relative z-10">
+                      <div className="flex-shrink-0 w-10 h-10 rounded-full bg-[#b9a063] inline-flex items-center justify-center text-white relative z-10">
                         <Sparkles size={20} />
                       </div>
                       <div className="flex-grow pl-4">

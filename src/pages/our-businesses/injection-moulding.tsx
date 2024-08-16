@@ -21,13 +21,13 @@ const BlowMoulding = () => {
 
       <AnotherNavbar />
 
-      <div className="relative w-full">
+      <div className="relative w-full bg-black">
         <img src="/assets/moulding2/non-woven.jpg" style={{
           maxHeight: '700px'
-        }} alt="Sample Image" className="w-full h-full object-cover" />
+        }} alt="Sample Image" className="w-full opacity-75 h-full object-cover" />
         <div className="absolute w-full top-0 left-0 bottom-0 flex text-white">
           <div className="flex flex-col ml-36 my-auto">
-            <h1 className={classNames(PlayfairDisplayBold.className, 'text-7xl')}>Injection Moulding</h1>
+            <h1 className={classNames(PlayfairDisplayBold.className, 'text-7xl drop-shadow-2xl')}>Injection Moulding</h1>
 
             <div className={classNames(PlayfairDisplay.className, "text-3xl mt-4 mb-4")}>our expertise!</div>
           </div>
