@@ -10,7 +10,7 @@ import Footer from '~/components/Footer'
 import Link from 'next/link'
 import TransparentNavbar2 from '~/components/TransparentNavbar2'
 
-const Products = () => {
+const Products = ({ MiddleComponent }: { MiddleComponent?: React.FC }) => {
   return (
     <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} transition={{ duration: 1 }}>
       <Head>
@@ -18,16 +18,18 @@ const Products = () => {
       </Head>
 
       <TransparentNavbar2 />
-
-      <div className="relative">
-        <img src="/PRODUCT-CATALOGUE.png" style={{
-        }} alt="Sample Image" className="py-12 px-12 w-full h-full object-cover" />
-        {/* <div className="absolute w-full top-0 left-0 bottom-0 flex text-white">
+      {!MiddleComponent && (
+        <div className="relative">
+          <img src="/PRODUCT-CATALOGUE.png" style={{
+          }} alt="Sample Image" className="py-12 px-12 w-full h-full object-cover" />
+          {/* <div className="absolute w-full top-0 left-0 bottom-0 flex text-white">
           <div className="flex flex-col ml-36 my-auto">
             <h1 className={classNames(InterBold.className, 'text-7xl')}>Our Product Range</h1>
           </div>
         </div> */}
-      </div>
+        </div>
+      )}
+      {MiddleComponent && <MiddleComponent />}
       <div className={classNames('px-4 md:px-14 py-4 bg-[#fff4dc] text-xl', InterBold.className)}>
         HOME <span className='text-blue-400'>{">"}</span> PRODUCTS
       </div>
@@ -285,16 +287,16 @@ const Products = () => {
                   </div>
                 </div>
                 <div className='flex flex-row mx-auto w-full items-center justify-center'>
-                <div className="w-1/2 sm:w-1/3 md:w-1/4 p-5">
-                  <div className="relative card">
-                    <img src="/corrugated-non-automotive/4B5A4408.jpg" alt="Random Image 2" className="rounded-md border-2 w-full h-48 object-cover object-center" />
-                    <div className="overlay absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 overlay transition-opacity duration-300">
-                      <h2 className={classNames("text-white text-lg font-medium", InterBold.className)}>
-                        Inlet Hose Assy <br /> for Front Load WM
-                      </h2>
+                  <div className="w-1/2 sm:w-1/3 md:w-1/4 p-5">
+                    <div className="relative card">
+                      <img src="/corrugated-non-automotive/4B5A4408.jpg" alt="Random Image 2" className="rounded-md border-2 w-full h-48 object-cover object-center" />
+                      <div className="overlay absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 overlay transition-opacity duration-300">
+                        <h2 className={classNames("text-white text-lg font-medium", InterBold.className)}>
+                          Inlet Hose Assy <br /> for Front Load WM
+                        </h2>
+                      </div>
                     </div>
                   </div>
-                </div>
                   <div className="w-1/2 sm:w-1/3 md:w-1/4 p-5">
                     <div className="relative card">
                       <img src="/corrugated-non-automotive/4B5A4509.jpg" alt="Random Image 2" className="rounded-md border-2 w-full h-48 object-cover object-center" />

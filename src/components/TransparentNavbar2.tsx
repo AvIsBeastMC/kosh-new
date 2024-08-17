@@ -35,7 +35,7 @@ const TransparentNavbar2 = () => {
   return (
     <div className={classNames(scroll ? 'text-black bg-gray-100' : ' ', 'transition-colors fixed w-full top-0 z-50')}>
       <div className='flex flex-row py-4 px-6 md:px-12 items-center'>
-        <img src={scroll ? '/logo-new.png' : '/logo-new-white.png'} alt="" className='w-48 md:w-72 mr-auto' />
+        <img src={scroll ? '/logo-new.png' : '/logo-new.png'} alt="" className='w-48 md:w-72 mr-auto' />
         <button
           className="inline-flex items-center justify-center p-2 rounded-md text-gray-400 md:hidden"
           onClick={() => setIsOpen(!isOpen)}

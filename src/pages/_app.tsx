@@ -32,6 +32,12 @@ export const ManropeFont = Manrope({
   weight: '500'
 });
 
+export const ManropeFontBold = Manrope({
+  subsets: ["latin"],
+  variable: "--font-sans",
+  weight: '700'
+});
+
 export const PlayfairDisplayBold = Playfair_Display({
   subsets: ["latin"],
   variable: "--font-sans",
