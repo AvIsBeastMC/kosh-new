@@ -4,6 +4,8 @@ import Link from 'next/link'
 import { useRouter } from 'next/router'
 import React from 'react'
 import { InterFont } from '~/pages/_app'
+import DropdownComponent from './Dropdown'
+import { ChevronDown } from 'lucide-react'
 
 const TransparentNavbar2 = () => {
   const router = useRouter()
@@ -61,7 +63,9 @@ const TransparentNavbar2 = () => {
         <div className={classNames('hidden md:flex gap-8 flex-row ml-auto', InterFont.className)}>
           <NavLink href="/">Home</NavLink>
           <NavLink href="/about">About</NavLink>
-          <NavLink href="/products">Products</NavLink>
+          <DropdownComponent>
+            <button className='flex flex-row items-cenrter gap-2'>Products <ChevronDown /></button>
+          </DropdownComponent>
           <NavLink href="/careers">Careers</NavLink>
           <NavLink href="/contact">Contact</NavLink>
         </div>
