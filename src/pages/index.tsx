@@ -170,7 +170,7 @@ const Home = () => {
       <div className='sections'>
         <div className="relative section">
           <Slider pauseOnHover={false} autoplay autoplaySpeed={3000} infinite className="cursor-grab object-cover object-center rounded">
-            {['/slider/1.jpg', '/slider/2.jpg', '/slider/3.jpg', '/slider/growth-mindset.jpg'].map((image, i) => (
+            {['/slider/1.jpg', '/slider/2.jpg', '/slider/3.jpg', '/slider/4.jpg'].map((image, i) => (
               <div key={i} className="w-full relative bg-black">
                 <img src={image} style={{
                   maxHeight: '100vh'
@@ -502,14 +502,14 @@ const Home = () => {
           ))}
         </div> */}
 
-        <div data-aos="fade-down" data-aos-delay="200" className="bg-[#d3d3d3] relative flex items-center justify-center overflow-hidden ">
+        <div data-aos="fade-down" data-aos-delay="200" className="mb-8 relative flex items-center justify-center overflow-hidden ">
           <div className="relative mx-auto h-full sm:max-w-xl md:max-w-full md:px-24 lg:max-w-screen-xl lg:px-8">
-            <img src='/nalini.jpg' />
+            <img src='/director-msg/nalini.jpg' />
           </div>
         </div>
-        <div data-aos="fade-left" data-aos-delay="200" className="bg-[#E8E1DE] relative flex items-center justify-center overflow-hidden ">
+        <div data-aos="fade-left" data-aos-delay="200" className="relative flex items-center justify-center overflow-hidden ">
           <div className="relative mx-auto h-full sm:max-w-xl md:max-w-full md:px-24 lg:max-w-screen-xl lg:px-8">
-            <img src='/samir.jpg' />
+            <img src='/director-msg/samir.jpg' />
           </div>
         </div>
         <div data-aos="fade-left" data-aos-delay="200" className="bg-white relative flex items-center  n justify-center overflow-hidden ">
