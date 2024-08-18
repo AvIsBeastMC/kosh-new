@@ -11,23 +11,24 @@ const TransparentNavbar2 = () => {
   const router = useRouter()
   const [scroll, setScroll] = React.useState<boolean>(false)
   const [isOpen, setIsOpen] = React.useState<boolean>(false)
+  const [showNavbar, setShowNavbar] = React.useState<boolean>(false)
 
   React.useEffect(() => {
-    const handleScroll = () => {
-      if (window.scrollY > 24) {
-        setScroll(true)
-      } else {
-        setScroll(false)
-      }
-    }
-    document.addEventListener('scroll', handleScroll)
-    return () => document.removeEventListener('scroll', handleScroll)
-  }, [])
+    const initialHash = router.asPath.split('#')[1]
+    
+    if (!initialHash) {
+      setShowNavbar(true)
+    };
+
+    window.addEventListener('scroll', () => {
+      setShowNavbar(true)
+    });
+  }, [router.asPath])
 
   const NavLink = ({ href, children }: { href: string, children: React.ReactNode }) => {
     return (
       <Link href={href} className='hover:opacity-75 transition-opacity'>
-        <span className={router.pathname == href ? 'border-b-2 pb-2 border-gray-700' : ''}>
+        <span className={router.pathname === href ? 'border-b-2 pb-2 border-gray-700' : ''}>
           {children}
         </span>
       </Link>
@@ -35,7 +36,13 @@ const TransparentNavbar2 = () => {
   }
 
   return (
-    <div className={classNames(scroll ? 'text-black bg-gray-100' : ' ', 'transition-colors fixed w-full top-0 z-50')}>
+    <div
+      className={classNames(
+        showNavbar && (scroll || !scroll) ? 'text-black bg-gray-100' : 'text-transparent',
+        'transition-colors fixed w-full top-0 z-50',
+        { 'hidden': !showNavbar }
+      )}
+    >
       <div className='flex flex-row py-4 px-6 md:px-12 items-center'>
         <img src={scroll ? '/logo-new.png' : '/logo-new.png'} alt="" className='w-48 md:w-72 mr-auto' />
         <button
@@ -64,7 +71,7 @@ const TransparentNavbar2 = () => {
           <NavLink href="/">Home</NavLink>
           <NavLink href="/about">About</NavLink>
           <DropdownComponent>
-            <button className='flex flex-row items-cenrter gap-2'>Products <ChevronDown /></button>
+            <button className='flex flex-row items-center gap-2'>Products <ChevronDown /></button>
           </DropdownComponent>
           <NavLink href="/careers">Careers</NavLink>
           <NavLink href="/contact">Contact</NavLink>

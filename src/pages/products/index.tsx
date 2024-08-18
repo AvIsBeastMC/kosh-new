@@ -127,7 +127,7 @@ const Products = ({ MiddleComponent }: { MiddleComponent?: React.FC }) => {
             </div>
           </div>
         </section> */}
-        <section className="text-gray-600 body-font pb-24">
+        <section id='corrugated-automotive' className="text-gray-600 body-font pb-24">
           <div className="">
             {/* <table className="mb-12 table-auto w-1/2 text-left whitespace-no-wrap">
               <thead className=''>
@@ -741,7 +741,7 @@ const Products = ({ MiddleComponent }: { MiddleComponent?: React.FC }) => {
           </div>
         </section>
 
-        <section className="text-gray-600 body-font py-24">
+        <section id='corrugated-greentech' className="text-gray-600 body-font py-24">
           <div className="">
             <div className="flex flex-col w-full mb-6">
               <h1 className={classNames("sm:text-4xl text-3xl font-medium title-font mb-4 text-gray-900", ManropeFont.className)}>Corrugated Greentech</h1>

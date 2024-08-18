@@ -502,16 +502,10 @@ const Home = () => {
           ))}
         </div> */}
 
-        <div data-aos="fade-down" data-aos-delay="200" className="mb-8 relative flex items-center justify-center overflow-hidden ">
-          <div className="relative mx-auto h-full sm:max-w-xl md:max-w-full md:px-24 lg:max-w-screen-xl lg:px-8">
-            <img src='/director-msg/nalini.jpg' />
+          <div className='flex flex-col gap-6 mx-auto w-3/4'>
+            <img data-aos="fade-left" data-aos-delay="300" src='/director-msg/nalini.jpg' className='mr-auto' />
+            <img data-aos="fade-right" data-aos-delay="300" src='/director-msg/samir.jpg' className='ml-auto' />
           </div>
-        </div>
-        <div data-aos="fade-left" data-aos-delay="200" className="relative flex items-center justify-center overflow-hidden ">
-          <div className="relative mx-auto h-full sm:max-w-xl md:max-w-full md:px-24 lg:max-w-screen-xl lg:px-8">
-            <img src='/director-msg/samir.jpg' />
-          </div>
-        </div>
         <div data-aos="fade-left" data-aos-delay="200" className="bg-white relative flex items-center  n justify-center overflow-hidden ">
           {/* <div className="relative mx-auto h-full px-4  pb-20   md:pb-10 sm:max-w-xl md:max-w-full md:px-24 lg:max-w-screen-xl lg:px-8">
             <div className="flex flex-col items-center justify-between lg:flex-row py-16">

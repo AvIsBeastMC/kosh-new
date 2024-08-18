@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-html-link-for-pages */
 import React, { useState } from "react";
 import { Dropdown, DropdownTrigger, DropdownMenu, DropdownItem, Button, cn, DropdownSection } from "@nextui-org/react";
 import { InterFont } from "~/pages/_app";
@@ -56,9 +57,9 @@ export default function DropdownComponent({ children }: { children: React.ReactN
                   }} exit={{
                     opacity: 0
                   }} className="flex flex-col gap-2 mb-4 rounded-md mt-2 px-4 py-2 bg-gray-100 w-full">
-                    <li>• Automotive</li>
-                    <li>• Non-Automotive</li>
-                    <li>• Greentech</li>
+                    <Link href="/designs/products#injection-automotive" className="dropdown-link"><li>• Automotive</li></Link>
+                    <Link href="/designs/products#injection-non-automotive" className="dropdown-link"><li>• Non-Automotive</li></Link>
+                    <Link href="/designs/products#injection-greentech" className="dropdown-link"><li>• Greentech</li></Link>
                   </motion.div>
                 )}
               {/* </AnimatePresence> */}
@@ -104,9 +105,9 @@ export default function DropdownComponent({ children }: { children: React.ReactN
                   }} exit={{
                     opacity: 0
                   }} className="flex flex-col gap-2 mb-4 rounded-md mt-2 px-4 py-2 bg-gray-100 w-full">
-                    <li>• Automotive</li>
-                    <li>• Non-Automotive</li>
-                    <li>• Greentech</li>
+                    <Link href="/designs/products#corrugated-automotive" className="dropdown-link"><li>• Automotive</li></Link>
+                    <Link href="/designs/products#corrugated-non-automotive" className="dropdown-link"><li>• Non-Automotive</li></Link>
+                    <Link href="/designs/products#corrugated-greentech" className="dropdown-link"><li>• Greentech</li></Link>
                   </motion.div>
                 )}
               {/* </AnimatePresence> */}
