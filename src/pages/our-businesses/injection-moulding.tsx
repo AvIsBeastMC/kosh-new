@@ -71,7 +71,7 @@ const BlowMoulding = () => {
                 "/products/businesses/injection/26.png",
                 "/products/businesses/injection/27.png",
                 "/products/businesses/injection/28.png",
-                "/products/businesses/injection/29.png",
+                "/products/businesses/injection/29.jpg",
                 "/products/businesses/injection/30.png"
               ].map((a, i) => (
                 <div key={i} className="w-1/2 sm:w-1/3 md:w-1/4 p-5 -ml-4">
