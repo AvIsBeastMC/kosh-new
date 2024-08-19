@@ -90,12 +90,12 @@ const Home = () => {
           <div className="absolute w-full top-0 right-0 left-0 bottom-0 flex text-white">
             <div className="flex flex-row mx-36 my-24 align-top items-start">
               <div className='gap-7 flex flex-col self-center'>
-                <span onClick={() => setState('Injection')} className='cursor-pointer hover:opacity-75 transition-opacity border-b-2 pb-2 pr-12 border-gray-600 w-full'>Injection Moulding</span>
-                <span onClick={() => setState('Blow')} className='cursor-pointer hover:opacity-75 transition-opacity border-b-2 pb-2 pr-12 border-gray-600 w-full'>Blow Moulding</span>
-                <span onClick={() => setState('Extrusion')} className='cursor-pointer hover:opacity-75 transition-opacity border-b-2 pb-2 pr-12 border-gray-600 w-full'>Extrusion Moulding</span>
-                <span onClick={() => setState('Non-woven Packaging')} className='cursor-pointer hover:opacity-75 transition-opacity border-b-2 pb-2 pr-12 border-gray-600 w-full'>Non-woven Packaging</span>
-                <span onClick={() => setState('Electronics')} className='cursor-pointer hover:opacity-75 transition-opacity border-b-2 pb-2 pr-12 border-gray-600 w-full'>Electronics</span>
-                <span onClick={() => setState('Medicare')} className='cursor-pointer hover:opacity-75 transition-opacity border-b-2 pb-2 pr-12 border-gray-600 w-full'>Medicare</span>
+                <span onClick={() => setState('Injection')} className='cursor-pointer hover:opacity-75 transition-opacity border-b-2 pb-2 pr-12 border-gray-300 w-full'>Injection Moulding</span>
+                <span onClick={() => setState('Blow')} className='cursor-pointer hover:opacity-75 transition-opacity border-b-2 pb-2 pr-12 border-gray-300 w-full'>Blow Moulding</span>
+                <span onClick={() => setState('Extrusion')} className='cursor-pointer hover:opacity-75 transition-opacity border-b-2 pb-2 pr-12 border-gray-300 w-full'>Extrusion Moulding</span>
+                <span onClick={() => setState('Non-woven Packaging')} className='cursor-pointer hover:opacity-75 transition-opacity border-b-2 pb-2 pr-12 border-gray-300 w-full'>Non-woven Packaging</span>
+                <span onClick={() => setState('Electronics')} className='cursor-pointer hover:opacity-75 transition-opacity border-b-2 pb-2 pr-12 border-gray-300 w-full'>Electronics</span>
+                <span onClick={() => setState('Medicare')} className='cursor-pointer hover:opacity-75 transition-opacity border-b-2 pb-2 pr-12 border-gray-300 w-full'>Medicare</span>
               </div>
 
               <AnimatePresence mode='wait'>
@@ -183,8 +183,8 @@ const Home = () => {
 
                     <div className='w-20 rounded-md h-1 bg-blue-400'></div>
                     <div className={classNames(JioType.className, "flex flex-row gap-2")}>
-                      <button className="rounded-full border-2 border-gray-400 px-4 py-1 text-xl hover:bg-gray-700 transition-colors">about us <span className={classNames(InterFont.className)}>{"-->"}</span></button>
-                      <button className="rounded-full border-2 border-gray-400 px-4 py-1 text-xl hover:bg-gray-700 transition-colors">our history <span className={classNames(InterFont.className)}>{"-->"}</span></button>
+                      <button className="rounded-full border-2 border-white px-4 py-1 text-xl hover:bg-gray-700 transition-colors">about us <span className={classNames(InterFont.className)}>{"-->"}</span></button>
+                      <button className="rounded-full border-2 border-white px-4 py-1 text-xl hover:bg-gray-700 transition-colors">our history <span className={classNames(InterFont.className)}>{"-->"}</span></button>
                     </div>
                     {/*             
             <div className="text-blue-200 mb-4">________________</div>
